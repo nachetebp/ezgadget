@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="morfeofast Example" scrolling="true"/>
+<Content type="html">
+<![CDATA[
+<link rel="stylesheet" type="text/css" href="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
+<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
+
+<script language="JavaScript">
+
+	var menu = null;
+	
+	var screens = new Hash();
+            
+    screens.set('Client', {title: 'Client', contentEl:'client', pre: []});
+screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['service','segment','phone']});
+
+
+	function loadMenu(){
+		
+		menu = new Ext.TabPanel({
+	        renderTo:'menu',
+	        activeTab:0,
+	        plain:true,
+	        frame:true,
+	        autoscroll:true,
+	        enableTabScroll:true,
+	        animScroll:true,
+	        autoHeight:true,
+	        autoWidth:true,
+	        monitorResize:true,
+	        defaults:{autoScroll:true}
+	    });
+	    
+	    EngineFactory.getInstance().setEngine(screens, menu);
+	    
+	    EngineFactory.getInstance().run();
+	}
+	
+	
+	_IG_RegisterOnloadHandler(loadMenu);
+</script>
+<div id="content_div">
+<div id="menu" style="overflow:auto;"></div>
+<div id="client" class="x-hide-display">
+	<object id="search_obj" width="100%" height="100%">
+		<html>
+		    <head>
+		        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/css.css" />
+        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/internet.css" />
+				<style type="text/css">
+					#bodyDiv{
+						max-width: 550px;
+					}
+					#searchArea {
+						border: 1px solid #F8A704;
+						-moz-border-radius:13px 13px;
+						background:#FFF8E8 url(http://10.95.39.252:4412/fast/screens/bg_td2.jpg) repeat-x;
+						border:1px solid #F8A704;
+						height:100px;
+						margin:5px auto 0px;
+						padding:0px;
+						text-align:center;
+						width:100%;
+					}
+					#contents{
+						padding:12px;
+					}
+					#send{
+						margin-left: 15px;
+					}
+					#amazonImage{
+						position:absolute;
+						right:2px;
+						top:3px;
+					}
+					.title{
+						padding: 2px;
+						color:#AAAAAA;
+						font-weight: bold;
+						font-family:Arial,Helvetica,sans-serif;	
+						white-space:nowrap;
+						overflow: hidden;
+					}
+
+				</style>
+		        <script language="JavaScript">
+			        function Cliente(){
+			        var servicio = null;
+			        var segmento = null;
+			        var telefono = null;
+			        };
+		        	
+		        	Cliente.prototype.send = function (tipo, valor ){
+						cliente.telefono = {name: 'phone', tipo: tipo, valor: null};
+						cliente.segmento = {name: 'segment', tipo: tipo, valor: valor};
+						if (cliente.servicio != null)
+							EngineFactory.getInstance().manageFacts([cliente.servicio,cliente.segmento,cliente.telefono],['promotions']);
+					}
+
+		        	Cliente.prototype.send2 = function (tipo, valor ){
+						cliente.servicio = {name: 'service', tipo: tipo, valor: valor};
+						if (cliente.segmento != null)
+							EngineFactory.getInstance().manageFacts([cliente.servicio,cliente.segmento,cliente.telefono],['promotions']);
+					}
+					var cliente = new Cliente();
+		        </script>
+		    </head>
+		    <body>
+		        <div id="bodyDiv" style="text-align: center;">
+		        	<h1 id="title">SelecciÃ³n de cliente</h1>
+						<!-- table style="width:100%;border:1px;"><tr>
+							<td><img src="http://10.95.39.252:4412/fast/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"></td>
+							<td><img src="http://10.95.39.252:4412/fast/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"></td>
+						 </tr></table>
+
+						<table border="0"><tr>
+							<td><img src="http://10.95.39.252:4412/fast/img/menuOpc1Off.gif" onclick="cliente.send2('Sv','I');"></td>
+							<td><img src="http://10.95.39.252:4412/fast/img/menuOpc2Off.gif" onclick="cliente.send2('Sv','Tf');"></td>
+							<td><img src="http://10.95.39.252:4412/fast/img/menuOpc3Off.gif" onclick="cliente.send2('Sv','Tv');"></td>
+						 </tr></table -->
+						 
+							<img src="http://10.95.39.252:4412/fast/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"/>
+							<img src="http://10.95.39.252:4412/fast/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"/>
+<BR/>
+							<img src="http://10.95.39.252:4412/fast/img/menuOpc1Off.gif" onclick="cliente.send2('Sv','I');"/>
+							<img src="http://10.95.39.252:4412/fast/img/menuOpc2Off.gif" onclick="cliente.send2('Sv','Tf');"/>
+							<img src="http://10.95.39.252:4412/fast/img/menuOpc3Off.gif" onclick="cliente.send2('Sv','Tv');"/>
+						 
+
+		        </div>
+		    </body>
+		</html>
+	</object>
+</div>
+
+<div id="promotions" class="x-hide-display">
+	<object id="search_obj" width="100%" height="100%">
+		<html>
+		    <head>
+		        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/css.css" />
+        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/internet.css" />
+				<style type="text/css">
+					#bodyDiv{
+						max-width: 550px;
+					}
+					#searchArea {
+						border: 1px solid #F8A704;
+						-moz-border-radius:13px 13px;
+						background:#FFF8E8 url(http://10.95.39.252:4412/fast/screens/bg_td2.jpg) repeat-x;
+						border:1px solid #F8A704;
+						height:50px;
+						margin:5px auto 0px;
+						padding:0px;
+						text-align:center;
+						width:100%;
+					}
+					#contents{
+						padding:12px;
+					}
+					#send{
+						margin-left: 15px;
+					}
+					#amazonImage{
+						position:absolute;
+						right:2px;
+						top:3px;
+					}
+					.title{
+						padding: 2px;
+						color:#AAAAAA;
+						font-weight: bold;
+						font-family:Arial,Helvetica,sans-serif;	
+						white-space:nowrap;
+						overflow: hidden;
+					}
+
+				</style>
+		        <script language="JavaScript">
+			        function Ofertas(){
+			        	var p = null;
+			        };
+
+					Ofertas.prototype.init = function (){
+			            ofertas.p = {name: 'cart', producto: 'Linea + DUO ADSL + Llamadas Nacionales'};
+	                    //Get the facts to invoke the service
+	                    var servicio = EngineFactory.getInstance().getFact('service');
+	                    var segmento = EngineFactory.getInstance().getFact('segment');
+	                    var telefono = EngineFactory.getInstance().getFact('phone');
+//	                    alert(segmento.valor);
+//	                    alert(servicio.valor);
+//	                    alert(telefono.valor);
+	                    var img = document.getElementById("oferta_img");
+	                    
+	                    var txt = document.getElementById("coment_tfno");
+	                    if(telefono.valor != null) {
+		                    txt.innerHTML = "Superoferta para el telÃ©fono " + telefono.valor;
+	                    } else {
+		                    txt.innerHTML = "";
+						}
+	                    
+	                    if(servicio.valor == 'I') {
+	                    	img.src="http://10.95.39.252:4412/fast/img/Internet_yacliente.gif";
+			                ofertas.p = {name: 'cart', producto: 'DUO ADSL + Llamadas Nacionales'};
+	                    } else if(servicio.valor == 'Tf') {
+	                    	img.src="http://10.95.39.252:4412/fast/img/TF_NOcliente.gif";	                    
+			                ofertas.p = {name: 'cart', producto: 'Linea + Telefono + Servicios'};
+	                    } else if(servicio.valor == 'Tv') {
+	                    	img.src="http://10.95.39.252:4412/fast/img/TV_yacliente.gif";	                    
+			                ofertas.p = {name: 'cart', producto: 'TRIO'};
+	                    }
+	                    
+	                }
+		            
+		        	Ofertas.prototype.send = function (){
+						EngineFactory.getInstance().manageFacts([ofertas.p],['promotion']);
+					}
+		            
+		            var ofertas = new Ofertas();
+					EngineFactory.getInstance().addScreenLoader("Promotions", ofertas.init);
+		        </script>
+		    </head>
+		    <body>
+		        <div id="bodyDiv" style="text-align: center;">
+		        	<h1 id="coment_tfno" class="texto1_1_bold">Superofertas</h1><br/>
+						<img id="oferta_img" src="http://10.95.39.252:4412/fast/img/Internet_NOcliente.gif" onclick="ofertas.send();"/>
+		        </div>
+		    </body>
+		</html>
+	</object>
+</div>
+</div>
+]]>
+</Content>
+</Module>
