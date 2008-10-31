@@ -3,11 +3,12 @@
 <ModulePrefs title="morfeofast Example" scrolling="true"/>
 <Content type="html">
 <![CDATA[
-<link rel="stylesheet" type="text/css" href="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
-<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
+<!--<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>-->
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
 
 <script language="JavaScript">
 
@@ -112,7 +113,7 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 		    </head>
 		    <body>
 		        <div id="bodyDiv" style="text-align: center;">
-		        	<h1 id="title">SelecciÃ³n de cliente</h1>
+		        	<h1 id="title">Selección de cliente</h1>
 						<!-- table style="width:100%;border:1px;"><tr>
 							<td><img src="http://10.95.39.252:4412/fast/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"></td>
 							<td><img src="http://10.95.39.252:4412/fast/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"></td>
