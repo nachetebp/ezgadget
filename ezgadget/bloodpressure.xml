@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="Presión sanguínea" height="300" /> 
+  <ModulePrefs title="Presión sanguínea" height="350" /> 
   <Content type="html">
      <![CDATA[ 
 <style type="text/css">
