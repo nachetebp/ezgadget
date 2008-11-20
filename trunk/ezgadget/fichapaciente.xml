@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="Ficha del paciente" height="480" /> 
+  <Content type="html">
+     <![CDATA[ 
+<style type="text/css">
+#bodyDiv {
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+.breakDown:hover {
+	text-decoration: underline;
+}
+
+.breakDown {
+	color: #6266A7;
+	cursor: pointer;
+	font-size: 9px;
+}
+
+.separador3 {
+	background-color: #BBBBD3;
+	height: 3px;
+	margin: 8px 0pt;
+}
+
+.titulo {
+	background: #000077;
+	color: #FFFFFF;
+	padding: 2px;
+}
+
+.ficha {
+	background-color: rgb(0, 0, 119);
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	padding: 2px;
+}
+table td{
+	font-size:10px;
+}
+
+</style>
+<div id="bodyDiv">
+<p align="center">&nbsp;</p>
+<p align="center" class="ficha">Ficha de paciente</p>
+<table border="0" width="100%" id="table1">
+	<tr>
+		<td><b>Nombre:</b></td>
+		<td>GONZALO</td>
+	</tr>
+	<tr>
+		<td><b>Apellidos:</b></td>
+		<td>ALONSO MARTINEZ DE LA VARA</td>
+	</tr>
+	<tr>
+		<td><b>Nº Seguridad Social:</b></td>
+		<td>852695644125</td>
+	</tr>
+	<tr>
+		<td><b>Domicilio:</b></td>
+		<td>Atenes, 16, 1 A, 08006 BARCELONA</td>
+	</tr>
+	<tr>
+		<td>
+		<p align="left"><b>Tfno Móvil:</b>
+		</td>
+		<td>636 84 58 93</td>
+	</tr>
+	<tr>
+		<td><b>Otro tfno:</b></td>
+		<td>93 34 56 367</td>
+	</tr>
+</table>
+<div class='separador3'><span /></div>
+<span align="left" class="titulo">Historial</span>
+<p align="left">Vacío</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Alergias</span>
+<p align="left">Gramíneas</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Tratamientos en curso</span>
+<p align="left">Ninguno</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Resultados de pruebas</span>
+<p align="left" class='breakDown'>Análisis de sangre</p>
+<p align="left" class='breakDown'>Presión sanguínea</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Pruebas pendientes</span>
+<p align="left">Ninguna</p>
+</div>
+     ]]>
+  </Content> 
+</Module>
