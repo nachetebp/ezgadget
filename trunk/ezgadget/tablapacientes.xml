@@ -6,6 +6,7 @@
 <style type="text/css">
 table {
 border:1px solid #000077;
+font-size: 9px;
 }
 
 .breakDown:hover{text-decoration: underline;}
