@@ -4,11 +4,19 @@
   <Content type="html">
      <![CDATA[ 
 <style type="text/css">
+#imagenDiv {
+	text-align:center;
+}
+
 .imagen {
 	border: 1px solid black;
+	padding:2px;
+	text-align:center;	
 }
 </style>
+<div id="imagenDiv">
 <img class="imagen" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/BloodPressureTrackerGraph.gif"></img>
+</div>
      ]]>
   </Content> 
 </Module>
