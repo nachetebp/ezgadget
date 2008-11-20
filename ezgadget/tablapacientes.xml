@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="Tabla de Pacientes" height="600"/> 
+  <ModulePrefs title="Tabla de Pacientes" height="340" width="600" /> 
   <Content type="html">
      <![CDATA[ 
 <style type="text/css">
