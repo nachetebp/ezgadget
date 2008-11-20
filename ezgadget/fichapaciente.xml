@@ -36,6 +36,7 @@
 	color: rgb(255, 255, 255);
 	font-size: 12px;
 	padding: 2px;
+	margin:0 0 5px;
 }
 table td{
 	font-size:10px;
@@ -43,7 +44,6 @@ table td{
 
 </style>
 <div id="bodyDiv">
-<p align="center">&nbsp;</p>
 <p align="center" class="ficha">Ficha de paciente</p>
 <table border="0" width="100%" id="table1">
 	<tr>
