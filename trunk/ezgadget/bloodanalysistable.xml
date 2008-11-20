@@ -18,7 +18,7 @@ thead th {
 	padding:3px 2px;
 	margin: 0px 0px 0px;
 	text-align: left;
-	font-size: 9px;
+	font-size: 12px;
 }
 
 tbody tr {
@@ -30,7 +30,7 @@ tbody th,td {
 	color: #415995;
 	padding:0px 7px;
 	text-align: left;
-	font-size: 9px;
+	font-size: 10px;
 }
 
 td.normal {
