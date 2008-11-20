@@ -27,14 +27,14 @@ tbody tr {
 
 tbody th,td {
 	border: 1px outset rgb(221, 221, 221);
-	color: #777777;
+	color: #415995;
 	padding:1px 7px;
 	text-align: left;
 	font-size: 9px;
 }
 
 td.normal {
-	color: #00FF00;
+	color: #00D000;
 }
 
 td.low {
