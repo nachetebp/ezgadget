@@ -9,6 +9,10 @@ border:1px solid #000077;
 font-size: 9px;
 }
 
+th {
+font-size: 10px;
+}
+
 .breakDown:hover{text-decoration: underline;}
 .breakDown{
 border: 1px outset rgb(221, 221, 221); 
@@ -48,7 +52,7 @@ color:#CCCCCC;
 <tr>
 <th id="th0" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Apellidos</th>
 <th id="th1" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Nombre</th>
-<th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Nº Seguridad Social</th>
+<th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Nº S. S.</th>
 <th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Domicilio</th>
 <th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Ficha médica</th>
 </tr>
