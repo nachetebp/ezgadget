@@ -18,6 +18,7 @@ thead th {
 	padding: 3px;
 	margin: 0px 0px 0px;
 	text-align: left;
+	font-size: 10px;
 }
 
 tbody tr {
@@ -27,8 +28,9 @@ tbody tr {
 tbody th,td {
 	border: 1px outset rgb(221, 221, 221);
 	color: #777777;
-	padding: 4px 7px;
+	padding:1px 7px;
 	text-align: left;
+	font-size: 10px;
 }
 
 td.normal {
