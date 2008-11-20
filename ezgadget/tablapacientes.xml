@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="Tabla de Pacientes" /> 
+  <Content type="html">
+     <![CDATA[ 
+       Tabla de los pacientes
+     ]]>
+  </Content> 
+</Module>
