@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="hello world" /> 
+  <Content type="html">
+     <![CDATA[ 
+       <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/icoLink.gif"></img>
+     ]]>
+  </Content> 
+</Module>
