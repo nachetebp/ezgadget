@@ -3,10 +3,101 @@
   <ModulePrefs title="Tabla de Pacientes" /> 
   <Content type="html">
      <![CDATA[ 
-       Tabla de los pacientes
-       Probando...
-       <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/medico.jpg"></img>
-       <img src="/media/medico.jpg"></img>
+<style type="text/css">
+table {
+border:1px solid #000077;
+}
+
+.breakDown:hover{text-decoration: underline;}
+.breakDown{
+border: 1px outset rgb(221, 221, 221); 
+color: #6266A7; 
+cursor: pointer; 
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; 
+font-size: 9px;}
+.separador3 {
+background-color:#BBBBD3;
+height:3px;
+margin:8px 0pt;
+}
+.listado_paginacion {
+font-family:Arial,Verdana,sans-serif;
+font-size:0.7em;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:bold;
+line-height:normal;
+margin:8px 0pt 20px 10px;
+}
+.listado_paginacion ul, .listado_paginacion li {
+display:inline;
+list-style-type:none;
+margin:0pt;
+padding:0pt;
+}
+.listado_paginacion span {
+color:#CCCCCC;
+}
+</style>
+<table style="margin: 2.5%; padding: 0px; font-family: Arial; font-size: 14px; text-align: center; width: 95%; height: 50px;" cellspacing="0">
+<tbody>
+
+<tr>
+<th id="th0" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Apellidos</th>
+<th id="th1" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Nombre</th>
+<th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Nº Seguridad Social</th>
+<th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Domicilio</th>
+<th id="th4" style="border: 1px outset rgb(221, 221, 221); background-color: rgb(0, 0, 119); color: rgb(255, 255, 255); width: 12%;">Ficha médica</th>
+</tr>
+<tr>
+<td style="border: 1px outset rgb(221, 221, 221);">MARTINEZ CORRIA</td>
+<td style="border: 1px outset rgb(221, 221, 221);">RAMON</td>
+<td style="border: 1px outset rgb(221, 221, 221);">685942558674</td>
+<td class="breakDown" align="center" valign="middle">Duquessa d'Orleans, 6, 3 C, 08034 BARCELONA</td>
+<td class="breakDown" align="center" valign="middle">Visualizar</td>
+</tr>
+<tr>
+<td style="border: 1px outset rgb(221, 221, 221);">ALONSO MARTINEZ DE LA VARA</td>
+<td style="border: 1px outset rgb(221, 221, 221);">GONZALO</td>
+<td style="border: 1px outset rgb(221, 221, 221);">852695644125</td>
+<td class="breakDown" align="center" valign="middle">Atenes, 16, 1 A, 08006 BARCELONA</td>
+<td class="breakDown" align="center" valign="middle">Visualizar</td>
+</tr>
+<tr>
+<td style="border: 1px outset rgb(221, 221, 221);">GONZALEZ ABAD</td>
+<td style="border: 1px outset rgb(221, 221, 221);">ANTONIA</td>
+<td style="border: 1px outset rgb(221, 221, 221);">65523522864</td>
+<td class="breakDown" align="center" valign="middle">Granadella, 44, 1 B, 08030 BARCELONA</td>
+<td class="breakDown" align="center" valign="middle">Visualizar</td>
+</tr>
+<tr>
+<td style="border: 1px outset rgb(221, 221, 221);">GONZALEZ SANJUAN</td>
+<td style="border: 1px outset rgb(221, 221, 221);">MANUEL</td>
+<td style="border: 1px outset rgb(221, 221, 221);">63552986881</td>
+<td class="breakDown" align="center" valign="middle">Mir, 29, 2 A, 08030 BARCELONA</td>
+<td style="border: 1px outset rgb(221, 221, 221);">No disponible</td>
+</tr>
+<tr>
+<td style="border: 1px outset rgb(221, 221, 221);">PEREZ BOLA&Ntilde;OS</td>
+<td style="border: 1px outset rgb(221, 221, 221);">HERMENEGILDO</td>
+<td style="border: 1px outset rgb(221, 221, 221);">74225866251</td>
+<td class="breakDown" align="center" valign="middle">Ptge. Rosa Leveroni, 2, 5 B, 08034 BARCELONA</td>
+<td class="breakDown" align="center" valign="middle">Visualizar</td>
+</tr>
+</tbody></table>
+<div class='separador3'><span/></div>
+<div class='listado_paginacion'>P&aacute;gs.  <ul>
+<li class='activo'>1<span> | </span></li>
+<li><a onclick='' href='#'>2</a><span> | </span></li>
+<li><a onclick='' href='#'>3</a><span> | </span></li>
+<li><a onclick='' href='#'>4</a><span> | </span></li>
+<li><a onclick='' href='#'>5</a> </li>
+<li><a onclick='' href='#'><img alt='siguiente' src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/icoLink.gif'/></a></li>
+</ul>
+</div>
+<div class='separador3'><span/></div>
      ]]>
   </Content> 
 </Module>
