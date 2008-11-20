@@ -3,7 +3,7 @@
   <ModulePrefs title="hello world" /> 
   <Content type="html">
      <![CDATA[ 
-       <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/icoLink.gif"></img>
+       <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/BloodPressureTrackerGraph.gif"></img>
      ]]>
   </Content> 
 </Module>
