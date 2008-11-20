@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="hello world" /> 
+  <ModulePrefs title="Presión sanguínea" /> 
   <Content type="html">
      <![CDATA[ 
-       <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/BloodPressureTrackerGraph.gif"></img>
+<style type="text/css">
+.imagen {
+	border: 1px solid black;
+}
+</style>
+<img class="imagen" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/BloodPressureTrackerGraph.gif"></img>
      ]]>
   </Content> 
 </Module>
