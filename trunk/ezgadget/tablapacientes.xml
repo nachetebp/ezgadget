@@ -6,6 +6,7 @@
        Tabla de los pacientes
        Probando...
        <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/medico.jpg"></img>
+       <img src="/media/medico.jpg"></img>
      ]]>
   </Content> 
 </Module>
