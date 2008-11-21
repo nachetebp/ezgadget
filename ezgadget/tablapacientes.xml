@@ -99,7 +99,7 @@ color:#CCCCCC;
 <div class='separador3'><span/></div>
 <div class='listado_paginacion'>P&aacute;gs.  <ul>
 <li class='activo'>1<span> | </span></li>
-<li><a onclick='' href='#'>2</a><span> | </span></li>
+<li><a onclick='' href='#' class="breakdown">2</a><span> | </span></li>
 <li><a onclick='' href='#'>3</a><span> | </span></li>
 <li><a onclick='' href='#'>4</a><span> | </span></li>
 <li><a onclick='' href='#'>5</a> </li>
