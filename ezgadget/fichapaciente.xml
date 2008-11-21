@@ -11,6 +11,7 @@
 
 .breakDown:hover {
 	text-decoration: underline;
+	color: red;
 }
 
 .breakDown {
@@ -87,8 +88,8 @@ table td{
 <p align="left">Ninguno</p>
 <div class='separador3'><span /></div>
 
-<span align="left" class="titulo">Resultados de pruebas</span>
-<span align="left" class='breakDown'>Análisis de sangre</span>
+<span align="left" class="titulo">Resultados de pruebas</span><br />
+<span align="left" class='breakDown'>Análisis de sangre</span><br />
 <span align="left" class='breakDown'>Presión sanguínea</span>
 <div class='separador3'><span /></div>
 
