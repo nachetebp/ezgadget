@@ -5,6 +5,13 @@
      <![CDATA[ 
 <style type="text/css">
 #bodyDiv {
+	display:block;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 10px;
+}
+
+#bodyDiv2 {
+	display:none;
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 10px;
 }
@@ -46,6 +53,56 @@ table td{
 
 </style>
 <div id="bodyDiv">
+<p align="center" class="ficha">Ficha de paciente</p>
+<table border="0" width="100%" id="table1">
+	<tr>
+		<td><b>Nombre:</b></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td><b>Apellidos:</b></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td><b>Nº Seguridad Social:</b></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td><b>Domicilio:</b></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>
+		<p align="left"><b>Tfno Móvil:</b>
+		</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td><b>Otro tfno:</b></td>
+		<td>-</td>
+	</tr>
+</table>
+<div class='separador3'><span /></div>
+<span align="left" class="titulo">Historial</span>
+<p align="left">-</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Alergias</span>
+<p align="left">-</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Tratamientos en curso</span>
+<p align="left">-</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Resultados de pruebas</span>
+<p align="left">-</p>
+<div class='separador3'><span /></div>
+
+<span align="left" class="titulo">Pruebas pendientes</span>
+<p align="left">-</p>
+</div>
+<div id="bodyDiv2">
 <p align="center" class="ficha">Ficha de paciente</p>
 <table border="0" width="100%" id="table1">
 	<tr>

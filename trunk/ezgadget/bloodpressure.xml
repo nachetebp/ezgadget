@@ -5,6 +5,12 @@
      <![CDATA[ 
 <style type="text/css">
 #imagenDiv {
+	display: block;
+	text-align:center;
+}
+
+#imagenDiv2 {
+	display: none;
 	text-align:center;
 }
 
@@ -15,6 +21,9 @@
 }
 </style>
 <div id="imagenDiv">
+<img class="imagen" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/BloodPressureTrackerGraph_empty.gif"></img>
+</div>
+<div id="imagenDiv2">
 <img class="imagen" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/BloodPressureTrackerGraph.gif"></img>
 </div>
      ]]>
