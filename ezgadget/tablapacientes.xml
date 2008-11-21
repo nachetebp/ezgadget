@@ -17,6 +17,12 @@ font-size: 10px;
 text-decoration: none;
 color: red;
 }
+.activo {
+color: #000000; 
+cursor: none; 
+font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; 
+font-size: 9px;
+}
 .breakDown{
 text-decoration: none;
 color: #6266A7; 
@@ -100,9 +106,9 @@ color:#CCCCCC;
 <div class='listado_paginacion'>P&aacute;gs.  <ul>
 <li class='activo'>1<span> | </span></li>
 <li><a onclick='' href='#' class="breakdown">2</a><span> | </span></li>
-<li><a onclick='' href='#'>3</a><span> | </span></li>
-<li><a onclick='' href='#'>4</a><span> | </span></li>
-<li><a onclick='' href='#'>5</a> </li>
+<li><a onclick='' href='#' class="breakdown">3</a><span> | </span></li>
+<li><a onclick='' href='#' class="breakdown">4</a><span> | </span></li>
+<li><a onclick='' href='#' class="breakdown">5</a> </li>
 <li><a onclick='' href='#'><img alt='siguiente' src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/media/icoLink.gif'/></a></li>
 </ul>
 </div>
