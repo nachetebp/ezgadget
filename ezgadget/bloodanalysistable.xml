@@ -138,11 +138,11 @@ input[type="button"] {
 			<td class="high"></td>
 		</tr>
 		<tr>
-			<td>59</td>
+			<td>-</td>
 			<td>Triglycerides</td>
 			<td>75</td>
 			<td>100</td>
-			<td class="low">Low</td>
+			<td class="low"> </td>
 		</tr>
 		<tr>
 			<td>-</td>
