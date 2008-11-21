@@ -121,70 +121,70 @@ input[type="button"] {
 			<td>Glucosa</td>
 			<td>85</td>
 			<td>100</td>
-			<td class="normal"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Uric Acid</td>
 			<td>3.2</td>
 			<td>5.5</td>
-			<td class="normal"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Sodium</td>
 			<td>135</td>
 			<td>140</td>
-			<td class="high"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Triglycerides</td>
 			<td>75</td>
 			<td>100</td>
-			<td class="low"> </td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Creatinine</td>
 			<td>0.7</td>
 			<td>1.1</td>
-			<td class="normal"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Potassium</td>
 			<td>4</td>
 			<td>4.5</td>
-			<td class="high"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>CO2</td>
 			<td>25</td>
 			<td>30</td>
-			<td class="low"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Calcium</td>
 			<td>9.2</td>
 			<td>10.1</td>
-			<td class="normal"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Phosphorus</td>
 			<td>3.5</td>
 			<td>4</td>
-			<td class="normal"></td>
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>-</td>
 			<td>Cholesterol</td>
 			<td>150</td>
 			<td>200</td>
-			<td class="normal"></td>
+			<td>-</td>
 		</tr>
 	</tbody>
 </table>
