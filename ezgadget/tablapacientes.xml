@@ -19,11 +19,11 @@ color: red;
 }
 .breakDown{
 text-decoration: none;
-border: 1px outset rgb(221, 221, 221); 
 color: #6266A7; 
 cursor: pointer; 
 font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; 
-font-size: 9px;}
+font-size: 9px;
+}
 .separador3 {
 background-color:#BBBBD3;
 height:3px;
@@ -65,35 +65,35 @@ color:#CCCCCC;
 <td style="border: 1px outset rgb(221, 221, 221);">RAMON</td>
 <td style="border: 1px outset rgb(221, 221, 221);">685942558674</td>
 <td align="center" valign="middle"><a href="#" class="breakdown">Duquessa d'Orleans, 6, 3 C, 08034 BARCELONA</a></td>
-<td class="breakDown" align="center" valign="middle">Visualizar</td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Visualizar</a></td>
 </tr>
 <tr>
 <td style="border: 1px outset rgb(221, 221, 221);">ALONSO MARTINEZ DE LA VARA</td>
 <td style="border: 1px outset rgb(221, 221, 221);">GONZALO</td>
 <td style="border: 1px outset rgb(221, 221, 221);">852695644125</td>
-<td class="breakDown" align="center" valign="middle">Atenes, 16, 1 A, 08006 BARCELONA</td>
-<td class="breakDown" align="center" valign="middle">Visualizar</td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Atenes, 16, 1 A, 08006 BARCELONA</a></td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Visualizar</a></td>
 </tr>
 <tr>
 <td style="border: 1px outset rgb(221, 221, 221);">GONZALEZ ABAD</td>
 <td style="border: 1px outset rgb(221, 221, 221);">ANTONIA</td>
 <td style="border: 1px outset rgb(221, 221, 221);">65523522864</td>
-<td class="breakDown" align="center" valign="middle">Granadella, 44, 1 B, 08030 BARCELONA</td>
-<td class="breakDown" align="center" valign="middle">Visualizar</td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Granadella, 44, 1 B, 08030 BARCELONA</a></td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Visualizar</a></td>
 </tr>
 <tr>
 <td style="border: 1px outset rgb(221, 221, 221);">GONZALEZ SANJUAN</td>
 <td style="border: 1px outset rgb(221, 221, 221);">MANUEL</td>
 <td style="border: 1px outset rgb(221, 221, 221);">63552986881</td>
-<td class="breakDown" align="center" valign="middle">Mir, 29, 2 A, 08030 BARCELONA</td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Mir, 29, 2 A, 08030 BARCELONA</a></td>
 <td style="border: 1px outset rgb(221, 221, 221);">No disponible</td>
 </tr>
 <tr>
 <td style="border: 1px outset rgb(221, 221, 221);">PEREZ BOLA&Ntilde;OS</td>
 <td style="border: 1px outset rgb(221, 221, 221);">MIGUEL</td>
 <td style="border: 1px outset rgb(221, 221, 221);">74225866251</td>
-<td class="breakDown" align="center" valign="middle">Ptge. Rosa Leveroni, 2, 5 B, 08034 BARCELONA</td>
-<td class="breakDown" align="center" valign="middle">Visualizar</td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Ptge. Rosa Leveroni, 2, 5 B, 08034 BARCELONA</a></td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Visualizar</a></td>
 </tr>
 </tbody></table>
 <div class='separador3'><span/></div>
