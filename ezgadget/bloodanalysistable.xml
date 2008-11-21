@@ -59,6 +59,17 @@ a:hover {
 }
 
 #bodyDiv {
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	margin: 0px auto;
+	max-width: 700px;
+	max-height: 500px;
+}
+
+#bodyDiv2 {
+	display: block;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	text-align: center;
@@ -73,10 +84,6 @@ a:hover {
 	margin: 5px;
 	font-size: 24px;
 	font-weight: bold;
-}
-
-#listdiv {
-	text-align: center;
 }
 
 input[type="button"] {
@@ -98,15 +105,6 @@ input[type="button"] {
 
 </style>
 <div id="bodyDiv">
-<!--
-<SELECT NAME="Fecha">
-   <OPTION VALUE="3" selected>17/11/08</OPTION>
-   <OPTION VALUE="2">17/10/08</OPTION>
-   <OPTION VALUE="1">17/09/08</OPTION>
-   <OPTION VALUE="0">17/08/08</OPTION>
-</SELECT>
---> 
-<div id="listDiv">
 <table>
 	<thead>
 		<tr>
@@ -190,16 +188,91 @@ input[type="button"] {
 		</tr>
 	</tbody>
 </table>
-<!--
-<div id="buttonContainerDiv"><input type="button" id="clearButton"
-	class="button" value="Clear Cart" /> <input type="button"
-	id="updateButton" class="button" value="Update Cart" />
-	<input
-		type="button" id="checkoutButton" class="button"
-		value="Proceed to Checkout" />
 </div>
--->
-</div>
+<div id="bodyDiv2">
+<table>
+	<thead>
+		<tr>
+			<th>
+			Cantidad</th>
+			<th>Item</th>
+			<th colspan="2">Rango Funcional</th>
+			<th>Resultado</th>
+		</tr>
+	</thead>
+	<tbody id="listBody">
+		<tr>
+			<td>88</td>
+			<td>Glucosa</td>
+			<td>85</td>
+			<td>100</td>
+			<td class="normal">Normal</td>
+		</tr>
+		<tr>
+			<td>4.2</td>
+			<td>Uric Acid</td>
+			<td>3.2</td>
+			<td>5.5</td>
+			<td class="normal">Normal</td>
+		</tr>
+		<tr>
+			<td>142</td>
+			<td>Sodium</td>
+			<td>135</td>
+			<td>140</td>
+			<td class="high">High</td>
+		</tr>
+		<tr>
+			<td>59</td>
+			<td>Triglycerides</td>
+			<td>75</td>
+			<td>100</td>
+			<td class="low">Low</td>
+		</tr>
+		<tr>
+			<td>0.8</td>
+			<td>Creatinine</td>
+			<td>0.7</td>
+			<td>1.1</td>
+			<td class="normal">Normal</td>
+		</tr>
+		<tr>
+			<td>4.7</td>
+			<td>Potassium</td>
+			<td>4</td>
+			<td>4.5</td>
+			<td class="high">High</td>
+		</tr>
+		<tr>
+			<td>23</td>
+			<td>CO2</td>
+			<td>25</td>
+			<td>30</td>
+			<td class="low">Low</td>
+		</tr>
+		<tr>
+			<td>9.7</td>
+			<td>Calcium</td>
+			<td>9.2</td>
+			<td>10.1</td>
+			<td class="normal">Normal</td>
+		</tr>
+		<tr>
+			<td>3.6</td>
+			<td>Phosphorus</td>
+			<td>3.5</td>
+			<td>4</td>
+			<td class="normal">Normal</td>
+		</tr>
+		<tr>
+			<td>189</td>
+			<td>Cholesterol</td>
+			<td>150</td>
+			<td>200</td>
+			<td class="normal">Normal</td>
+		</tr>
+	</tbody>
+</table>
 </div>
      ]]>
   </Content> 
