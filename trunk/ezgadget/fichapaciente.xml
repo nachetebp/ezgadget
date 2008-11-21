@@ -37,6 +37,7 @@
 	font-size: 12px;
 	padding: 2px;
 	margin:0 0 5px;
+	font-weight:bold;
 }
 table td{
 	font-size:10px;
@@ -87,8 +88,8 @@ table td{
 <div class='separador3'><span /></div>
 
 <span align="left" class="titulo">Resultados de pruebas</span>
-<p align="left" class='breakDown'>Análisis de sangre</p>
-<p align="left" class='breakDown'>Presión sanguínea</p>
+<span align="left" class='breakDown'>Análisis de sangre</span>
+<span align="left" class='breakDown'>Presión sanguínea</span>
 <div class='separador3'><span /></div>
 
 <span align="left" class="titulo">Pruebas pendientes</span>
