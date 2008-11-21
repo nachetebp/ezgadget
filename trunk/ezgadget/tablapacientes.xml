@@ -13,8 +13,12 @@ th {
 font-size: 10px;
 }
 
-.breakDown:hover{text-decoration: underline;}
+.breakDown:hover{
+text-decoration: none;
+color: red;
+}
 .breakDown{
+text-decoration: none;
 border: 1px outset rgb(221, 221, 221); 
 color: #6266A7; 
 cursor: pointer; 
@@ -60,7 +64,7 @@ color:#CCCCCC;
 <td style="border: 1px outset rgb(221, 221, 221);">MARTINEZ CORRIA</td>
 <td style="border: 1px outset rgb(221, 221, 221);">RAMON</td>
 <td style="border: 1px outset rgb(221, 221, 221);">685942558674</td>
-<td class="breakDown" align="center" valign="middle">Duquessa d'Orleans, 6, 3 C, 08034 BARCELONA</td>
+<td align="center" valign="middle"><a href="#" class="breakdown">Duquessa d'Orleans, 6, 3 C, 08034 BARCELONA</a></td>
 <td class="breakDown" align="center" valign="middle">Visualizar</td>
 </tr>
 <tr>
