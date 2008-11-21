@@ -16,7 +16,6 @@
 
 .breakDown {
 	color: #6266A7;
-	cursor: pointer;
 	font-size: 9px;
 }
 
@@ -89,8 +88,8 @@ table td{
 <div class='separador3'><span /></div>
 
 <span align="left" class="titulo">Resultados de pruebas</span><br />
-<span align="left" class='breakDown'>Análisis de sangre</span><br />
-<span align="left" class='breakDown'>Presión sanguínea</span>
+<a href="#" align="left" class='breakDown'>Análisis de sangre</a><br />
+<a href="#" align="left" class='breakDown'>Presión sanguínea</a>
 <div class='separador3'><span /></div>
 
 <span align="left" class="titulo">Pruebas pendientes</span>
