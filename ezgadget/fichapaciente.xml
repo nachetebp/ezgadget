@@ -10,11 +10,12 @@
 }
 
 .breakDown:hover {
-	text-decoration: underline;
+	text-decoration: none;
 	color: red;
 }
 
 .breakDown {
+	text-decoration: none;
 	color: #6266A7;
 	font-size: 9px;
 }
@@ -87,7 +88,7 @@ table td{
 <p align="left">Ninguno</p>
 <div class='separador3'><span /></div>
 
-<span align="left" class="titulo">Resultados de pruebas</span><br />
+<span align="left" class="titulo">Resultados de pruebas</span><br /><br />
 <a href="#" align="left" class='breakDown'>Análisis de sangre</a><br />
 <a href="#" align="left" class='breakDown'>Presión sanguínea</a>
 <div class='separador3'><span /></div>
