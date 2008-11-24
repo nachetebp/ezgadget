@@ -10,7 +10,7 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
-
+<SCRIPT language="javascript" src="/ezweb/js/EzWebAPI/EzWebAPI.js"></SCRIPT>
 <script language="JavaScript">
 
 	var menu = null;
