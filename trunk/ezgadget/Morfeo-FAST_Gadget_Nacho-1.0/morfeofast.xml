@@ -51,10 +51,11 @@
 	    
 	    EngineFactory.getInstance().run();
 	}
-	_IG_RegisterOnloadHandler(loadMenu);
 	
 </script>
-
+<script language="JavaScript">
+	_IG_RegisterOnloadHandler(loadMenu);
+</script>
 <div id="content_div">
 <div id="menu" style="overflow:auto;"></div>
 <div id="client" class="x-hide-display">
