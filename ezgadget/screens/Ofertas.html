@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <link type="text/css" rel="stylesheet" href="screen.css" />
+		<style type="text/css">
+			#bodyDiv{
+				max-width: 550px;
+			}
+			#searchArea {
+				border: 1px solid #F8A704;
+				-moz-border-radius:13px 13px;
+				background:#FFF8E8 url(style/bg_td2.jpg) repeat-x;
+				border:1px solid #F8A704;
+				height:50px;
+				margin:5px auto 0px;
+				padding:0px;
+				text-align:center;
+				width:100%;
+			}
+			#contents{
+				padding:12px;
+			}
+			#send{
+				margin-left: 15px;
+			}
+		</style>
+        <script language="JavaScript" src="../js/prototype/prototype.js">
+        </script>
+        <script language="JavaScript">
+
+			function send (tipo, valor ){
+				var SC = new Hash ();
+				SC.set ("shortcut", tipo);
+				var SCData = new Hash ();
+				SCData.set ("requestParameters", valor);
+				SC.set ("data",SCData);
+				//Add it to the KB
+				screenAPI.setFact (SC);
+			}
+        </script>
+    </head>
+    <body>
+        <div id="bodyDiv">
+			<div id="searchArea">
+				<div id="contents">
+				<table><tr>
+					<td><img src="../img/Internet_NOcliente.gif" onclick="send('S','H');"></td>
+				 </tr></table>
+				</div>
+			</div>       
+        </div>
+    </body>
+</html>
