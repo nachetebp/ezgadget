@@ -4,16 +4,24 @@
 <Content type="html">
 <![CDATA[
 
-<!--<link rel="stylesheet" type="text/css" href="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/resources/css/ext-all.css" />-->
+<!--
+<link rel="stylesheet" type="text/css" href="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/resources/css/ext-all.css" />
+-->
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
 
-<!--<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
+<!--
+<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
+-->
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>-->
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
+
+<!--
 <SCRIPT language="javascript" src="http://prototypejs.org/assets/2008/9/29/prototype-1.6.0.3.js"></SCRIPT>
 <script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/adapter/ext/ext-base.js"></script>
 <script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/ext-all.js"></script>
+-->
 
 <script language="JavaScript">
 
