@@ -3,12 +3,17 @@
 <ModulePrefs title="morfeofast Example" scrolling="true"/>
 <Content type="html">
 <![CDATA[
+
+<!--<link rel="stylesheet" type="text/css" href="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/resources/css/ext-all.css" />-->
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
-<!--<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>-->
+
+<!--<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>-->
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://prototypejs.org/assets/2008/9/29/prototype-1.6.0.3.js"></SCRIPT>
+<script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/adapter/ext/ext-base.js"></script>
+<script type="text/javascript" src="http://extjs-public.googlecode.com/svn/tags/ext-2.1/release/ext-all.js"></script>
 
 <script language="JavaScript">
 
@@ -51,8 +56,8 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 		<html>
 		    <head>
 		        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/css.css" />
-        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/internet.css" />
+        <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/css.css" />
+        <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/internet.css" />
 				<style type="text/css">
 					#bodyDiv{
 						max-width: 550px;
@@ -60,7 +65,7 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 					#searchArea {
 						border: 1px solid #F8A704;
 						-moz-border-radius:13px 13px;
-						background:#FFF8E8 url(http://10.95.39.252:4412/fast/screens/bg_td2.jpg) repeat-x;
+						background:#FFF8E8 url(http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/bg_td2.jpg) repeat-x;
 						border:1px solid #F8A704;
 						height:100px;
 						margin:5px auto 0px;
@@ -115,22 +120,22 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 		        <div id="bodyDiv" style="text-align: center;">
 		        	<h1 id="title">Selección de cliente</h1>
 						<!-- table style="width:100%;border:1px;"><tr>
-							<td><img src="http://10.95.39.252:4412/fast/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"></td>
-							<td><img src="http://10.95.39.252:4412/fast/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"></td>
+							<td><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"></td>
+							<td><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"></td>
 						 </tr></table>
 
 						<table border="0"><tr>
-							<td><img src="http://10.95.39.252:4412/fast/img/menuOpc1Off.gif" onclick="cliente.send2('Sv','I');"></td>
-							<td><img src="http://10.95.39.252:4412/fast/img/menuOpc2Off.gif" onclick="cliente.send2('Sv','Tf');"></td>
-							<td><img src="http://10.95.39.252:4412/fast/img/menuOpc3Off.gif" onclick="cliente.send2('Sv','Tv');"></td>
+							<td><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/menuOpc1Off.gif" onclick="cliente.send2('Sv','I');"></td>
+							<td><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/menuOpc2Off.gif" onclick="cliente.send2('Sv','Tf');"></td>
+							<td><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/menuOpc3Off.gif" onclick="cliente.send2('Sv','Tv');"></td>
 						 </tr></table -->
 						 
-							<img src="http://10.95.39.252:4412/fast/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"/>
-							<img src="http://10.95.39.252:4412/fast/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"/>
+							<img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/btnSector1_on.gif" onclick="cliente.send('Sg','H');"/>
+							<img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/btnSector2_on.gif" onclick="cliente.send('Sg','P');"/>
 <BR/>
-							<img src="http://10.95.39.252:4412/fast/img/menuOpc1Off.gif" onclick="cliente.send2('Sv','I');"/>
-							<img src="http://10.95.39.252:4412/fast/img/menuOpc2Off.gif" onclick="cliente.send2('Sv','Tf');"/>
-							<img src="http://10.95.39.252:4412/fast/img/menuOpc3Off.gif" onclick="cliente.send2('Sv','Tv');"/>
+							<img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/menuOpc1Off.gif" onclick="cliente.send2('Sv','I');"/>
+							<img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/menuOpc2Off.gif" onclick="cliente.send2('Sv','Tf');"/>
+							<img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/menuOpc3Off.gif" onclick="cliente.send2('Sv','Tv');"/>
 						 
 
 		        </div>
@@ -144,8 +149,8 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 		<html>
 		    <head>
 		        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/css.css" />
-        <link type="text/css" rel="stylesheet" href="http://10.95.39.252:4412/fast/screens/internet.css" />
+        <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/css.css" />
+        <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/internet.css" />
 				<style type="text/css">
 					#bodyDiv{
 						max-width: 550px;
@@ -153,7 +158,7 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 					#searchArea {
 						border: 1px solid #F8A704;
 						-moz-border-radius:13px 13px;
-						background:#FFF8E8 url(http://10.95.39.252:4412/fast/screens/bg_td2.jpg) repeat-x;
+						background:#FFF8E8 url(http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/bg_td2.jpg) repeat-x;
 						border:1px solid #F8A704;
 						height:50px;
 						margin:5px auto 0px;
@@ -206,13 +211,13 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 						}
 	                    
 	                    if(servicio.valor == 'I') {
-	                    	img.src="http://10.95.39.252:4412/fast/img/Internet_yacliente.gif";
+	                    	img.src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/Internet_yacliente.gif";
 			                ofertas.p = {name: 'cart', producto: 'DUO ADSL + Llamadas Nacionales'};
 	                    } else if(servicio.valor == 'Tf') {
-	                    	img.src="http://10.95.39.252:4412/fast/img/TF_NOcliente.gif";	                    
+	                    	img.src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/TF_NOcliente.gif";	                    
 			                ofertas.p = {name: 'cart', producto: 'Linea + Telefono + Servicios'};
 	                    } else if(servicio.valor == 'Tv') {
-	                    	img.src="http://10.95.39.252:4412/fast/img/TV_yacliente.gif";	                    
+	                    	img.src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/TV_yacliente.gif";	                    
 			                ofertas.p = {name: 'cart', producto: 'TRIO'};
 	                    }
 	                    
@@ -229,7 +234,7 @@ screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['s
 		    <body>
 		        <div id="bodyDiv" style="text-align: center;">
 		        	<h1 id="coment_tfno" class="texto1_1_bold">Superofertas</h1><br/>
-						<img id="oferta_img" src="http://10.95.39.252:4412/fast/img/Internet_NOcliente.gif" onclick="ofertas.send();"/>
+						<img id="oferta_img" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/img/Internet_NOcliente.gif" onclick="ofertas.send();"/>
 		        </div>
 		    </body>
 		</html>
