@@ -20,14 +20,41 @@ var EngineFactory = function () {
 		this.loaders = new Hash();
 		
 		this.emptyTab = null;
+		
+		this.events = new Hash();
 
 		// ****************
 		// PUBLIC METHODS 
 		// ****************
-		Engine.prototype.setEngine = function (screens, menu) {
+		Engine.prototype.setEngine = function (screens, events, menu) {
 			this.menu = menu;
 			this.screens = screens;
-		} 
+			this.events = events;
+		}
+		
+		Engine.prototype.transformFact = function(factName, attributeName, value){
+			if(attributeName!=''){
+				var fact = this.getFact(factName);
+				if(!fact){
+					fact = {name: factName};
+				}
+				fact[attributeName] = value;
+				return fact;
+			} else {
+				var fact = eval('('+value+')');
+				if (fact.name == factName){
+					return fact;
+				} else {
+					return null;
+				}
+			}
+		}
+		
+		Engine.prototype.manageVarFacts = function (addedFacts, deletedFacts){
+			this.manageFacts(addedFacts, deletedFacts);
+			var func = this.loaders.get(this.menu.getActiveTab().title);
+			func();
+		}
 		
 		Engine.prototype.manageFacts = function (addedFacts, deletedFacts){
 			for (var i=0; addedFacts!= null && i<addedFacts.length; i++){
@@ -40,7 +67,25 @@ var EngineFactory = function () {
 		}
 		
 		Engine.prototype.addFact = function (fact){
-			this.facts.set(fact.name, fact);
+			if(fact){
+				this.facts.set(fact.name, fact);
+				this.throwEvents(fact);
+			}
+		}
+		
+		Engine.prototype.throwEvents = function (fact){
+			var factEvents = this.events.get(fact.name);
+			if(factEvents){
+				var variables = factEvents.keys();
+				for(var i=0; i < variables.length; i++){
+					var v = factEvents.get(variables[i]);
+					if(v.fact_attr == ''){
+						v.variable.set(Object.toJSON(fact));	
+					} else {
+						v.variable.set(fact[v.fact_attr]);
+					}
+				}
+			}
 		}
 		
 		Engine.prototype.getFact = function (name){
@@ -48,7 +93,9 @@ var EngineFactory = function () {
 		}
 		
 		Engine.prototype.deleteFact = function (name){
-			this.facts.unset(name);
+			if(name){
+				this.facts.unset(name);
+			}
 		}
 		
 		Engine.prototype.run = function (){
