@@ -3,6 +3,11 @@
   <ModulePrefs title="Multiple Content Sections (version 1)">
     <Require feature="opensocial-0.8" />
   </ModulePrefs>
+  <Content type="html" view="home">
+  <![CDATA[
+    <h1>Home</h1>
+  ]]>
+  </Content>
   <Content type="html" view="profile">
   <![CDATA[
     <h1>Profile</h1>
