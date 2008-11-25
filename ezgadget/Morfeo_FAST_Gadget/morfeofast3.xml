@@ -24,7 +24,6 @@
     screens.set('Client', {title: 'Client', contentEl:'client', pre: []});
 	screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['service','segment','phone']});
 
-
 	function loadMenu(){
 		
 		menu = new Ext.TabPanel({
