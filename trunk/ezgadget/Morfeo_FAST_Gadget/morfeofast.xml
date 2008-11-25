@@ -14,8 +14,8 @@
 -->
 
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/prototype/prototype.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ezweb/EzWebAPI.js"></SCRIPT>
-
+<!--<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ezweb/EzWebAPI.js"></SCRIPT>
+-->
 <script language="JavaScript">
 var EngineFactory = function () {
 
