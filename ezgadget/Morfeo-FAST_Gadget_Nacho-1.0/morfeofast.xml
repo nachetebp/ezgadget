@@ -56,7 +56,7 @@
 	    
 	    EngineFactory.getInstance().run();
 	}
-	_IG_RegisterOnloadHandler(loadMenu());
+	_IG_RegisterOnloadHandler(loadMenu);
 	
 </script>
 <div id="content_div">
