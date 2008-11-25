@@ -10,10 +10,11 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-base.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-all.js"></SCRIPT>
 
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/fast/engine.js"></SCRIPT>
 <!--
-<SCRIPT language="javascript" src="http://10.95.7.175:8004/static/Morfeo-ACOL_1-1.0/js/fast/engine.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/fast/engine.js"></SCRIPT>
 -->
+<SCRIPT language="javascript" src="http://10.95.7.175:8004/static/Morfeo-ACOL_1-1.0/js/fast/engine.js"></SCRIPT>
+
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/prototype/prototype.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ezweb/EzWebAPI.js"></SCRIPT>
 
@@ -57,10 +58,7 @@
 	    
 	    EngineFactory.getInstance().run();
 	}
-	_IG_RegisterOnloadHandler(setTimeout(loadMenu, 3000));
-	<!--
 	_IG_RegisterOnloadHandler(loadMenu);
-	-->
 	
 </script>
 <div id="content_div">
