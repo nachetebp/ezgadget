@@ -18,7 +18,7 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ezweb/EzWebAPI.js"></SCRIPT>
 
 <script language="JavaScript">
-	var menu = null;
+	
 	
 	var screens = new Hash();
             
@@ -38,6 +38,7 @@
 	}
 
 	function loadMenu(){
+		var menu = null;
 		menu = new Ext.TabPanel({
 	        renderTo:'menu',
 	        activeTab:0,
@@ -66,7 +67,7 @@
 		<html>
 		    <head>
 		        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
-        		  <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/css.css" />
+        	    <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/css.css" />
 		        <link type="text/css" rel="stylesheet" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/screens/internet.css" />
 				<style type="text/css">
 					#bodyDiv{
