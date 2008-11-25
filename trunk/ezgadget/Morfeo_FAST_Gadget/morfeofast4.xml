@@ -7,9 +7,8 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-base.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-all.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/prototype/prototype.js"></SCRIPT>
-<!--
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/fast/engine.js"></SCRIPT>
--->
+
 <script language="JavaScript">
 	var menu = null;
 	
@@ -21,14 +20,6 @@
 	screens.set('Order', {title: 'Order', contentEl:'order', pre: ['purchase']});
 
 	var events = new Hash();
-	
-	function getEventVariables(evs, fact_name){
-		var variables = evs.get(fact_name);
-		if(!variables){
-			variables = evs.set(fact_name, new Hash());
-		}
-		return variables;
-	}
 
 	function loadMenu(){
 		
