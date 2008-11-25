@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="morfeofast Example 1" scrolling="true" height="370" />
+<ModulePrefs title="morfeofast Example 4" scrolling="true" height="370" />
 <Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/resources/ext/css/ext-all.css" />
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-base.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-all.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/prototype/prototype.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/fast/engine.js"></SCRIPT>
-<!--
-<SCRIPT language="javascript" src="http://10.95.7.175:8004/static/Morfeo-ACOL_1-1.0/js/fast/engine.js"></SCRIPT>
--->
-<!--<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ezweb/EzWebAPI.js"></SCRIPT>
--->
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/fast/engine2.js"></SCRIPT>
+
 <script language="JavaScript">
 	var menu = null;
 	
@@ -24,14 +20,6 @@
 	screens.set('Order', {title: 'Order', contentEl:'order', pre: ['purchase']});
 
 	var events = new Hash();
-	
-	function getEventVariables(evs, fact_name){
-		var variables = evs.get(fact_name);
-		if(!variables){
-			variables = evs.set(fact_name, new Hash());
-		}
-		return variables;
-	}
 
 	function loadMenu(){
 		
