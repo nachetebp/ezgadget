@@ -57,7 +57,10 @@
 	    
 	    EngineFactory.getInstance().run();
 	}
+	_IG_RegisterOnloadHandler(setTimeout(loadMenu(), 5000));
+	<!--
 	_IG_RegisterOnloadHandler(loadMenu);
+	-->
 	
 </script>
 <div id="content_div">
