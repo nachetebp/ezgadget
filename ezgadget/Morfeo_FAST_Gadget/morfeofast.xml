@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="morfeofast Example" scrolling="true" height="370" />
+<ModulePrefs title="morfeofast Example" scrolling="true" height="337" />
 <Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/resources/ext/css/ext-all.css" />
@@ -384,7 +384,7 @@
             <h1 id="title">Orden de pedido</h1>
             <div id="listDivCart">
 <form name="main" method="post" action="qxaa00jsBuyController" target="oculto"><p><p> 
-<table width="550" border="0" cellspacing="2" cellpadding="2" align="center"> 
+<table width="515" border="0" cellspacing="2" cellpadding="2" align="center"> 
   <tr>  
     <td colspan="5" class="texto2_4" align="center">Como paso previo a la contrataci&oacute;n, se comprobar&aacute; la cobertura, es decir, la disponibilidad del servicio en su domicilio.</td> 
   </tr> 
