@@ -3,12 +3,17 @@
 <ModulePrefs title="morfeofast Example 3" scrolling="true"/>
 <Content type="html">
 <![CDATA[
-<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
-<!--<SCRIPT language="javascript" src="http://192.168.55.228:8083/static/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>-->
+<!--<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/resources/ext/css/ext-all.css" />
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-base.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/ext/ext-all.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/fast/engine.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo-FAST_Gadget_Nacho-1.0/js/prototype/prototype.js"></SCRIPT>
+-->
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/resources/ext/css/ext-all.css" />
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-base.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-all.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/prototype/prototype.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/fast/engine.js"></SCRIPT>
 
 <script language="JavaScript">
 
@@ -17,7 +22,7 @@
 	var screens = new Hash();
             
     screens.set('Client', {title: 'Client', contentEl:'client', pre: []});
-screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['service','segment','phone']});
+	screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['service','segment','phone']});
 
 
 	function loadMenu(){
