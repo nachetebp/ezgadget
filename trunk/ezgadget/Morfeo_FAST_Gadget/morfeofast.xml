@@ -18,7 +18,7 @@
 
 <script language="JavaScript">
 	
-	var menu = null;
+	
 	var screens = new Hash();
             
 	screens.set('Client', {title: 'Client', contentEl:'client', pre: []});
@@ -37,6 +37,7 @@
 	}
 
 	function loadMenu(){
+	var menu = null;
 		menu = new Ext.TabPanel({
 	        renderTo:'menu',
 	        activeTab:0,
