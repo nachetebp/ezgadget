@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="morfeofast Example 1" scrolling="true" height="370">
-</ModulePrefs>
+<ModulePrefs title="morfeofast Example 1" scrolling="true" height="370" />
 <Content type="html">
 <![CDATA[
-
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/resources/ext/css/ext-all.css" />
-
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-base.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/Morfeo_FAST_Gadget/js/ext/ext-all.js"></SCRIPT>
 
