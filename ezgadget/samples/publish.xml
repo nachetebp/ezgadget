@@ -1,59 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-	<ModulePrefs title="Map Controller" height="150" /> 
-	<UserPref name="lat" 
-		default_value="37441900" 
-		publish="true" 
-		group="geoinfo" /> 
-	<UserPref name="long" 
-		default_value="-122141900" 
-		publish="true"
-		group="geoinfo" /> 
+	<ModulePrefs title="Publisher Gadget 01" height="150" /> 
+	<UserPref name="test000" 
+		display_name="Message" 
+		default_value="Bonjour Monde" 
+		publish="true" />  
 	<Content type="html">
-	<![CDATA[     
+
+	<![CDATA[ 
+		<br/>
+		My Message
 		<br/><br/>
 		<table>
-
 		  <tr>
 			<td>
-			  Latitude:
+
+			 Message:
 			</td>
 			<td>
-			  <input type="text" id="txtLat" name="txtLat" value="">
+			  <input type="text" id="msg" name="msg" value="">
 
-			</td>
-		  </tr>
-		  <tr>
-			<td>
-			  Longitude:
 			</td>
 			<td>
+			  <input type="button" name="butUpdateMsg" name="butUpdateMsg" value="Update Message" onclick="updateValue()">
 
-			  <input type="text" id="txtLong" name="txtLong" value="">
 			</td>
-			<td>
-
-			  <input type="button" name="butUpdateLoc" name="butUpdateLoc" value="Update" onclick="updateLoc()">
-			</td>
-
 		  </tr>
 		</table>
 
 		<script type="text/javascript">
-		  function updateLoc() {
-			var newLat = parseFloat(_gel("txtLat").value) * 1000000;
-			var newLong = parseFloat(_gel("txtLong").value) * 1000000;
-			prefs.set("lat", newLat.toString(), "long", newLong.toString());
-
-		  }
-
-		  var prefs = new _IG_Prefs(__MODULE_ID__);
-		  var lat = prefs.getInt("lat") / 1000000;
-		  var long = prefs.getInt("long") / 1000000;
-		  _gel("txtLat").value = lat;
-		  _gel("txtLong").value = long;
-
+		
+			function updateValue() {   
+			  var newMsg = _gel("msg").value;
+			  prefs.set("test000", newMsg);  
+			}
+	
+			var prefs = new _IG_Prefs(__MODULE_ID__);
+			var str = prefs.getString("test000");
+			_gel("msg").value = str;
+		
 		</script>
+
 	]]> 
-	</Content>
+	</Content> 
 </Module>
