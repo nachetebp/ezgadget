@@ -162,16 +162,7 @@ var EngineFactory = function () {
 	
 }();
 
-	var menu = null;
-	
-	var screens = new Hash();
-            
-	screens.set('Client', {title: 'Client', contentEl:'client', pre: []});
-	screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['service','segment','phone']});
-	screens.set('ShoppingCart', {title: 'ShoppingCart', contentEl:'shoppingCart', pre: ['cart']});
-	screens.set('Order', {title: 'Order', contentEl:'order', pre: ['purchase']});
 
-	var events = new Hash();
 
 	function getEventVariables(evs, fact_name){
 		var variables = evs.get(fact_name);
@@ -182,7 +173,16 @@ var EngineFactory = function () {
 	}
 
 	function loadMenu(){
+		var menu = null;
 	
+	var screens = new Hash();
+            
+	screens.set('Client', {title: 'Client', contentEl:'client', pre: []});
+	screens.set('Promotions', {title: 'Promotions', contentEl:'promotions', pre: ['service','segment','phone']});
+	screens.set('ShoppingCart', {title: 'ShoppingCart', contentEl:'shoppingCart', pre: ['cart']});
+	screens.set('Order', {title: 'Order', contentEl:'order', pre: ['purchase']});
+
+	var events = new Hash();
 		menu = new Ext.TabPanel({
 	        renderTo:'menu',
 	        activeTab:0,
