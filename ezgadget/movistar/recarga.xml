@@ -8,7 +8,7 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
 
 <script language="JAVASCRIPT">
-    var http_request = new XMLHttpRequest();
+    var http_request = false;
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
@@ -21,7 +21,7 @@
         // El número de cuenta empieza por 123
         url="JSON/numTelefono.json";
       }
-
+      http_request = new XMLHttpRequest();
       // Descarga los datos JSON del servidor.
       http_request.onreadystatechange = handle_json;
       http_request.open("GET", url, true);
