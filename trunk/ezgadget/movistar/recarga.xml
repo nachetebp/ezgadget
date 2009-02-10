@@ -49,9 +49,14 @@
     }  
     
     function handle_json2(responseText) {
-         var the_object = eval("(" + responseText + ")");
-         var html = the_object['msg'];
-         document.getElementById('warnings').innerHTML = html;
+         if (responseText == null) {
+            alert("responseText=null");
+            return;
+         }else{
+            var the_object = eval("(" + responseText + ")");
+            var html = the_object['msg'];
+            document.getElementById('warnings').innerHTML = html;
+         }
     }
     
     function ValidarTJ(cadena) {
