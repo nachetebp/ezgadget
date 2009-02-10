@@ -21,12 +21,15 @@
         // El número de cuenta empieza por 123
         url="JSON/numTelefono.json";
       }
+      /*
       http_request = new XMLHttpRequest();
       // Descarga los datos JSON del servidor.
       http_request.onreadystatechange = handle_json;
       http_request.open("GET", url, true);
       alert("no va a funcionar...");
-      http_request.send(null);    
+      http_request.send(null);
+      */
+      _IG_FetchContent(url, handle_json2)    
     }
     
     function handle_json() { 
@@ -44,6 +47,12 @@
             http_request = null;
         }
     }  
+    
+    function handle_json2(responseText) {
+         var the_object = eval("(" + responseText + ")");
+         var html = the_object['msg'];
+         document.getElementById('warnings').innerHTML = html;
+    }
     
     function ValidarTJ(cadena) {
      var longitud = cadena.length;
