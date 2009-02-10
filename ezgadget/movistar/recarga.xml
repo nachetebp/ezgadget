@@ -7,22 +7,6 @@
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns.css" />
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
 
-<!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
-<!-- Activity Name for this tag is: Media Contacts Homepage -->
-<!-- Web site URL where tag should be placed: http:// www.mediacontacts.com -->
-<!-- This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
-<!-- Creation Date: 21/09/2004 -->
-<!--
-<SCRIPT language="JavaScript">
-var axel = Math.random()+"";
-var a = axel * 10000000000000;
-document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
-</SCRIPT>
-<NOSCRIPT>
-<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord=1?" WIDTH=1 HEIGHT=1 BORDER=0>
-</NOSCRIPT>
--->
-<!-- End of DoubleClick Spotlight Tag: Please do not remove-->
 <script language="JAVASCRIPT">
     function makeJSONRequest() {    
       var params = {};
