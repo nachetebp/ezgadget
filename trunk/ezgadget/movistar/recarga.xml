@@ -5,10 +5,7 @@
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns.css" />
-
-<!-- funcmenu.js es el que lanza las ventanas de condiciones de uso y que es CVV
-    La url de las ventanas que lanza están en la propia página de movistar -->
-<script language="JavaScript" src="recarga/funcmenu.js"></script>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
 
 <!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
 <!-- Activity Name for this tag is: Media Contacts Homepage -->
@@ -145,7 +142,6 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
             }
         }
     };
-    
 </script>
 
 <div id="contents">
