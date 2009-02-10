@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+  <ModulePrefs title="Recarga en Canal Cliente" height="420" /> 
+  <Content type="html">
+<![CDATA[
+<iframe border="0" width="100%" src="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408951_43408937_0_0,00.html"></iframe>
+]]>
+  </Content>
+</Module>
