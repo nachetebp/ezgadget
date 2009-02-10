@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="Recarga en Canal Cliente" height="1500" /> 
-  <Content type="html">
+<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="1500" /> 
+<Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns.css" />
@@ -382,5 +382,5 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
 <div id="warnings"></div>
 </div>
 ]]>
-  </Content>
+</Content>
 </Module>
