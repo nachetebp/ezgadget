@@ -25,6 +25,7 @@
       // Descarga los datos JSON del servidor.
       http_request.onreadystatechange = handle_json;
       http_request.open("GET", url, true);
+      alert("no va a funcionar...");
       http_request.send(null);  
       function handle_json() { 
         if (http_request.readyState == 4) {
