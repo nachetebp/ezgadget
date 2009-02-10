@@ -8,15 +8,11 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
 
 <script language="JAVASCRIPT">
-    function makeJSONRequest() {    
-      var params = {};
-      params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.JSON;
-      
-      
-      telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
-      numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
+    function makeJSONRequest() {   
+      var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
+      var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
       // This URL returns a JSON-encoded string that represents a JavaScript object
-      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
+      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/OK.json";
       if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
         // El número de telefóno empieza por 676
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
@@ -24,15 +20,27 @@
         // El número de cuenta empieza por 123
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
       }
-      gadgets.io.makeRequest(url, response, params);
-    }
 
-    function response(obj) { 
-      var jsondata = obj.data;
-      var html = jsondata["msg"];
-      document.getElementById('warnings').innerHTML = html;
+      var http_request = new XMLHttpRequest();
+      // Descarga los datos JSON del servidor.
+      http_request.onreadystatechange = handle_json;
+      http_request.open("GET", url, true);
+      http_request.send(null);  
+      function handle_json() { 
+        if (http_request.readyState == 4) {
+            if (http_request.status == 200) {
+                var json_data = http_request.responseText; 
+                var the_object = eval("(" + json_data + ")");
+                var html = the_object['msg'];
+                document.getElementById('warnings').innerHTML = html;
+            } else {
+                alert("Ha habido un problema con la URL.");
+            }
+            http_request = null;
+        }
+      }    
     }
-
+    
     function ValidarTJ(cadena) {
      var longitud = cadena.length;
      var cifra = null;
@@ -55,7 +63,7 @@
      } else {
       return false;
      }
-    };    
+    }
 
     function ValidarFecha(cadenaMes,cadenaAnyo) {
  
