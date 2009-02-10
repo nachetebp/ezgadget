@@ -41,22 +41,13 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
       }
       gadgets.io.makeRequest(url, response, params);
-    };
+    }
 
     function response(obj) { 
       var jsondata = obj.data;
       var html = jsondata['msg'];
-      /*
-      var html = "<strong>Values: </strong><br /><br />";
-      // Returned JS object can be processed as an associative array
-      for (var key in jsondata) {    
-        var item = jsondata[key];
-        html += key + ": ";
-        html += item + "<br />";
-      } 
-      */        
       document.getElementById('warnings').innerHTML = html;
-     };
+    }
 
     function ValidarTJ(cadena) {
      var longitud = cadena.length;
@@ -80,8 +71,7 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
      } else {
       return false;
      }
-    };
-    
+    };    
 
     function ValidarFecha(cadenaMes,cadenaAnyo) {
  
@@ -96,7 +86,7 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
        }
      }
      return true;
-    };
+    }
     
 
 
@@ -141,7 +131,7 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
                              
             }
         }
-    };
+    }
 </script>
 
 <div id="contents">
