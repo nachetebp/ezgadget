@@ -13,13 +13,13 @@
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
       // This URL returns a JSON-encoded string that represents a JavaScript object
-      var url="JSON/ok.json";
+      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
       if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
         // El número de telefóno empieza por 676
-        url="JSON/numCuenta.json";
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
       }else if((numTarjeta.match("123"))&&(numTarjeta.indexOf("123")==0)){
         // El número de cuenta empieza por 123
-        url="JSON/numTelefono.json";
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
       }
       /*
       http_request = new XMLHttpRequest();
