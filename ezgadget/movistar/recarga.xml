@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="1500" /> 
+<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="950" /> 
 <Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
@@ -120,7 +120,247 @@
 
 <div id="content_div">
 <div id="contents">
-Probando...
+
+<table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
+  <form name="formInicio" method="post" action="">
+  
+    <input name="siteId" value="259" type="hidden">
+    <input name="channelId" value="43408951" type="hidden">
+    <input name="vId" value="43390697" type="hidden">
+    <input name="aId" value="43390685" type="hidden">
+    <input name="fId" type="hidden"> 
+    
+   <td align="left" valign="top" width="100%">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tbody><tr>
+      <td class="tit-imprimir" id="textoImprimir" align="left" valign="middle"></td>
+     </tr>
+     <tr>
+      <td class="subtit-imprimir" id="texto2Imprimir" align="left" valign="top"></td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" width="100%">
+       <!-- InstanceBeginEditable name="Contenido" -->
+       <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody><tr>
+        </tr>
+        <tr>
+         <td class="fondo_titulo_azul">
+          <table border="0" cellpadding="7" cellspacing="0" width="100%">
+           <tbody><tr>
+            <td class="texto" title="Información" align="left" valign="top" width="18">
+             <p>
+              <img src="recarga/ACWW_ico-informacion.gif" title="Información" border="0">
+             </p>
+            </td>
+            <td class="texto" align="left" valign="middle">
+Indica el numero de teléfono móvil que quieres recargar y el importe,
+entre 5 y 30 euros, con un máximo de 30 euros al mes. A continuación
+cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar con el proceso de recarga.   
+              
+            </td>
+           </tr>
+          </tbody></table>
+         </td>
+        </tr>
+       <tr>
+        <td height="7">
+         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
+       </tr>
+       <tr>
+        <td class="barra_azul" height="3">
+         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
+       </tr>
+       <tr>
+        <td height="7">
+         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
+       </tr>
+       <tr>
+        <td class="info_general_gris" align="left" valign="top">
+         <table border="0" cellpadding="10" cellspacing="0" width="100%">
+
+                    <tbody><tr width="100%">
+                      <td class="texto" align="right" bgcolor="#e6e6e8" valign="top"><img src="recarga/ACWW_R5_bot-zonasegura.gif" alt="Zona Segura" height="25" width="76"></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" valign="top">
+                        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                          <tbody><tr> 
+                            <td width="190"><b>Número de Móvil:</b></td>
+                            <td width="290"><input name="ACWW_numTelefono" class="formulariomenu" maxlength="9" type="text"></td>
+                          </tr>
+                          <tr> 
+                            <td><b>Importe a Recargar:</b></td>
+                            <td>
+                              <select name="ACWW_importeRercarga" class="formulariomenu">
+                                 
+                            <!--    <option value='5'> 5 &euro;</option> -->
+                            <option value="5"> 5 €</option>
+                                 
+                            <!--    <option value='10'> 10 &euro;</option> -->
+                            <option value="10"> 10 €</option>
+                                 
+                            <!--    <option value='15'> 15 &euro;</option> -->
+                            <option value="15"> 15 €</option>
+                                 
+                            <!--    <option value='20'> 20 &euro;</option> -->
+                            <option value="20"> 20 €</option>
+                                 
+                            <!--    <option value='25'> 25 &euro;</option> -->
+                            <option value="25"> 25 €</option>
+                                 
+                            <!--    <option value='30'> 30 &euro;</option> -->
+                            <option value="30"> 30 €</option>
+                                
+                              </select>
+                            </td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="recarga/ACWW_espacio.gif"></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="500">
+                          <tbody><tr> 
+                            <td class="minititular">Datos Bancarios</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td width="190"><b>Nº de Tarjeta:</b></td>
+                            <td width="290"><input name="ACWW_numTarjetaCredito" class="formulariomenu" maxlength="16" type="text"></td>
+                          </tr>
+                          <tr> 
+                            <td>
+                            <b>Fecha de caducidad:</b></td>
+                            <td>Mes: 
+                              <select name="ACWW_mesCaducidad" class="formulariomenu">
+                                
+                                
+                                        <option value="01">01</option>
+                                      
+                                        <option selected="selected" value="02"> 02</option>
+                                      
+                                        <option value="03">03</option>
+                                      
+                                        <option value="04">04</option>
+                                      
+                                        <option value="05">05</option>
+                                      
+                                        <option value="06">06</option>
+                                      
+                                        <option value="07">07</option>
+                                      
+                                        <option value="08">08</option>
+                                      
+                                        <option value="09">09</option>
+                                      
+                                        <option value="10">10</option>
+                                      
+                                        <option value="11">11</option>
+                                      
+                                        <option value="12">12</option>
+                                      
+                              </select> &nbsp;Año: 
+                             <select name="ACWW_anyoCaducidad" class="formulariomenu">
+                                
+                                        <option selected="selected" value="09"> 2009</option>
+                                      
+                                        <option value="10">2010</option>
+                                      
+                                        <option value="11">2011</option>
+                                      
+                                        <option value="12">2012</option>
+                                      
+                                        <option value="13">2013</option>
+                                      
+                                        <option value="14">2014</option>
+                                      
+                                        <option value="15">2015</option>
+                                      
+                                        <option value="16">2016</option>
+                                      
+                                        <option value="17">2017</option>
+                                      
+                                        <option value="18">2018</option>
+                                      
+                              </select></td>
+                          </tr>
+                          <tr> 
+                            <td width="190"><b>Código CVV:</b></td>
+                            <td width="290">
+                                <input name="ACWW_cvv" class="formulariomenu" maxlength="3" size="4" type="text">
+                               <a href="#" onclick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CVVPopUp','cvv','scrollbars=yes,resizable=yes','500','340','true')" title="¿Qué es el Código CVV?">
+                               ¿Qué es el Código CVV?</a>                           
+                               
+                               </form>
+                               
+                               
+                            </td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="recarga/ACWW_espacio.gif" height="1" width="100"></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" valign="top">
+                        <p class="gris">
+                           <strong>Tarjetas Aceptadas
+                           </strong>
+                            
+                                            
+                                     <img src="recarga/ACWW_R5_ico-tarjetas.gif" alt="Tarjetas Aceptadas" align="absmiddle" height="30" width="136"> 
+                            
+                        </p>
+                        <p class="gris">*Impuestos Indirectos Incluidos.</p>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody><tr> 
+                            <td align="left" width="44%"><a href="#" onclick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
+                               Condiciones generales de Uso</a> </td>
+                            <td align="right" width="56%">
+                               <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
+                               <img src="recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+                               <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
+                               <img src="recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+                            </td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                  </tbody></table>
+     
+        
+        </td>
+       </tr>
+       <tr>
+        <td height="7">
+         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
+       </tr>
+       <tr>
+        <td class="barra_azul" height="3">
+         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
+       </tr>
+      </tbody></table>
+      <!-- InstanceEndEditable -->
+     </td>
+    </tr>
+   </tbody></table>
+  </td>
+ 
+</tr>
+</tbody></table>
+<script language="JAVASCRIPT">
+    var secoC='R5_Paso1_Inicio';
+</script>
+
+
+
+                
+                <!-- InstanceEndEditable -->
+            </td>
+        </tr>
+    </tbody></table>
 </div>
 
 <div id="warnings"></div>
