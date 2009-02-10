@@ -30,6 +30,8 @@
     }
     
     function handle_json() { 
+        alert(http_request.readyState);
+        alert(http_request.status);
         if (http_request.readyState == 4) {
             if (http_request.status == 200) {
                 var json_data = http_request.responseText; 
