@@ -3,10 +3,8 @@
   <ModulePrefs title="Recarga en Canal Cliente" height="1500" /> 
   <Content type="html">
 <![CDATA[
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<link href="recarga/CWEB_pcns6x.css" rel="stylesheet" type="text/css" />
-<link href="recarga/ACWW_estilos_ns.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="recarga/CWEB_pcns6x.css" />
+<link rel="stylesheet" type="text/css" href="recarga/ACWW_estilos_ns.css" />
 
 <!-- funcmenu.js es el que lanza las ventanas de condiciones de uso y que es CVV
     La url de las ventanas que lanza están en la propia página de movistar -->
