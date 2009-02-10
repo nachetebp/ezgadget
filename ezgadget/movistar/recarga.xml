@@ -32,7 +32,7 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
       telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
       // This URL returns a JSON-encoded string that represents a JavaScript object
-      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/OK.json";
+      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
       if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
         // El número de telefóno empieza por 676
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
@@ -45,7 +45,7 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
 
     function response(obj) { 
       var jsondata = obj.data;
-      var html = jsondata['msg'];
+      var html = jsondata["msg"];
       document.getElementById('warnings').innerHTML = html;
     }
 
