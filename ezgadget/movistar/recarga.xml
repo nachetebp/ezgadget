@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-  <ModulePrefs title="Recarga en Canal Cliente" height="420" /> 
+  <ModulePrefs title="Recarga en Canal Cliente" height="820" /> 
   <Content type="html">
 <![CDATA[
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
