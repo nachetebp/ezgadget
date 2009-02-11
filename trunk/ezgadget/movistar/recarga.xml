@@ -388,6 +388,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
          <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
        </tr>
       </tbody></table>
+      <div id="messageBox"></div>
       <!-- InstanceEndEditable -->
      </td>
     </tr>
@@ -407,7 +408,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
             </td>
         </tr>
     </tbody></table>
-    <div id="messageBox"></div>
+    
 </div>
 
 
