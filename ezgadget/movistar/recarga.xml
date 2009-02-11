@@ -75,6 +75,16 @@
             //document.getElementById('warnings').innerHTML = html;
             var msg = new _IG_MiniMessage(__MODULE_ID__,_gel("messageBox"));
             msg.createDismissibleMessage(html);
+            /*
+            var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
+            
+            staticMsg.style.cursor = "pointer";
+            staticMsg.onclick = function() {
+                msg.dismissMessage(staticMsg);
+            };
+            */
+            
+            
             _IG_AdjustIFrameHeight();
          }
     }
