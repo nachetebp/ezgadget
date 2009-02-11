@@ -9,7 +9,7 @@
 <![CDATA[
 <iframe id="frameGadget" name="frameGadget" border="0" width="100%" src="http://demo.ezweb.morfeo-project.org/repository/Agenda.html"></iframe>
 <div id="testing">testing</div>
-<input type="button" onClick="var frameObj=document.getElementById('frameGadget');alert(frameObj.contentDocument.title);" value="alert"></input>
+<input type="button" onClick="var frameObj=document.getElementById('frameGadget');alert(frameObj.contentDocument.getElementById('cabecera').innerHTML);" value="alert"></input>
 ]]>
 
 </Content>
