@@ -6,7 +6,7 @@
     <Require feature="minimessage"/>
 </ModulePrefs>
 <UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="false" />
-<UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="false" />
+<UserPref name="numCard" display_name="Número de Tarjeta" datatype="string" required="false" />
 <Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
