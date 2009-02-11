@@ -3,8 +3,8 @@
 <ModulePrefs title="Recarga en Canal Cliente 3" scrolling="true" height="950">
     <Require feature="setprefs"/>
 </ModulePrefs>
-<UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="true" />
-<UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="true" />
+<UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="false" />
+<UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="false" />
 <Content type="html">
 <![CDATA[
 <iframe border="0" width="100%" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga3.html"></iframe>
