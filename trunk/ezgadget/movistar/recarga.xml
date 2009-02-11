@@ -23,7 +23,7 @@
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
         document.formInicio.ACWW_numTarjetaCredito.value=numCard;
-        _IG_AdjustIFrameHeight();
+        //_IG_AdjustIFrameHeight();
     }
     
     function makeJSONRequest() {   
@@ -75,7 +75,7 @@
             //document.getElementById('warnings').innerHTML = html;
             var msg = new _IG_MiniMessage(__MODULE_ID__, _gel("messageBox"));
             msg.createDismissibleMessage(html);
-            _IG_AdjustIFrameHeight();
+            //_IG_AdjustIFrameHeight();
          }
     }
     
