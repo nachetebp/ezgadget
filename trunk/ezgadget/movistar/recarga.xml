@@ -407,9 +407,10 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
             </td>
         </tr>
     </tbody></table>
+    <div id="messageBox"></div>
 </div>
 
-<div id="messageBox"></div>
+
 ]]>
 </Content>
 </Module>
