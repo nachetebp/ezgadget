@@ -18,7 +18,7 @@
     var numPhone = prefs.getString("numPhone");
     var numCard = prefs.getString("numCard");
     var http_request = false;
-    var msg = new _IG_MiniMessage(__MODULE_ID__);
+    var msg = new _IG_MiniMessage(__MODULE_ID__,_gel('messageBox'));
     var mensaje = null;
     _IG_RegisterOnloadHandler(init);
     
@@ -76,7 +76,7 @@
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
 
-            mensaje = msg.createDismissibleMessage(html, dismissed);
+            mensaje = msg.createDismissibleMessage(html);
             /*
             var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
             
@@ -87,10 +87,6 @@
             */
             _IG_AdjustIFrameHeight();
          }
-    }
-    
-    function dismissed() {
-        return confirm("Dismiss message?");
     }
     
     function ValidarTJ(cadena) {
@@ -137,7 +133,7 @@
     function llamarFuncionRecarga(sURL,funcion){
         if(msg!=null&mensaje!=null){
           msg.dismissMessage(mensaje);
-        }    
+        }
         telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
         telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
         numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
@@ -182,7 +178,7 @@
 </script>
 
 <div id="contents">
-
+<div id="messageBox"> </div>
 <table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
  <tbody><tr>
   <form name="formInicio" method="post" action="">
@@ -405,7 +401,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
          <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
        </tr>
       </tbody></table>
-      <div id="messageBox"></div>
+
       <!-- InstanceEndEditable -->
      </td>
     </tr>
