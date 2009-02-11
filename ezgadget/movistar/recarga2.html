@@ -3,43 +3,12 @@
   <HEAD>
     <style type="text/css"> </style>
     <TITLE> Userprefs Params Example </TITLE>
-    <?php
-      // Parse gadget URL and emit <script src=...</script> statements into the HTML output. 
-      // The <script src=...</script> statements will load the libraries passed in via the URL.
-      $libraries = split(",", $_GET["libs"]);
-      foreach ($libraries as $script) {
-        if (preg_match('@^[a-z0-9/._-]+$@i', $script)
-          && !preg_match('@([.][.])|([.]/)|(//)@', $script)) {
-            print "<script src='http://www.google.com/ig/f/$script'></script>";
-        }
-      }
-    ?>
-  </HEAD>
-   <BODY>
-<div id="contents">
-<!-- funcmenu.js es el que lanza las ventanas de condiciones de uso y que es CVV
-    La url de las ventanas que lanza están en la propia página de movistar -->
-<script language="JavaScript" src="recarga/funcmenu.js"></script>
-
 <link href="recarga/CWEB_pcns6x.css" rel="stylesheet" type="text/css" >
 <link href="recarga/ACWW_estilos_ns.css" rel="stylesheet" type="text/css" >
-
-<!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
-<!-- Activity Name for this tag is: Media Contacts Homepage -->
-<!-- Web site URL where tag should be placed: http:// www.mediacontacts.com -->
-<!-- This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
-<!-- Creation Date: 21/09/2004 -->
-<!--
-<SCRIPT language="JavaScript">
-var axel = Math.random()+"";
-var a = axel * 10000000000000;
-document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
-</SCRIPT>
-<NOSCRIPT>
-<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord=1?" WIDTH=1 HEIGHT=1 BORDER=0>
-</NOSCRIPT>
--->
-<!-- End of DoubleClick Spotlight Tag: Please do not remove-->
+      
+    <!-- funcmenu.js es el que lanza las ventanas de condiciones de uso y que es CVV
+    La url de las ventanas que lanza están en la propia página de movistar -->
+<script language="JavaScript" src="recarga/funcmenu.js"></script>
 <script language="JAVASCRIPT">
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
@@ -160,6 +129,28 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
     }
     
 </script>
+  
+  </HEAD>
+   <BODY>
+<div id="contents">
+
+<!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
+<!-- Activity Name for this tag is: Media Contacts Homepage -->
+<!-- Web site URL where tag should be placed: http:// www.mediacontacts.com -->
+<!-- This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
+<!-- Creation Date: 21/09/2004 -->
+<!--
+<SCRIPT language="JavaScript">
+var axel = Math.random()+"";
+var a = axel * 10000000000000;
+document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
+</SCRIPT>
+<NOSCRIPT>
+<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord=1?" WIDTH=1 HEIGHT=1 BORDER=0>
+</NOSCRIPT>
+-->
+<!-- End of DoubleClick Spotlight Tag: Please do not remove-->
+
 
 <table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
  <tbody><tr>
