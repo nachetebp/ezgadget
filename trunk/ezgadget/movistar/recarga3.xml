@@ -8,7 +8,7 @@
 <Content type="html">
 <![CDATA[
 <iframe border="0" width="100%" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga3.html"></iframe>
-<input type="button" onClick="alert(document.getElementById("warnings"));">Alert</input>
+<input type="button" onClick="alert(document.getElementById('warnings'));">Alert</input>
 ]]>
 
 </Content>
