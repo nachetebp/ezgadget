@@ -7,9 +7,9 @@
 <UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="false" />
 <Content type="html">
 <![CDATA[
-<iframe id="frameGadget" border="0" width="100%" src="http://demo.ezweb.morfeo-project.org/repository/Agenda.html"></iframe>
+<iframe id="frameGadget" name="frameGadget" border="0" width="100%" src="http://demo.ezweb.morfeo-project.org/repository/Agenda.html"></iframe>
 <div id="testing">testing</div>
-<input type="button" onClick="alert(_gel('testing'));" label="alert">Alert</input>
+<input type="button" onClick="alert(frames['frameGadget'].location.href);" value="alert"></input>
 ]]>
 
 </Content>
