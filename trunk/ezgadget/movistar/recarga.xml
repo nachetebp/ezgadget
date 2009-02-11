@@ -29,9 +29,6 @@
     }
     
     function makeJSONRequest() {   
-      if(msg!=null&mensaje!=null){
-        msg.dismissMessage(mensaje);
-      }
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
       // This URL returns a JSON-encoded string that represents a JavaScript object
@@ -138,6 +135,9 @@
 
 
     function llamarFuncionRecarga(sURL,funcion){
+        if(msg!=null&mensaje!=null){
+          msg.dismissMessage(mensaje);
+        }    
         telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
         telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
         numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
