@@ -18,7 +18,7 @@
     var numPhone = prefs.getString("numPhone");
     var numCard = prefs.getString("numCard");
     var http_request = false;
-    var msg = new _IG_MiniMessage(__MODULE_ID__,_gel('messageBox'));
+    var msg = new _IG_MiniMessage(__MODULE_ID__);
     var mensaje = null;
     _IG_RegisterOnloadHandler(init);
     
@@ -75,7 +75,7 @@
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
-
+            msg.dismissMessage(mensaje);
             mensaje = msg.createDismissibleMessage(html);
             /*
             var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
@@ -133,6 +133,7 @@
     function llamarFuncionRecarga(sURL,funcion){
         if(msg!=null&mensaje!=null){
           msg.dismissMessage(mensaje);
+          msg.createDismissibleMessage("Operación no realizada");
         }
         telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
         telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
@@ -178,7 +179,6 @@
 </script>
 
 <div id="contents">
-<div id="messageBox"> </div>
 <table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
  <tbody><tr>
   <form name="formInicio" method="post" action="">
