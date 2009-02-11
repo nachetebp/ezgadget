@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="950" /> 
+<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="950">
+    <Require feature="setprefs"/>
+</ModulePrefs>
+<UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="true" />
+<UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="true" />
 <Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
@@ -8,6 +12,11 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
 
 <script language="JAVASCRIPT">
+    var prefs = new _IG_Prefs();
+    var numPhone = prefs.getString("numPhone");
+    var numCard = prefs.getString("numCard");
+    document.formInicio.ACWW_numTelefono.value=numPhone;
+    document.formInicio.ACWW_numTarjetaCredito.value=numCard;
     var http_request = false;
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
