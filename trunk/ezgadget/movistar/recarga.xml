@@ -73,7 +73,7 @@
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
-            var msg = new _IG_MiniMessage(__MODULE_ID__, _gel("messageBox"));
+            var msg = new _IG_MiniMessage(__MODULE_ID__);
             msg.createDismissibleMessage(html);
             _IG_AdjustIFrameHeight();
          }
