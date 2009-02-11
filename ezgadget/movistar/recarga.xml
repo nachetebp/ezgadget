@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="950">
+<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="1150">
     <Require feature="setprefs"/>
 
     <Require feature="minimessage"/>
@@ -18,7 +18,7 @@
     var numPhone = prefs.getString("numPhone");
     var numCard = prefs.getString("numCard");
     var http_request = false;
-    _IG_RegisterOnloadHandler(init);
+    //_IG_RegisterOnloadHandler(init);
     
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
