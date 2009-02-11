@@ -73,7 +73,7 @@
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
-            var msg = new _IG_MiniMessage(__MODULE_ID__);
+            var msg = new _IG_MiniMessage(__MODULE_ID__,_gel("messageBox"));
             msg.createDismissibleMessage(html);
             _IG_AdjustIFrameHeight();
          }
@@ -164,7 +164,7 @@
     }
 </script>
 
-<div id="contents" style="width:100%;">
+<div id="contents">
 
 <table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
  <tbody><tr>
@@ -367,7 +367,8 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
                             <td align="right" width="56%">
                                <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
-                               <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
+                               <!--<a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">-->
+                               <a href="#" onClick="_IG_AdjustIFrameHeight();" title="Cancelar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
                             </td>
                           </tr>
@@ -408,7 +409,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
     </tbody></table>
 </div>
 
-<div id="messageBox" style="width:100%;"></div>
+<div id="messageBox"></div>
 ]]>
 </Content>
 </Module>
