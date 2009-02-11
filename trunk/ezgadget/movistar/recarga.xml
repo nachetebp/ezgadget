@@ -67,7 +67,6 @@
             alert("responseText=null");
             return;
          }else{
-            alert(responseText);
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
             document.getElementById('warnings').innerHTML = html;
