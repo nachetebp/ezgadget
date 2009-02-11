@@ -133,7 +133,7 @@
     function llamarFuncionRecarga(sURL,funcion){
         if(msg!=null&mensaje!=null){
           msg.dismissMessage(mensaje);
-          msg.createDismissibleMessage("Operación no realizada");
+          mensaje=msg.createDismissibleMessage("Operación no realizada");
         }
         telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
         telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
