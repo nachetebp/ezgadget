@@ -5,5 +5,5 @@
 </ModulePrefs>
 <UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="true" />
 <UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="true" />
-<Content type="url" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga2.html?up_mychoice=1" />
+<Content type="url" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga2.php?up_mychoice=1" />
 </Module>
