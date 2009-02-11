@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="1150">
+<ModulePrefs title="Recarga en Canal Cliente" scrolling="true" height="800">
     <Require feature="setprefs"/>
-
+    <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
 </ModulePrefs>
 <UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="false" />
@@ -18,12 +18,12 @@
     var numPhone = prefs.getString("numPhone");
     var numCard = prefs.getString("numCard");
     var http_request = false;
-    //_IG_RegisterOnloadHandler(init);
+    _IG_RegisterOnloadHandler(init);
     
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
         document.formInicio.ACWW_numTarjetaCredito.value=numCard;
-        //_IG_AdjustIFrameHeight();
+        _IG_AdjustIFrameHeight();
     }
     
     function makeJSONRequest() {   
@@ -75,7 +75,7 @@
             //document.getElementById('warnings').innerHTML = html;
             var msg = new _IG_MiniMessage(__MODULE_ID__, _gel("messageBox"));
             msg.createDismissibleMessage(html);
-            //_IG_AdjustIFrameHeight();
+            _IG_AdjustIFrameHeight();
          }
     }
     
