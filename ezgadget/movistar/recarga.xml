@@ -35,10 +35,10 @@
       var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
       if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
         // El número de telefóno empieza por 676
-        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
       }else if((numTarjeta.match("123"))&&(numTarjeta.indexOf("123")==0)){
         // El número de cuenta empieza por 123
-        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
       }
       /*
       http_request = new XMLHttpRequest();
