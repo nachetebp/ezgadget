@@ -76,7 +76,7 @@
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
             msg.dismissMessage(mensaje);
-            mensaje = msg.createDismissibleMessage(html);
+            mensaje = msg.createDismissibleMessage(html,dismissed);
             /*
             var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
             
@@ -87,6 +87,10 @@
             */
             _IG_AdjustIFrameHeight();
          }
+    }
+    
+    function dismissed() {
+        _IG_AdjustIFrameHeight();
     }
     
     function ValidarTJ(cadena) {
@@ -133,7 +137,7 @@
     function llamarFuncionRecarga(sURL,funcion){
         if(msg!=null&mensaje!=null){
           msg.dismissMessage(mensaje);
-          mensaje=msg.createDismissibleMessage("Operación no realizada");
+          mensaje=msg.createDismissibleMessage("Operación no realizada", dismissed);
         }
         telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
         telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
