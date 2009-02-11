@@ -18,6 +18,8 @@
     var numPhone = prefs.getString("numPhone");
     var numCard = prefs.getString("numCard");
     var http_request = false;
+    var msg = new _IG_MiniMessage(__MODULE_ID__);
+    var mensaje = null;
     _IG_RegisterOnloadHandler(init);
     
     function init() {
@@ -27,6 +29,9 @@
     }
     
     function makeJSONRequest() {   
+      if(msg!=null&mensaje!=null){
+        msg.dismissMessage(mensaje);
+      }
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
       // This URL returns a JSON-encoded string that represents a JavaScript object
@@ -73,8 +78,8 @@
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
-            var msg = new _IG_MiniMessage(__MODULE_ID__,_gel("messageBox"));
-            msg.createDismissibleMessage(html);
+
+            mensaje = msg.createDismissibleMessage(html, dismissed);
             /*
             var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
             
@@ -83,10 +88,12 @@
                 msg.dismissMessage(staticMsg);
             };
             */
-            
-            
             _IG_AdjustIFrameHeight();
          }
+    }
+    
+    function dismissed() {
+        return confirm("Dismiss message?");
     }
     
     function ValidarTJ(cadena) {
