@@ -15,9 +15,14 @@
     var prefs = new _IG_Prefs();
     var numPhone = prefs.getString("numPhone");
     var numCard = prefs.getString("numCard");
-    document.formInicio.ACWW_numTelefono.value=numPhone;
-    document.formInicio.ACWW_numTarjetaCredito.value=numCard;
     var http_request = false;
+    _IG_RegisterOnloadHandler(init);
+    
+    function init() {
+        document.formInicio.ACWW_numTelefono.value=numPhone;
+        document.formInicio.ACWW_numTarjetaCredito.value=numCard;    
+    }
+    
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
