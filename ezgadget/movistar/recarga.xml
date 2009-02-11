@@ -242,9 +242,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
         <td class="info_general_gris" align="left" valign="top">
          <table border="0" cellpadding="10" cellspacing="0" width="100%">
 
-                    <tbody><tr width="100%">
-                      <td class="texto" align="right" bgcolor="#e6e6e8" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_R5_bot-zonasegura.gif" alt="Zona Segura" height="25" width="76"></td>
-                    </tr>
+                    <tbody>
                     <tr> 
                       <td class="texto" align="left" valign="top">
                         <table border="0" cellpadding="5" cellspacing="0" width="100%">
