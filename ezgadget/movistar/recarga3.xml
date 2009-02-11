@@ -7,8 +7,8 @@
 <UserPref name="numCard" display_name="Número de la Tarjeta" datatype="string" required="false" />
 <Content type="html">
 <![CDATA[
-<iframe border="0" width="100%" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga3.html"></iframe>
-<input type="button" onClick="alert(document.getElementById('warnings'));">Alert</input>
+<iframe border="0" width="100%" src="http://demo.ezweb.morfeo-project.org/repository/Agenda.html"></iframe>
+<input type="button" onClick="alert(document.getElementById('divAgenda'));" label="alert">Alert</input>
 ]]>
 
 </Content>
