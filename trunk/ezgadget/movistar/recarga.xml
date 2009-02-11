@@ -73,7 +73,7 @@
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
             //document.getElementById('warnings').innerHTML = html;
-            var msg = new _IG_MiniMessage(__MODULE_ID__);
+            var msg = new _IG_MiniMessage(__MODULE_ID__, _gel("messageBox"));
             msg.createDismissibleMessage(html);
             _IG_AdjustIFrameHeight();
          }
@@ -409,7 +409,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
     </tbody></table>
 </div>
 
-<div id="warnings"></div>
+<div id="messageBox"></div>
 </div>
 ]]>
 </Content>
