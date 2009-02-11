@@ -8,7 +8,8 @@
 <Content type="html">
 <![CDATA[
 <iframe id="frameGadget" border="0" width="100%" src="http://demo.ezweb.morfeo-project.org/repository/Agenda.html"></iframe>
-<input type="button" onClick="alert(_gel('divAgenda'));" label="alert">Alert</input>
+<div id="testing">testing</div>
+<input type="button" onClick="alert(_gel('testing'));" label="alert">Alert</input>
 ]]>
 
 </Content>
