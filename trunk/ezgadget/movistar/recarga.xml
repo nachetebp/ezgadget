@@ -384,9 +384,10 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
                             <td align="right" width="56%">
                                <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
-                               <!--<a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">-->
-                               <a href="#" onClick="_IG_AdjustIFrameHeight();" title="Cancelar">
+<!-- Quitamos el botón de Cancelar
+                               <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+-->
                             </td>
                           </tr>
                         </tbody></table></td>
