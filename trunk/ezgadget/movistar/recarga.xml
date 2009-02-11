@@ -280,7 +280,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar 
                       <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif"></td>
                     </tr>
                     <tr> 
-                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="500">
+                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="auto">
                           <tbody><tr> 
                             <td class="minititular">Datos Bancarios</td>
                             <td>&nbsp;</td>
