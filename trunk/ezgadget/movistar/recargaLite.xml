@@ -173,7 +173,7 @@
                           
                       }
                    }else{
-                      alert('El formato de la tarjeta o fecha de caducidad no es correcto. Por favor, introdúcelo de nuevo.');
+                      alert('Número tarjeta no válido');
                    }
                 }
                              
