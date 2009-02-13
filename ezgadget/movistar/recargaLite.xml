@@ -10,7 +10,7 @@
 <Content type="html">
 <![CDATA[
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
-<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns.css" />
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns_lite.css" />
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
 
 <script language="JAVASCRIPT">
