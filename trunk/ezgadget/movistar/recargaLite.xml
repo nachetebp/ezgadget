@@ -183,6 +183,8 @@
 </script>
 
 <div id="contents">
+<table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody><tr>
   <form name="formInicio" method="post" action="">
   
     <input name="siteId" value="259" type="hidden">
@@ -191,8 +193,12 @@
     <input name="aId" value="43390685" type="hidden">
     <input name="fId" type="hidden"> 
     
+   <td align="left" valign="top" width="100%">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tbody>
+       <tr>
+        <td class="info_general_gris" align="left" valign="top">
          <table border="0" cellpadding="10" cellspacing="0" width="100%">
-
                     <tbody>
                     <tr> 
                       <td class="texto" align="left" valign="top">
@@ -342,6 +348,20 @@
                         </tbody></table></td>
                     </tr>
                   </tbody></table>
+     
+        
+        </td>
+       </tr>
+       <tr>
+        <td height="7">
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
+       </tr>
+       <tr>
+        <td class="barra_azul" height="3">
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
+       </tr>
+      </tbody></table>
+
       <!-- InstanceEndEditable -->
      </td>
     </tr>
