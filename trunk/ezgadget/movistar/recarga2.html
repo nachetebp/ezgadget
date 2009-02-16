@@ -1,34 +1,48 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-  <HEAD>
-    <style type="text/css"> </style>
-    <TITLE> Userprefs Params Example </TITLE>
-<link href="recarga/CWEB_pcns6x.css" rel="stylesheet" type="text/css" >
-<link href="recarga/ACWW_estilos_ns.css" rel="stylesheet" type="text/css" >
-      
-    <!-- funcmenu.js es el que lanza las ventanas de condiciones de uso y que es CVV
-    La url de las ventanas que lanza están en la propia página de movistar -->
-<script language="JavaScript" src="recarga/funcmenu.js"></script>
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns_lite.css" />
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
+
 <script language="JAVASCRIPT">
+    var prefs = new _IG_Prefs();
+    var numPhone = prefs.getString("numPhone");
+    var numCard = prefs.getString("numCard");
+    var http_request = false;
+    var msg = new _IG_MiniMessage(__MODULE_ID__);
+    var mensaje = null;
+    _IG_RegisterOnloadHandler(init);
+    
+    function init() {
+        document.formInicio.ACWW_numTelefono.value=numPhone;
+        document.formInicio.ACWW_numTarjetaCredito.value=numCard;
+        _IG_AdjustIFrameHeight();
+    }
+    
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
       // This URL returns a JSON-encoded string that represents a JavaScript object
-      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/OK.json";
+      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
       if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
         // El número de telefóno empieza por 676
-        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
       }else if((numTarjeta.match("123"))&&(numTarjeta.indexOf("123")==0)){
         // El número de cuenta empieza por 123
-        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
       }
-
-      var http_request = new XMLHttpRequest();
+      /*
+      http_request = new XMLHttpRequest();
       // Descarga los datos JSON del servidor.
       http_request.onreadystatechange = handle_json;
       http_request.open("GET", url, true);
-      http_request.send(null);  
-      function handle_json() { 
+      alert("no va a funcionar...");
+      http_request.send(null);
+      */
+      _IG_FetchContent(url, handle_json2)    
+    }
+    
+    function handle_json() { 
+        alert(http_request.readyState);
+        alert(http_request.status);
         if (http_request.readyState == 4) {
             if (http_request.status == 200) {
                 var json_data = http_request.responseText; 
@@ -40,9 +54,34 @@
             }
             http_request = null;
         }
-      }    
+    }  
+    
+    function handle_json2(responseText) {
+         if (responseText == null) {
+            alert("responseText=null");
+            return;
+         }else{
+            var the_object = eval("(" + responseText + ")");
+            var html = the_object['msg'];
+            //document.getElementById('warnings').innerHTML = html;
+            msg.dismissMessage(mensaje);
+            mensaje = msg.createDismissibleMessage(html,dismissed);
+            /*
+            var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
+            
+            staticMsg.style.cursor = "pointer";
+            staticMsg.onclick = function() {
+                msg.dismissMessage(staticMsg);
+            };
+            */
+            _IG_AdjustIFrameHeight();
+         }
     }
-
+    
+    function dismissed() {
+        _IG_AdjustIFrameHeight();
+    }
+    
     function ValidarTJ(cadena) {
      var longitud = cadena.length;
      var cifra = null;
@@ -66,7 +105,6 @@
       return false;
      }
     }
-    
 
     function ValidarFecha(cadenaMes,cadenaAnyo) {
  
@@ -86,6 +124,10 @@
 
 
     function llamarFuncionRecarga(sURL,funcion){
+        if(msg!=null&mensaje!=null){
+          msg.dismissMessage(mensaje);
+          mensaje=msg.createDismissibleMessage("Operación no realizada", dismissed);
+        }
         telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
         telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
         numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
@@ -120,40 +162,16 @@
                           
                       }
                    }else{
-                      alert('El formato de la tarjeta o fecha de caducidad no es correcto. Por favor, introdúcelo de nuevo.');
+                      alert('Número tarjeta no válido');
                    }
                 }
                              
             }
         }
     }
-    
 </script>
-  
-  </HEAD>
-   <BODY>
+
 <div id="contents">
-
-<!-- Start of DoubleClick Spotlight Tag: Please do not remove-->
-<!-- Activity Name for this tag is: Media Contacts Homepage -->
-<!-- Web site URL where tag should be placed: http:// www.mediacontacts.com -->
-<!-- This tag must be placed within the opening <body> tag, as close to the beginning of it as possible-->
-<!-- Creation Date: 21/09/2004 -->
-<!--
-<SCRIPT language="JavaScript">
-var axel = Math.random()+"";
-var a = axel * 10000000000000;
-document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord='+ a + '?" WIDTH=1 HEIGHT=1 BORDER=0>');
-</SCRIPT>
-<NOSCRIPT>
-<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=media099;cat=homep051;ord=1?" WIDTH=1 HEIGHT=1 BORDER=0>
-</NOSCRIPT>
--->
-<!-- End of DoubleClick Spotlight Tag: Please do not remove-->
-
-
-<table id="aimprimir" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
- <tbody><tr>
   <form name="formInicio" method="post" action="">
   
     <input name="siteId" value="259" type="hidden">
@@ -162,58 +180,12 @@ document.write('<IMG SRC="http://ad.es.doubleclick.net/activity;src=910204;type=
     <input name="aId" value="43390685" type="hidden">
     <input name="fId" type="hidden"> 
     
-   <td align="left" valign="top" width="100%">
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-     <tbody><tr>
-      <td class="tit-imprimir" id="textoImprimir" align="left" valign="middle"></td>
-     </tr>
-     <tr>
-      <td class="subtit-imprimir" id="texto2Imprimir" align="left" valign="top"></td>
-     </tr>
-     <tr>
-      <td align="left" valign="top" width="100%">
-       <!-- InstanceBeginEditable name="Contenido" -->
-       <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tbody><tr>
-        </tr>
-        <tr>
-         <td class="fondo_titulo_azul">
-          <table border="0" cellpadding="7" cellspacing="0" width="100%">
-           <tbody><tr>
-            <td class="texto" title="Información" align="left" valign="top" width="18">
-             <p>
-              <img src="recarga/ACWW_ico-informacion.gif" title="Información" border="0">
-             </p>
-            </td>
-            <td class="texto" align="left" valign="middle">
-Indica el numero de teléfono móvil que quieres recargar y el importe,
-entre 5 y 30 euros, con un máximo de 30 euros al mes. A continuación
-cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar con el proceso de recarga.   
-              
-            </td>
-           </tr>
-          </tbody></table>
-         </td>
-        </tr>
-       <tr>
-        <td height="7">
-         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
-       </tr>
-       <tr>
-        <td class="barra_azul" height="3">
-         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
-       </tr>
-       <tr>
-        <td height="7">
-         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
-       </tr>
+     <tbody>
        <tr>
         <td class="info_general_gris" align="left" valign="top">
          <table border="0" cellpadding="10" cellspacing="0" width="100%">
-
-                    <tbody><tr width="100%">
-                      <td class="texto" align="right" bgcolor="#e6e6e8" valign="top"><img src="recarga/ACWW_R5_bot-zonasegura.gif" alt="Zona Segura" height="25" width="76"></td>
-                    </tr>
+                    <tbody>
                     <tr> 
                       <td class="texto" align="left" valign="top">
                         <table border="0" cellpadding="5" cellspacing="0" width="100%">
@@ -250,10 +222,10 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar c
                         </tbody></table></td>
                     </tr>
                     <tr> 
-                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="recarga/ACWW_espacio.gif"></td>
+                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif"></td>
                     </tr>
                     <tr> 
-                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="500">
+                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="auto">
                           <tbody><tr> 
                             <td class="minititular">Datos Bancarios</td>
                             <td>&nbsp;</td>
@@ -322,7 +294,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar c
                             <td width="190"><b>Código CVV:</b></td>
                             <td width="290">
                                 <input name="ACWW_cvv" class="formulariomenu" maxlength="3" size="4" type="text">
-                               <a href="#" onclick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CVVPopUp','cvv','scrollbars=yes,resizable=yes','500','340','true')" title="¿Qué es el Código CVV?">
+                               <a href="#" onclick="MM_openBrWindow('https://www.canalcliente.movistar.es/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CVVPopUp','cvv','scrollbars=yes,resizable=yes','500','340','true')" title="¿Qué es el Código CVV?">
                                ¿Qué es el Código CVV?</a>                           
                                
                                </form>
@@ -333,7 +305,7 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar c
                         </tbody></table></td>
                     </tr>
                     <tr> 
-                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="recarga/ACWW_espacio.gif" height="1" width="100"></td>
+                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" height="1" width="100"></td>
                     </tr>
                     <tr> 
                       <td class="texto" align="left" valign="top">
@@ -342,19 +314,20 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar c
                            </strong>
                             
                                             
-                                     <img src="recarga/ACWW_R5_ico-tarjetas.gif" alt="Tarjetas Aceptadas" align="absmiddle" height="30" width="136"> 
+                                     <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_R5_ico-tarjetas.gif" alt="Tarjetas Aceptadas" align="absmiddle" height="30" width="136"> 
                             
                         </p>
-                        <p class="gris">*Impuestos Indirectos Incluidos.</p>
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tbody><tr> 
-                            <td align="left" width="44%"><a href="#" onclick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
+                            <td align="left" width="44%"><a href="#" onclick="MM_openBrWindow('https://www.canalcliente.movistar.es/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
                                Condiciones generales de Uso</a> </td>
                             <td align="right" width="56%">
                                <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
-                               <img src="recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+                               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+<!-- Quitamos el botón de Cancelar
                                <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
-                               <img src="recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+                               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+-->
                             </td>
                           </tr>
                         </tbody></table></td>
@@ -363,37 +336,8 @@ cumplimenta los datos bancarios y pulsa el botón <b>Aceptar </b>para continuar c
      
         
         </td>
-       </tr>
-       <tr>
-        <td height="7">
-         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="7" width="7"></td>
-       </tr>
-       <tr>
-        <td class="barra_azul" height="3">
-         <img src="recarga/ACWW_espacio.gif" alt="" title="" height="3" width="3"></td>
-       </tr>
-      </tbody></table>
       <!-- InstanceEndEditable -->
      </td>
     </tr>
    </tbody></table>
-  </td>
- 
-</tr>
-</tbody></table>
-<script language="JAVASCRIPT">
-    var secoC='R5_Paso1_Inicio';
-</script>
-
-
-
-                
-                <!-- InstanceEndEditable -->
-            </td>
-        </tr>
-    </tbody></table>
 </div>
-<!-- FIN CUERPO -->
-<div id="warnings"></div>
-</body>
-</html>
