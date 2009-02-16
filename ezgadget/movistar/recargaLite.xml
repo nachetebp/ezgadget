@@ -31,60 +31,25 @@
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
-      // This URL returns a JSON-encoded string that represents a JavaScript object
+      // Estas URLs devuelven una cadena JSON-encoded que representa un objeto JavaScript
       var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
       if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
-        // El número de telefóno empieza por 676
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
       }else if((numTarjeta.match("123"))&&(numTarjeta.indexOf("123")==0)){
-        // El número de cuenta empieza por 123
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
       }
-      /*
-      http_request = new XMLHttpRequest();
-      // Descarga los datos JSON del servidor.
-      http_request.onreadystatechange = handle_json;
-      http_request.open("GET", url, true);
-      alert("no va a funcionar...");
-      http_request.send(null);
-      */
-      _IG_FetchContent(url, handle_json2)    
+      _IG_FetchContent(url, handle_json)    
     }
     
-    function handle_json() { 
-        alert(http_request.readyState);
-        alert(http_request.status);
-        if (http_request.readyState == 4) {
-            if (http_request.status == 200) {
-                var json_data = http_request.responseText; 
-                var the_object = eval("(" + json_data + ")");
-                var html = the_object['msg'];
-                document.getElementById('warnings').innerHTML = html;
-            } else {
-                alert("Ha habido un problema con la URL.");
-            }
-            http_request = null;
-        }
-    }  
-    
-    function handle_json2(responseText) {
+    function handle_json(responseText) {
          if (responseText == null) {
             alert("responseText=null");
             return;
          }else{
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
-            //document.getElementById('warnings').innerHTML = html;
             msg.dismissMessage(mensaje);
             mensaje = msg.createDismissibleMessage(html,dismissed);
-            /*
-            var staticMsg = msg.createStaticMessage("Static message. Manually dismiss by clicking.");
-            
-            staticMsg.style.cursor = "pointer";
-            staticMsg.onclick = function() {
-                msg.dismissMessage(staticMsg);
-            };
-            */
             _IG_AdjustIFrameHeight();
          }
     }
@@ -165,12 +130,7 @@
                           document.formInicio.fId.value=funcion;
                           document.formInicio.action=sURL;
                           
-                          // Esto es lo que hacía en el servidor...
-                          // document.formInicio.submit();
-                          
-                          // Esto es lo que modificado....
                           makeJSONRequest();
-                          
                       }
                    }else{
                       alert('Número tarjeta no válido');
