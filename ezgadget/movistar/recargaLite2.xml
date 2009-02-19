@@ -142,7 +142,7 @@
     }
 </script>
 
-<div id="contents">
+<div id="contents" width="100%">
   <form name="formInicio" method="post" action="">
   
     <input name="siteId" value="259" type="hidden">
