@@ -167,7 +167,7 @@
                           <tr> 
                             <td width="190"><b>Número de Móvil:</b></td>
                             <td width="290"><input name="ACWW_numTelefono" class="formulariomenu" maxlength="9" type="text"></td>
-                            <td colspan="2"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24415.jpg"></img></td>
+                            <td rowspan="2"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24415.jpg"></img></td>
                           </tr>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
