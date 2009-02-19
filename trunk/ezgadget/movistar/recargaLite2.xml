@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-<ModulePrefs title="Recarga en Canal Cliente - Lite" scrolling="true" height="800" width="500">
+<ModulePrefs title="Recarga en Canal Cliente - Lite" scrolling="true" height="800">
     <Require feature="setprefs"/>
     <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
