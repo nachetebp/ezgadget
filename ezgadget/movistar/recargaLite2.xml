@@ -150,12 +150,13 @@
     <input name="vId" value="43390697" type="hidden">
     <input name="aId" value="43390685" type="hidden">
     <input name="fId" type="hidden"> 
-    
+<!-- 
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
      <tbody>
        <tr>
         <td class="info_general_gris" align="left" valign="top">
-         <table border="0" cellpadding="10" cellspacing="0" width="100%">
+-->
+         <table class="info_general_gris" border="0" cellpadding="10" cellspacing="0" width="100%">
                     <tbody>
                     <tr> 
                       <td class="texto" align="left" valign="top">
@@ -306,12 +307,14 @@
                     </tr>
                   </tbody></table>
      
-        
+<!--        
         </td>
-      <!-- InstanceEndEditable -->
+
+     
      </td>
     </tr>
    </tbody></table>
+-->
 </div>
 
 
