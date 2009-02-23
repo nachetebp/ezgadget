@@ -525,7 +525,7 @@
              <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                <td align="right">            
-                   <a href="#" onclick="activarCapa('div22')" title='Aceptar'>
+                   <a href="#" onclick="javascript:llamarFuncionConsulta('#','43390699')" title='Aceptar'>
                    <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'></a>
                    <a href="#" onclick="activarCapa('div0')" title='Cancelar'>
                    <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif' border='0' title='Cancelar'></a>
