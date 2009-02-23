@@ -153,6 +153,7 @@
                 }
             }
         }
+        _IG_AdjustIFrameHeight();
     }
 </script>
 <div id="capas">
@@ -273,19 +274,19 @@
     <input name="vId" value="43390697" type="hidden">
     <input name="aId" value="43390685" type="hidden">
     <input name="fId" type="hidden"> 
-    
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-     <tbody>
-       <tr>
-        <td class="info_general_gris" align="left" valign="top">
-         <table border="0" cellpadding="10" cellspacing="0" width="100%">
+         <table class="info_general_gris" border="0" cellpadding="10" cellspacing="0" width="100%">
                     <tbody>
                     <tr> 
                       <td class="texto" align="left" valign="top">
                         <table border="0" cellpadding="5" cellspacing="0" width="100%">
-                          <tbody><tr> 
+                          <tbody>
+                          <tr> 
+                            <td style="padding:0px" colspan="3" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24636c.jpg" width="100%"></td>
+                          </tr>
+                          <tr> 
                             <td width="190"><b>Número de Móvil:</b></td>
                             <td width="290"><input name="ACWW_numTelefono" class="formulariomenu" maxlength="9" type="text"></td>
+                            <td style="padding:0px" rowspan="2" ><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/logo.jpg" width="47px"></img></td>
                           </tr>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
@@ -418,22 +419,13 @@
                             <td align="right" width="56%">
                                <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
-<!-- Quitamos el botón de Cancelar
                                <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
--->
-                            </td>
+                            </td> 
                           </tr>
                         </tbody></table></td>
                     </tr>
                   </tbody></table>
-     
-        
-        </td>
-      <!-- InstanceEndEditable -->
-     </td>
-    </tr>
-   </tbody></table>
    <a href="#" onclick="activarCapa('div3')">Siguiente capa</a>
 </div>
 <div id="div3">
