@@ -25,6 +25,7 @@
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
         document.formInicio.ACWW_numTarjetaCredito.value=numCard;
+        activarCapa("div1");
         _IG_AdjustIFrameHeight();
     }
     
@@ -141,7 +142,7 @@
         }
     }
     
-    function siguienteCapa(capa) {
+    function activarCapa(capa) {
         var capas = document.getElementById("capas").childNodes;
         for (i=0;i<capas.length;i++) {
             if (capas[i].nodeName == "DIV") {
@@ -156,8 +157,190 @@
 </script>
 <div id="capas">
 <div id="div1">
-<h1>Primera capa</h1>
-<a href="#" onclick="siguienteCapa('div2')">Siguiente capa</a>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+           <td id="noImprimir" height="24" align="right" valign="top" class="texto">
+           <a href="#" onClick="javascript:imprimirPantalla('','Canal Cliente','Activa');return false;" 
+           title="Imprimir">
+            <img src='/staticFiles/cda/imgACWW/ACWW_boton-imprimir.gif' border='0' title='Imprimir'>
+           </a>
+           </td>
+          </tr>
+
+          <tr>
+           <td  class="fondo_titulo_azul" >
+            <table width="100%" border="0" cellspacing="0" cellpadding="7">
+             <tr>
+              <td align="left" valign="top" class="texto">
+               <p>
+                <img src='/staticFiles/cda/imgACWW/ACWW_ico-informacion.gif' border='0' title='Información'>
+               </p>
+              </td>
+
+              <td align="left" valign="top" class="texto">
+          
+          
+              Recarga online tu tarjeta <b>movistar</b> y paga con tarjeta de crédito de una forma totalmente segura con todas las garantías de Verified by VISA y MasterCard pulsando <b>Recargar. </b>Para consultar las recargas<b> </b>realizadas pulsa en<b> Consultar tus recargas.</b><p>Ahora vas a acceder a tu zona cliente. Autentícate y haz tu recarga con todas las garantías movistar</p>
+              
+              </td>
+
+              <td align="left" valign="middle" class="texto">
+          
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+          <tr>
+           <td height="7">
+            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+
+          </tr>
+          <tr>
+           <td height="3"  class="barra_azul" >
+            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+          </tr>
+          <tr>
+           <td height="7">
+            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+          </tr>
+
+          
+          <tr>
+           <td height="127">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          
+             <tr>
+              <td width="182" rowspan="5" align="left" valign="top" class="texto">
+               <img src="/staticFiles/cda/imgACWW/ACWW_opciones-de-ahorro.jpg" 
+                 width="172" height="134" 
+                 title = "Consulta y Detalle de Consumo">
+              </td>
+              <td width="11" height="1" align="left" valign="middle" class="texto">
+               &nbsp;
+
+              </td>
+              <td align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+              <td align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+             </tr>
+             
+             
+                
+                       
+             <tr>
+
+              <td width="11" height="33%" align="left" valign="middle" class="texto">
+               <img src="/staticFiles/cda/imgACWW/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
+              </td>
+              <td height="33%" align="left" valign="middle" class="texto">
+               <b>
+                <a href="/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408951_43408937_0_0,00.html" title="Recargar">
+                 Recargar
+                </a>
+               </b>
+
+               <br>
+              </td>
+              <td align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+             </tr>
+             
+                
+                       
+             <tr>
+              <td width="11" height="33%" align="left" valign="middle" class="texto">
+               <img src="/staticFiles/cda/imgACWW/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
+
+              </td>
+              <td height="33%" align="left" valign="middle" class="texto">
+               <b>
+                <a href="/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408969_43408955_0_0,00.html" title="Consultar tus Recargas">
+                 Consultar tus Recargas
+                </a>
+               </b>
+               <br>
+              </td>
+
+              <td align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+             </tr>
+             
+                          
+             
+             <tr>
+              <td height="20%" align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+              <td align="left" valign="middle" class="texto">
+
+               &nbsp;
+              </td>
+              <td align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+             </tr>
+             
+             <tr>
+              <td height="20%" align="left" valign="middle" class="texto">
+               &nbsp;
+
+              </td>
+              <td align="left" valign="middle" class="texto">
+               &nbsp;
+              </td>
+             </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+             <tr> 
+                <td width="44%" align="left" ><a href="#" onClick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
+
+                   Condiciones generales de Uso</a> 
+                </td>
+              </tr>
+            </table>
+         </td>
+          </tr>
+          <tr>
+           <td height="7">
+            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+
+          </tr>
+          <tr>
+           <td height="3"  class="barra_azul" >
+            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+          </tr>
+          <tr>
+           <td height="7">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+             <tr>
+
+              <td id="noImprimir" width="90%" align="left">
+               <a href="/fwk/cda/controller/CCLI_CW_privado/0,2217,259_1655_2326_0_0,00.html" 
+               title="Volver">
+                <img src='/staticFiles/cda/imgACWW/ACWW_boton-volver.gif' border='0' title='Volver'>
+               </a>
+              </td>
+              <br>
+              <td id="noImprimir" width="10%" align="right">
+               <a href="#" onClick="javascript:imprimirPantalla('','Canal Cliente','Activa');return false;" 
+                title="Imprimir">
+                <img src='/staticFiles/cda/imgACWW/ACWW_boton-imprimir.gif' border='0' title='Imprimir'>
+
+               </a>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+
+<a href="#" onclick="activarCapa('div2')">Siguiente capa</a>
 </div>
 <div id="div2">
   <form name="formInicio" method="post" action="">
@@ -328,11 +511,11 @@
      </td>
     </tr>
    </tbody></table>
-   <a href="#" onclick="siguienteCapa('div3')">Siguiente capa</a>
+   <a href="#" onclick="activarCapa('div3')">Siguiente capa</a>
 </div>
 <div id="div3">
 <h1>Última capa</h1>
-<a href="#" onclick="siguienteCapa('div4')">Siguiente capa</a>
+<a href="#" onclick="activarCapa('div4')">Siguiente capa</a>
 </div>
 </div>
 
