@@ -143,10 +143,15 @@
     
     function siguienteCapa(capa) {
         var capas = document.getElementById("capas").childNodes;
-        for (capa in capas) {
-            alert(capa.Id);
-        };
-        
+        for (i=0;i<capas.length;i++) {
+            if (capas[i].nodeName == "DIV") {
+                if (capas[i].id == capa) {
+                    capas[i].style.display="inline";
+                }else {
+                    capas[i].style.display="none";
+                }
+            }
+        }
     }
 </script>
 <div id="capas">
