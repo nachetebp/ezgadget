@@ -501,7 +501,6 @@
                <td align="right">            
                    <a href="javascript:llamarFuncionConsulta('#','43402809')" title='Aceptar'>
                    <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'></a>
-                   &nbsp;
                    <a href="javascript:history.go(-1)" title='Cancelar'>
                    <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif' border='0' title='Cancelar'></a>
 
