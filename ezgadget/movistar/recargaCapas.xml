@@ -460,7 +460,126 @@
 </div>
 
 <div id="div21">
-<h1>Última capa 2</h1>
+<form name="formInicio" method="get" action="">
+  
+    <input type="hidden" name="siteId" value='259'>
+    <input type="hidden" name="channelId" value='43408969'>
+    <input type="hidden" name="vId" value='43390705'>
+    <input type="hidden" name="aId" value='43402813'>
+    <input type="hidden" name="fId" > 
+    
+   <td width="100%" align="left" valign="top">
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+      <td align="left" valign="middle" class="tit-imprimir" id="textoImprimir"></td>
+     </tr>
+     <tr>
+      <td align="left" valign="top" class="subtit-imprimir" id="texto2Imprimir"></td>
+     </tr>
+     <tr>
+      <td width="100%" align="left" valign="top">
+
+       <!-- InstanceBeginEditable name="Contenido" -->
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+         <td  class="fondo_titulo_azul" >
+          <table width="100%" border="0" cellspacing="0" cellpadding="7">
+           <tr>
+            <td width="18" align="left" valign="top" class="texto" title='Información'>
+             <p>
+              <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_ico-informacion.gif' border='0' title='Información'>
+             </p>
+            </td>
+
+            <td align="left" valign="middle" class="texto">
+              
+              <p> Introduce el número de móvil y el Código de la recarga.</p>           
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+       <tr>
+
+        <td height="7">
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+       </tr>
+       <tr>
+        <td height="3"  class="barra_azul" >
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+       </tr>
+       <tr>
+        <td height="7">
+
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+       </tr>
+       <tr>
+        <td align="left" valign="top"  class="info_general_gris" >
+         <table width="100%" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+           <td align="left" valign="top" class="texto">
+            <table width="381" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+
+                    <td width="223" height="35">
+                    <b>Número de Móvil: </b>
+                    </td>
+                    <td width="158">
+                       <input name="numTelefono" type="text" class="formulariomenu" value="" maxlength="9">
+                    </td>
+                 </tr>
+                 <tr>
+
+                  <td>
+                    <b>Código de Recarga: </b>
+                  </td>
+                  <td>
+                     <input name="codSolicitud" type="text" class="formulariomenu" maxlength="12">
+                  </td>
+               </tr>
+            </table>
+
+            <br><br>
+
+             <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+               <td align="right">            
+                   <a href="javascript:llamarFuncionConsulta('#','43402809')" title='Aceptar'>
+                   <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'></a>
+                   &nbsp;
+                   <a href="javascript:history.go(-1)" title='Cancelar'>
+                   <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif' border='0' title='Cancelar'></a>
+
+               </td>
+              </tr>
+             </table>   
+
+
+           </td>
+          </tr>
+         </table>
+        </td>
+       </tr>
+       <tr>
+
+        <td height="7">
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+       </tr>
+       <tr>
+        <td height="3"  class="barra_azul" >
+         <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+       </tr>
+      </table>
+      <!-- InstanceEndEditable -->
+
+
+     </td>
+    </tr>
+   </table>
+  </td>
+
+ </form>
 <a href="#" onclick="activarCapa('div0')">Primera capa</a>
 </div>
 
