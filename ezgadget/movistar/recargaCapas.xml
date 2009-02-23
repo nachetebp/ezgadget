@@ -145,7 +145,7 @@
         var capas = document.getElementById("capas").childNodes;
         for (capa in capas) {
             alert(capa.getId());
-        });
+        };
         
     }
 </script>
