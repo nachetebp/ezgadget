@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <Module>
-<ModulePrefs title="Recarga en Canal Cliente con Capas" scrolling="true" height="800">
+<ModulePrefs title="Recarga en Canal Cliente con Capas" scrolling="true" height="400">
     <Require feature="setprefs"/>
     <Require feature="dynamic-height"/>
     <Require feature="minimessage"/>
@@ -25,7 +25,7 @@
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
         document.formInicio.ACWW_numTarjetaCredito.value=numCard;
-        activarCapa("div1");
+        activarCapa("div0");
         _IG_AdjustIFrameHeight();
     }
     
@@ -157,7 +157,7 @@
     }
 </script>
 <div id="capas">
-<div id="div1">
+<div id="div0">
          <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
               <td style="padding:0px" colspan="3" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24636c.jpg" width="100%"></td>
@@ -194,7 +194,7 @@
               </td>
               <td height="33%" align="left" valign="middle" class="texto">
                <b>
-                <a href="/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408951_43408937_0_0,00.html" title="Recargar">
+                <a href="#" onclick="activarCapa('div11')" title="Recargar">
                  Recargar
                 </a>
                </b>
@@ -215,7 +215,7 @@
               </td>
               <td height="33%" align="left" valign="middle" class="texto">
                <b>
-                <a href="/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408969_43408955_0_0,00.html" title="Consultar tus Recargas">
+                <a href="#" onclick="activarCapa('div21')" title="Consultar tus Recargas">
                  Consultar tus Recargas
                 </a>
                </b>
@@ -266,7 +266,7 @@
 
 <a href="#" onclick="activarCapa('div2')">Siguiente capa</a>
 </div>
-<div id="div2">
+<div id="div11">
   <form name="formInicio" method="post" action="">
   
     <input name="siteId" value="259" type="hidden">
@@ -428,7 +428,7 @@
                   </tbody></table>
    <a href="#" onclick="activarCapa('div3')">Siguiente capa</a>
 </div>
-<div id="div3">
+<div id="div21">
 <h1>Última capa</h1>
 <a href="#" onclick="activarCapa('div1')">Siguiente capa</a>
 </div>
