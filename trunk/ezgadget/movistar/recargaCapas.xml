@@ -43,7 +43,7 @@
     }
     
     function makeJSONRequest2() {   
-        activarCapa("div22"); 
+        activarCapa('div22'); 
     }
     
     function handle_json(responseText) {
@@ -168,6 +168,7 @@
                 document.formInicio.fId.value=funcion;
                 document.formInicio.action=sURL;
                 makeJSONRequest2();
+            }
         }
     }
     
