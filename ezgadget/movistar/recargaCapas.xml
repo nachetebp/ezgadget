@@ -158,45 +158,9 @@
 <div id="capas">
 <div id="div1">
          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-           <td  class="fondo_titulo_azul" >
-            <table width="100%" border="0" cellspacing="0" cellpadding="7">
-             <tr>
-              <td align="left" valign="top" class="texto">
-               <p>
-                <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_ico-informacion.gif' border='0' title='Información'>
-               </p>
-              </td>
-
-              <td align="left" valign="top" class="texto">
-          
-          
-              Recarga online tu tarjeta <b>movistar</b> y paga con tarjeta de crédito de una forma totalmente segura con todas las garantías de Verified by VISA y MasterCard pulsando <b>Recargar. </b>Para consultar las recargas<b> </b>realizadas pulsa en<b> Consultar tus recargas.</b><p>Ahora vas a acceder a tu zona cliente. Autentícate y haz tu recarga con todas las garantías movistar</p>
-              
-              </td>
-
-              <td align="left" valign="middle" class="texto">
-          
-              </td>
-             </tr>
-            </table>
-           </td>
+          <tr> 
+              <td style="padding:0px" colspan="3" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24636c.jpg" width="100%"></td>
           </tr>
-          <tr>
-           <td height="7">
-            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
-
-          </tr>
-          <tr>
-           <td height="3"  class="barra_azul" >
-            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
-          </tr>
-          <tr>
-           <td height="7">
-            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
-          </tr>
-
-          
           <tr>
            <td height="127">
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
