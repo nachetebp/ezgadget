@@ -28,7 +28,7 @@
         activarCapa("div0");
         _IG_AdjustIFrameHeight();
     }
-    
+
     function makeJSONRequest() {   
       var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
       var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
@@ -40,6 +40,10 @@
         url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
       }
       _IG_FetchContent(url, handle_json)    
+    }
+    
+    function makeJSONRequest2() {   
+        activarCapa("div22"); 
     }
     
     function handle_json(responseText) {
@@ -143,6 +147,27 @@
                 }
                              
             }
+        }
+    }
+    
+    function llamarFuncionConsulta(sURL,funcion){
+        telefonoOriginal=document.formInicio2.numTelefono.value;
+        codSolicitudOriginal=document.formInicio2.codSolicitud.value;
+        telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
+        
+        codSolicitudOriginal = codSolicitudOriginal.replace(/^\s*|\s*$/g,"");
+        telefonoOriginal=telefonoOriginal.replace(/^\s*|\s*$/g,"");
+        
+        if (telefonoOriginal.length==0 || codSolicitudOriginal.length==0){
+           alert('Por favor, introduce el número de la Tarjeta o el Código de Operación');
+        }else{
+            //ahora tengo que comprobar que sea un número de télefono erroneo
+            if (telefonoLimpio.length!=0 || telefonoOriginal.length!=9 || telefonoOriginal.charAt(0)!='6'){
+                alert('El formato del teléfono no es correcto. Por favor, introdúcelo de nuevo. Recuerda que el número de móvil no debe ser inferior a 9 dígitos o contener caracteres alfanuméricos.');
+            }else{
+                document.formInicio.fId.value=funcion;
+                document.formInicio.action=sURL;
+                makeJSONRequest2();
         }
     }
     
