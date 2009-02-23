@@ -460,7 +460,7 @@
 </div>
 
 <div id="div21">
-<form name="formInicio" method="get" action="">
+<form name="formInicio2" method="get" action="">
   
     <input type="hidden" name="siteId" value='259'>
     <input type="hidden" name="channelId" value='43408969'>
@@ -468,7 +468,7 @@
     <input type="hidden" name="aId" value='43402813'>
     <input type="hidden" name="fId" > 
     
-   <td width="100%" align="left" valign="top">
+   
 
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
      <tr>
@@ -577,7 +577,7 @@
      </td>
     </tr>
    </table>
-  </td>
+
 
  </form>
 <a href="#" onclick="activarCapa('div0')">Primera capa</a>
