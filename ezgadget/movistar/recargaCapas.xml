@@ -297,31 +297,6 @@
             </table>
          </td>
           </tr>
-          <tr>
-           <td height="7">
-            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
-
-          </tr>
-          <tr>
-           <td height="3"  class="barra_azul" >
-            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
-          </tr>
-          <tr>
-           <td height="7">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-             <tr>
-
-              <td id="noImprimir" width="90%" align="left">
-               <a href="/fwk/cda/controller/CCLI_CW_privado/0,2217,259_1655_2326_0_0,00.html" 
-               title="Volver">
-                <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-volver.gif' border='0' title='Volver'>
-               </a>
-              </td>
-              <br>
-             </tr>
-            </table>
-           </td>
-          </tr>
          </table>
 
 <a href="#" onclick="activarCapa('div2')">Siguiente capa</a>
