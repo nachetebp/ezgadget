@@ -164,7 +164,7 @@
              <tr>
               <td align="left" valign="top" class="texto">
                <p>
-                <img src='/recarga/ACWW_ico-informacion.gif' border='0' title='Información'>
+                <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_ico-informacion.gif' border='0' title='Información'>
                </p>
               </td>
 
@@ -184,16 +184,16 @@
           </tr>
           <tr>
            <td height="7">
-            <img src="/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
 
           </tr>
           <tr>
            <td height="3"  class="barra_azul" >
-            <img src="/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
           </tr>
           <tr>
            <td height="7">
-            <img src="/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
           </tr>
 
           
@@ -203,7 +203,7 @@
           
              <tr>
               <td width="182" rowspan="5" align="left" valign="top" class="texto">
-               <img src="/recarga/ACWW_opciones-de-ahorro.jpg" 
+               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_opciones-de-ahorro.jpg" 
                  width="172" height="134" 
                  title = "Consulta y Detalle de Consumo">
               </td>
@@ -225,7 +225,7 @@
              <tr>
 
               <td width="11" height="33%" align="left" valign="middle" class="texto">
-               <img src="/recarga/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
+               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
               </td>
               <td height="33%" align="left" valign="middle" class="texto">
                <b>
@@ -245,7 +245,7 @@
                        
              <tr>
               <td width="11" height="33%" align="left" valign="middle" class="texto">
-               <img src="/recarga/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
+               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
 
               </td>
               <td height="33%" align="left" valign="middle" class="texto">
@@ -299,12 +299,12 @@
           </tr>
           <tr>
            <td height="7">
-            <img src="/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
 
           </tr>
           <tr>
            <td height="3"  class="barra_azul" >
-            <img src="/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+            <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
           </tr>
           <tr>
            <td height="7">
@@ -314,7 +314,7 @@
               <td id="noImprimir" width="90%" align="left">
                <a href="/fwk/cda/controller/CCLI_CW_privado/0,2217,259_1655_2326_0_0,00.html" 
                title="Volver">
-                <img src='/recarga/ACWW_boton-volver.gif' border='0' title='Volver'>
+                <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-volver.gif' border='0' title='Volver'>
                </a>
               </td>
               <br>
