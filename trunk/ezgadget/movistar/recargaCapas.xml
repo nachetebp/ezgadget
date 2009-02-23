@@ -263,8 +263,6 @@
          </td>
           </tr>
          </table>
-
-<a href="#" onclick="activarCapa('div2')">Siguiente capa</a>
 </div>
 <div id="div11">
   <form name="formInicio" method="post" action="">
@@ -426,11 +424,11 @@
                         </tbody></table></td>
                     </tr>
                   </tbody></table>
-   <a href="#" onclick="activarCapa('div3')">Siguiente capa</a>
+   <a href="#" onclick="activarCapa('div0')">Siguiente capa</a>
 </div>
 <div id="div21">
 <h1>Última capa</h1>
-<a href="#" onclick="activarCapa('div1')">Siguiente capa</a>
+<a href="#" onclick="activarCapa('div0')">Siguiente capa</a>
 </div>
 </div>
 
