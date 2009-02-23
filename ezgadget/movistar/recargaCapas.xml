@@ -434,7 +434,6 @@
 <h1>Última capa 1</h1>
 <a href="#" onclick="activarCapa('div0')">Primera capa</a>
 </div>
-</div>
 <div id="div21">
 <h1>Última capa 2</h1>
 <a href="#" onclick="activarCapa('div0')">Primera capa</a>
