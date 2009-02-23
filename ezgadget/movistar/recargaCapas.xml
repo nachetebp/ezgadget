@@ -159,21 +159,12 @@
 <div id="div1">
          <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
-           <td id="noImprimir" height="24" align="right" valign="top" class="texto">
-           <a href="#" onClick="javascript:imprimirPantalla('','Canal Cliente','Activa');return false;" 
-           title="Imprimir">
-            <img src='/staticFiles/cda/imgACWW/ACWW_boton-imprimir.gif' border='0' title='Imprimir'>
-           </a>
-           </td>
-          </tr>
-
-          <tr>
            <td  class="fondo_titulo_azul" >
             <table width="100%" border="0" cellspacing="0" cellpadding="7">
              <tr>
               <td align="left" valign="top" class="texto">
                <p>
-                <img src='/staticFiles/cda/imgACWW/ACWW_ico-informacion.gif' border='0' title='Información'>
+                <img src='/recarga/ACWW_ico-informacion.gif' border='0' title='Información'>
                </p>
               </td>
 
@@ -193,16 +184,16 @@
           </tr>
           <tr>
            <td height="7">
-            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+            <img src="/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
 
           </tr>
           <tr>
            <td height="3"  class="barra_azul" >
-            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+            <img src="/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
           </tr>
           <tr>
            <td height="7">
-            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+            <img src="/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
           </tr>
 
           
@@ -212,7 +203,7 @@
           
              <tr>
               <td width="182" rowspan="5" align="left" valign="top" class="texto">
-               <img src="/staticFiles/cda/imgACWW/ACWW_opciones-de-ahorro.jpg" 
+               <img src="/recarga/ACWW_opciones-de-ahorro.jpg" 
                  width="172" height="134" 
                  title = "Consulta y Detalle de Consumo">
               </td>
@@ -234,7 +225,7 @@
              <tr>
 
               <td width="11" height="33%" align="left" valign="middle" class="texto">
-               <img src="/staticFiles/cda/imgACWW/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
+               <img src="/recarga/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
               </td>
               <td height="33%" align="left" valign="middle" class="texto">
                <b>
@@ -254,7 +245,7 @@
                        
              <tr>
               <td width="11" height="33%" align="left" valign="middle" class="texto">
-               <img src="/staticFiles/cda/imgACWW/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
+               <img src="/recarga/ACWW_flecha-naranja.gif" alt="" width="6" height="11" title="">
 
               </td>
               <td height="33%" align="left" valign="middle" class="texto">
@@ -308,12 +299,12 @@
           </tr>
           <tr>
            <td height="7">
-            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
+            <img src="/recarga/ACWW_espacio.gif" alt="" width="7" height="7" title=""></td>
 
           </tr>
           <tr>
            <td height="3"  class="barra_azul" >
-            <img src="/staticFiles/cda/imgACWW/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
+            <img src="/recarga/ACWW_espacio.gif" alt="" width="3" height="3" title=""></td>
           </tr>
           <tr>
            <td height="7">
@@ -323,17 +314,10 @@
               <td id="noImprimir" width="90%" align="left">
                <a href="/fwk/cda/controller/CCLI_CW_privado/0,2217,259_1655_2326_0_0,00.html" 
                title="Volver">
-                <img src='/staticFiles/cda/imgACWW/ACWW_boton-volver.gif' border='0' title='Volver'>
+                <img src='/recarga/ACWW_boton-volver.gif' border='0' title='Volver'>
                </a>
               </td>
               <br>
-              <td id="noImprimir" width="10%" align="right">
-               <a href="#" onClick="javascript:imprimirPantalla('','Canal Cliente','Activa');return false;" 
-                title="Imprimir">
-                <img src='/staticFiles/cda/imgACWW/ACWW_boton-imprimir.gif' border='0' title='Imprimir'>
-
-               </a>
-              </td>
              </tr>
             </table>
            </td>
@@ -515,7 +499,7 @@
 </div>
 <div id="div3">
 <h1>Última capa</h1>
-<a href="#" onclick="activarCapa('div4')">Siguiente capa</a>
+<a href="#" onclick="activarCapa('div1')">Siguiente capa</a>
 </div>
 </div>
 
