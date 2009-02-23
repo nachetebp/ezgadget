@@ -499,16 +499,13 @@
              <table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                <td align="right">            
-                   <a href="javascript:llamarFuncionConsulta('#','43402809')" title='Aceptar'>
+                   <a href="#" onclick="activarCapa('div22')" title='Aceptar'>
                    <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'></a>
-                   <a href="javascript:history.go(-1)" title='Cancelar'>
+                   <a href="#" onclick="activarCapa('div0')" title='Cancelar'>
                    <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif' border='0' title='Cancelar'></a>
-
                </td>
               </tr>
              </table>   
-
-
            </td>
           </tr>
          </table>
@@ -518,7 +515,35 @@
  </form>
 <a href="#" onclick="activarCapa('div0')">Primera capa</a>
 </div>
-
+<div id="div22">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td align="left" valign="top"  class="info_general_gris" >
+                <table  width="100%" border="0" cellspacing="0" cellpadding="10">
+                    <tr>
+                        <td align="left" valign="top" class="texto">
+                            <table width="100%" border="0" cellspacing="0" align="center">
+                                <tr align="left" valign="middle" class="texto">
+                                    <td width="28%">
+                                        (0)<p>Tu petición se ha cursado correctamente.</p>
+                                        <!--(999)<p>Tu petición no puede ser cursada en estos momentos. Por favor, inténtalo más tarde.</p>-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right">
+                                        <a href="#" onclick="activarCapa('div0')" title="Aceptar">                 
+                                            <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'>
+                                        </a>
+                                    </td>
+                                </tr>                              
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
 </div>
 
 ]]>
