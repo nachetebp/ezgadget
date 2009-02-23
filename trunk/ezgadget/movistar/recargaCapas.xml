@@ -513,7 +513,6 @@
 
 
  </form>
-<a href="#" onclick="activarCapa('div0')">Primera capa</a>
 </div>
 <div id="div22">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
