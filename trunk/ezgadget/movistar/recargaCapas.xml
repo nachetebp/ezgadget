@@ -49,6 +49,10 @@
          }else{
             var the_object = eval("(" + responseText + ")");
             var html = the_object['msg'];
+            var validated = the_object['validated'];
+            if (validated == "OK"){
+                activarCapa("div12");
+            }
             msg.dismissMessage(mensaje);
             mensaje = msg.createDismissibleMessage(html,dismissed);
             _IG_AdjustIFrameHeight();
@@ -254,7 +258,7 @@
             </table>
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
              <tr> 
-                <td width="44%" align="left" ><a href="#" onClick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
+                <td width="44%" align="left" ><a href="#" onClick="MM_openBrWindow('https://www.canalcliente.movistar.es/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
 
                    Condiciones generales de Uso</a> 
                 </td>
@@ -417,7 +421,7 @@
                             <td align="right" width="56%">
                                <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
-                               <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
+                               <a href="#" onclick="activarCapa('div0')" title="Cancelar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
                             </td> 
                           </tr>
@@ -426,9 +430,14 @@
                   </tbody></table>
    <a href="#" onclick="activarCapa('div0')">Siguiente capa</a>
 </div>
+<div id="div12">
+<h1>Última capa 1</h1>
+<a href="#" onclick="activarCapa('div0')">Primera capa</a>
+</div>
+</div>
 <div id="div21">
-<h1>Última capa</h1>
-<a href="#" onclick="activarCapa('div0')">Siguiente capa</a>
+<h1>Última capa 2</h1>
+<a href="#" onclick="activarCapa('div0')">Primera capa</a>
 </div>
 </div>
 
