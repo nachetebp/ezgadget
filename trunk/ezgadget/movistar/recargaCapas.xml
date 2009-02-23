@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<Module>
+<ModulePrefs title="Recarga en Canal Cliente Lite" scrolling="true" height="800">
+    <Require feature="setprefs"/>
+    <Require feature="dynamic-height"/>
+    <Require feature="minimessage"/>
+</ModulePrefs>
+<UserPref name="numPhone" display_name="Número de Teléfono" datatype="string" required="false" />
+<UserPref name="numCard" display_name="Número de Tarjeta" datatype="string" required="false" />
+<Content type="html">
+<![CDATA[
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/CWEB_pcns6x.css" />
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_estilos_ns_lite.css" />
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/funcmenu.js"></SCRIPT>
+
+<script language="JAVASCRIPT">
+    var prefs = new _IG_Prefs();
+    var numPhone = prefs.getString("numPhone");
+    var numCard = prefs.getString("numCard");
+    var http_request = false;
+    var msg = new _IG_MiniMessage(__MODULE_ID__);
+    var mensaje = null;
+    _IG_RegisterOnloadHandler(init);
+    
+    function init() {
+        document.formInicio.ACWW_numTelefono.value=numPhone;
+        document.formInicio.ACWW_numTarjetaCredito.value=numCard;
+        _IG_AdjustIFrameHeight();
+    }
+    
+    function makeJSONRequest() {   
+      var telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
+      var numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
+      // Estas URLs devuelven una cadena JSON-encoded que representa un objeto JavaScript
+      var url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/ok.json";
+      if((telefonoOriginal.match("676"))&&(telefonoOriginal.indexOf("676")==0)){
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numTelefono.json";
+      }else if((numTarjeta.match("123"))&&(numTarjeta.indexOf("123")==0)){
+        url="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/JSON/numCuenta.json";
+      }
+      _IG_FetchContent(url, handle_json)    
+    }
+    
+    function handle_json(responseText) {
+         if (responseText == null) {
+            alert("responseText=null");
+            return;
+         }else{
+            var the_object = eval("(" + responseText + ")");
+            var html = the_object['msg'];
+            msg.dismissMessage(mensaje);
+            mensaje = msg.createDismissibleMessage(html,dismissed);
+            _IG_AdjustIFrameHeight();
+         }
+    }
+    
+    function dismissed() {
+        _IG_AdjustIFrameHeight();
+    }
+    
+    function ValidarTJ(cadena) {
+     var longitud = cadena.length;
+     var cifra = null;
+     var cifra_cad=null;
+     var suma=0;
+     for (var i=0; i < longitud; i+=2){
+       cifra = parseInt(cadena.charAt(i))*2;
+       if (cifra > 9){ 
+         cifra_cad = cifra.toString();
+         cifra = parseInt(cifra_cad.charAt(0)) + parseInt(cifra_cad.charAt(1));
+       }
+       suma+=cifra;
+     }
+     for (var i=1; i < longitud; i+=2){
+       suma += parseInt(cadena.charAt(i));
+     }
+        
+     if ((suma % 10) == 0){ 
+      return true;
+     } else {
+      return false;
+     }
+    }
+
+    function ValidarFecha(cadenaMes,cadenaAnyo) {
+ 
+     mesActual=2
+     anyoActual=09
+            
+     if (anyoActual>cadenaAnyo){ 
+       return false;
+     } else {
+       if(anyoActual==cadenaAnyo && mesActual>cadenaMes){
+          return false;
+       }
+     }
+     return true;
+    }
+    
+
+
+    function llamarFuncionRecarga(sURL,funcion){
+        if(msg!=null&mensaje!=null){
+          msg.dismissMessage(mensaje);
+          mensaje=msg.createDismissibleMessage("Operación no realizada", dismissed);
+        }
+        telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
+        telefonoLimpio=telefonoOriginal.replace(/[0-9]+/g,'');
+        numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
+        indiceMes = document.formInicio.ACWW_mesCaducidad.selectedIndex;
+        indiceAnyo= document.formInicio.ACWW_anyoCaducidad.selectedIndex;
+        mesCaducidad=document.formInicio.ACWW_mesCaducidad.options[indiceMes].value;
+        anyoCaducidad=document.formInicio.ACWW_anyoCaducidad.options[indiceAnyo].value;
+        cvv = document.formInicio.ACWW_cvv.value;
+        
+        if (telefonoOriginal.length==0){
+           alert('Por favor, introduce el número de móvil para continuar con el proceso de recarga.');
+        }else{      
+            //ahora tengo que comprobar que sea un número de télefono erroneo
+            if (telefonoLimpio.length!=0 || telefonoOriginal.length!=9 || telefonoOriginal.charAt(0)!='6'){
+                alert('El formato del teléfono no es correcto. Por favor, introdúcelo de nuevo. Recuerda que el número de móvil no debe ser inferior a 9 dígitos o contener caracteres alfanuméricos.');
+            }else{
+                if (numTarjeta.length==0){
+                    alert('Por favor, introduce Tarjeta o fecha de caducidad para continuar con el proceso de recarga. Son datos obligatorios.');
+                }else{
+                   if (ValidarTJ(numTarjeta) && ValidarFecha(mesCaducidad,anyoCaducidad)){
+                      if ((cvv.length <3) || (isNaN(cvv)) ){
+                         alert('Código CVV debe contener 3 dígitos.');                    
+                      }else{  
+                          document.formInicio.fId.value=funcion;
+                          document.formInicio.action=sURL;
+                          
+                          makeJSONRequest();
+                      }
+                   }else{
+                      alert('Número tarjeta no válido');
+                   }
+                }
+                             
+            }
+        }
+    }
+    
+    function siguienteCapa(capa) {
+        document.getElementById("capas").childNodes.each(function(pair){
+            alert(pair.getId());
+        });
+        
+    }
+</script>
+<div id="capas">
+<div id="div1">
+<h1>Primera capa</h1>
+<a href="#" onclick="siguienteCapa('div2')">Siguiente capa</a>
+</div>
+<div id="div2">
+  <form name="formInicio" method="post" action="">
+  
+    <input name="siteId" value="259" type="hidden">
+    <input name="channelId" value="43408951" type="hidden">
+    <input name="vId" value="43390697" type="hidden">
+    <input name="aId" value="43390685" type="hidden">
+    <input name="fId" type="hidden"> 
+    
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tbody>
+       <tr>
+        <td class="info_general_gris" align="left" valign="top">
+         <table border="0" cellpadding="10" cellspacing="0" width="100%">
+                    <tbody>
+                    <tr> 
+                      <td class="texto" align="left" valign="top">
+                        <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                          <tbody><tr> 
+                            <td width="190"><b>Número de Móvil:</b></td>
+                            <td width="290"><input name="ACWW_numTelefono" class="formulariomenu" maxlength="9" type="text"></td>
+                          </tr>
+                          <tr> 
+                            <td><b>Importe a Recargar:</b></td>
+                            <td>
+                              <select name="ACWW_importeRercarga" class="formulariomenu">
+                                 
+                            <!--    <option value='5'> 5 &euro;</option> -->
+                            <option value="5"> 5 €</option>
+                                 
+                            <!--    <option value='10'> 10 &euro;</option> -->
+                            <option value="10"> 10 €</option>
+                                 
+                            <!--    <option value='15'> 15 &euro;</option> -->
+                            <option value="15"> 15 €</option>
+                                 
+                            <!--    <option value='20'> 20 &euro;</option> -->
+                            <option value="20"> 20 €</option>
+                                 
+                            <!--    <option value='25'> 25 &euro;</option> -->
+                            <option value="25"> 25 €</option>
+                                 
+                            <!--    <option value='30'> 30 &euro;</option> -->
+                            <option value="30"> 30 €</option>
+                                
+                              </select>
+                            </td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif"></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="auto">
+                          <tbody><tr> 
+                            <td class="minititular">Datos Bancarios</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr> 
+                            <td width="190"><b>Nº de Tarjeta:</b></td>
+                            <td width="290"><input name="ACWW_numTarjetaCredito" class="formulariomenu" maxlength="16" type="text"></td>
+                          </tr>
+                          <tr> 
+                            <td>
+                            <b>Fecha de caducidad:</b></td>
+                            <td>Mes: 
+                              <select name="ACWW_mesCaducidad" class="formulariomenu">
+                                
+                                
+                                        <option value="01">01</option>
+                                      
+                                        <option selected="selected" value="02"> 02</option>
+                                      
+                                        <option value="03">03</option>
+                                      
+                                        <option value="04">04</option>
+                                      
+                                        <option value="05">05</option>
+                                      
+                                        <option value="06">06</option>
+                                      
+                                        <option value="07">07</option>
+                                      
+                                        <option value="08">08</option>
+                                      
+                                        <option value="09">09</option>
+                                      
+                                        <option value="10">10</option>
+                                      
+                                        <option value="11">11</option>
+                                      
+                                        <option value="12">12</option>
+                                      
+                              </select> &nbsp;Año: 
+                             <select name="ACWW_anyoCaducidad" class="formulariomenu">
+                                
+                                        <option selected="selected" value="09"> 2009</option>
+                                      
+                                        <option value="10">2010</option>
+                                      
+                                        <option value="11">2011</option>
+                                      
+                                        <option value="12">2012</option>
+                                      
+                                        <option value="13">2013</option>
+                                      
+                                        <option value="14">2014</option>
+                                      
+                                        <option value="15">2015</option>
+                                      
+                                        <option value="16">2016</option>
+                                      
+                                        <option value="17">2017</option>
+                                      
+                                        <option value="18">2018</option>
+                                      
+                              </select></td>
+                          </tr>
+                          <tr> 
+                            <td width="190"><b>Código CVV:</b></td>
+                            <td width="290">
+                                <input name="ACWW_cvv" class="formulariomenu" maxlength="3" size="4" type="text">
+                               <a href="#" onclick="MM_openBrWindow('https://www.canalcliente.movistar.es/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CVVPopUp','cvv','scrollbars=yes,resizable=yes','500','340','true')" title="¿Qué es el Código CVV?">
+                               ¿Qué es el Código CVV?</a>                           
+                               
+                               </form>
+                               
+                               
+                            </td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_espacio.gif" height="1" width="100"></td>
+                    </tr>
+                    <tr> 
+                      <td class="texto" align="left" valign="top">
+                        <p class="gris">
+                           <strong>Tarjetas Aceptadas
+                           </strong>
+                            
+                                            
+                                     <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_R5_ico-tarjetas.gif" alt="Tarjetas Aceptadas" align="absmiddle" height="30" width="136"> 
+                            
+                        </p>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody><tr> 
+                            <td align="left" width="44%"><a href="#" onclick="MM_openBrWindow('https://www.canalcliente.movistar.es/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
+                               Condiciones generales de Uso</a> </td>
+                            <td align="right" width="56%">
+                               <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
+                               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+<!-- Quitamos el botón de Cancelar
+                               <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
+                               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+-->
+                            </td>
+                          </tr>
+                        </tbody></table></td>
+                    </tr>
+                  </tbody></table>
+     
+        
+        </td>
+      <!-- InstanceEndEditable -->
+     </td>
+    </tr>
+   </tbody></table>
+   <a href="#" onclick="siguienteCapa('div3')">Siguiente capa</a>
+</div>
+<div id="div3">
+<h1>Última capa</h1>
+<a href="#" onclick="siguienteCapa('div4')">Siguiente capa</a>
+</div>
+</div>
+
+]]>
+</Content>
+</Module>
