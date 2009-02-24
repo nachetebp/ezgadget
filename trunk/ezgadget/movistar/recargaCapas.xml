@@ -489,9 +489,10 @@
 
 <div id="div12">
 <table border="0" cellpadding="10" cellspacing="0" width="100%" class="info_general_gris">
-            <tbody><tr width="100%">
-              <td class="texto" align="right" bgcolor="#e6e6e8" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_R5_bot-zonasegura.gif" alt="Zona Segura" height="25" width="76"></td>
-            </tr>
+            <tbody>          
+          <tr> 
+              <td style="padding:0px" colspan="3" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24636c.jpg" width="100%"></td>
+          </tr>
 
           <tr>
            <td class="texto" align="left" valign="top">
