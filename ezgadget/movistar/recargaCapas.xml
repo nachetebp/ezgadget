@@ -964,6 +964,9 @@ exclusivament sota el control de TME. </p>
 </div>
 <div id="div14">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+            <td style="padding:0px" colspan="3" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24636c.jpg" width="100%"></td>
+        </tr>
         <tr>
             <td align="left" valign="top"  class="info_general_gris" >
                 <table  width="100%" border="0" cellspacing="0" cellpadding="10">
@@ -994,14 +997,12 @@ exclusivament sota el control de TME. </p>
 
 <div id="div21">
 <form name="formInicio2" method="get" action="">
-  
+
     <input type="hidden" name="siteId" value='259'>
     <input type="hidden" name="channelId" value='43408969'>
     <input type="hidden" name="vId" value='43390705'>
     <input type="hidden" name="aId" value='43402813'>
     <input type="hidden" name="fId" > 
-    
-   
 
       <table width="100%" border="0" cellspacing="0" cellpadding="0">
        <tr>
