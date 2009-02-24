@@ -63,7 +63,7 @@
                 var _mesCaducidad=document.formInicio.ACWW_mesCaducidad.options[_indiceMes].value;
                 var _anyoCaducidad=document.formInicio.ACWW_anyoCaducidad.options[_indiceAnyo].value;
                 var _importe =document.formInicio.ACWW_importeRercarga.value;
-                alert(_telefonoLimpio);
+                alert(_telefonoOriginal);
                 document.getElementById("numero_movil").innerHTML=_telefonoOriginal;
             }
             msg.dismissMessage(mensaje);
