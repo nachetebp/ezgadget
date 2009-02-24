@@ -922,7 +922,7 @@ exclusivament sota el control de TME. </p>
                       <td class="texto" align="left" bgcolor="#ffffff" valign="top"><img src="datos_recarga_files/espacio.htm" height="1" width="100"></td>
                     </tr>
                     <tr> 
-                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="500">
+                      <td class="texto" align="left" valign="top"><table border="0" cellpadding="5" cellspacing="0" width="100%">
                           <tbody><tr> 
                             <td class="minititular">Datos Bancarios</td>
                             <td>&nbsp;</td>
