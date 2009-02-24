@@ -829,7 +829,7 @@ exclusivament sota el control de TME. </p>
 <br>
             <table border="0" cellpadding="0" cellspacing="0" width="100%">
              <tbody><tr>
-<!------------------------------------------>
+
             <td>
               <div id="contenedorIdiomas_texto" STYLE="padding:0px; margin: 0px; visibility: visible; width=250">
                 <DIV id="castellano_texto" STYLE="padding:0px; margin: 0px; visibility: visible; position: absolute;">
@@ -854,12 +854,10 @@ exclusivament sota el control de TME. </p>
             </td>
             </tr>
             <tr>
-<!------------------------------------------>
+
               <td align="right">
                <a href="javascript:activarCapa('div13');" title="Aceptar">
                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
-
-               &nbsp;
                <a href="javascript:activarCapa('div11');" title="Cancelar">
                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
               </td>
