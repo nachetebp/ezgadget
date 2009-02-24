@@ -832,7 +832,7 @@ exclusivament sota el control de TME. </p>
 
             <td>
               <div id="contenedorIdiomas_texto" STYLE="padding:0px; margin: 0px; visibility: visible; width=250">
-                <DIV id="castellano_texto" STYLE="padding:0px; margin: 0px; visibility: visible; position: absolute;">
+                <DIV id="castellano_texto" STYLE="padding:0px; margin: 0px; visibility: visible;">
                     <table>
                         <tr>
                             <td align="left">
@@ -841,7 +841,7 @@ exclusivament sota el control de TME. </p>
                         </tr>
                     </table>
                 </div>
-                <DIV id="catalan_texto" STYLE="padding:0px; margin: 0px; position: absolute; visibility: hidden">
+                <DIV id="catalan_texto" STYLE="padding:0px; margin: 0px; visibility: hidden">
                     <table>
                         <tr>
                             <td align="left">
