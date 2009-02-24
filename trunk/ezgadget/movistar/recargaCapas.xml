@@ -63,8 +63,11 @@
                 var _mesCaducidad=document.formInicio.ACWW_mesCaducidad.options[_indiceMes].value;
                 var _anyoCaducidad=document.formInicio.ACWW_anyoCaducidad.options[_indiceAnyo].value;
                 var _importe =document.formInicio.ACWW_importeRercarga.value;
-                alert(_telefonoOriginal);
                 document.getElementById("numero_movil").innerHTML=_telefonoOriginal;
+                document.getElementById("numero_tarjeta").innerHTML=_numTarjeta;
+                document.getElementById("mes_caducidad").innerHTML=_mesCaducidad;
+                document.getElementById("anyo_caducidad").innerHTML=_anyoCaducidad;
+                document.getElementById("importe_recarga").innerHTML=_importe;
             }
             msg.dismissMessage(mensaje);
             mensaje = msg.createDismissibleMessage(html,dismissed);
@@ -911,7 +914,7 @@ exclusivament sota el control de TME. </p>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
 <!--                            <td>5&euro;</td> -->
-                           <td>5 €</td> 
+                           <td id="importe_recarga">5 €</td> 
                           </tr>
                         </tbody></table></td>
                     </tr>
@@ -926,15 +929,13 @@ exclusivament sota el control de TME. </p>
                           </tr>
                           <tr> 
                             <td width="190"><b>Nº de Tarjeta:</b></td>
-                            <td width="290">
+                            <td width="290" id="numero_tarjeta">
                                 4111&nbsp;1111&nbsp;1111&nbsp;1111
                             </td>
                           </tr>
                           <tr> 
                             <td><b>Fecha de caducidad:</b></td>
-                            <td>Mes: 
-                               02&nbsp;Año:&nbsp;09 
-                            </td>
+                            <td>Mes:&nbsp;<span id="mes_caducidad">02</span>Año:&nbsp;<span id="anyo_caducidad">09</span></td>
                           </tr>
                         </tbody></table></td>
                     </tr>
