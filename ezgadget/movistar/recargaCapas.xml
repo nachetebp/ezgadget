@@ -914,7 +914,7 @@ exclusivament sota el control de TME. </p>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
 <!--                            <td>5&euro;</td> -->
-                           <td id="importe_recarga">5 €</td> 
+                           <td><span id="importe_recarga">5</span>&nbsp;€</td> € 
                           </tr>
                         </tbody></table></td>
                     </tr>
@@ -935,7 +935,7 @@ exclusivament sota el control de TME. </p>
                           </tr>
                           <tr> 
                             <td><b>Fecha de caducidad:</b></td>
-                            <td>Mes:&nbsp;<span id="mes_caducidad">02</span>Año:&nbsp;<span id="anyo_caducidad">09</span></td>
+                            <td>Mes:&nbsp;<span id="mes_caducidad">02</span>&nbsp;Año:&nbsp;<span id="anyo_caducidad">09</span></td>
                           </tr>
                         </tbody></table></td>
                     </tr>
