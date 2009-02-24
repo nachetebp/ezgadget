@@ -106,7 +106,23 @@
      return true;
     }
     
-
+    function cambiarIdioma(idioma)
+    {
+    if(idioma == 1)
+        {
+        document.all("catalan").style.visibility = "hidden";
+        document.all("castellano").style.visibility = "visible";
+        document.all("catalan_texto").style.visibility = "hidden";
+        document.all("castellano_texto").style.visibility = "visible";
+        }
+    else
+        {
+        document.all("catalan").style.visibility = "visible";
+        document.all("castellano").style.visibility = "hidden";
+        document.all("catalan_texto").style.visibility = "visible";
+        document.all("castellano_texto").style.visibility = "hidden";
+        }
+    }
 
     function llamarFuncionRecarga(sURL,funcion){
         if(msg!=null&mensaje!=null){
@@ -841,11 +857,11 @@ exclusivament sota el control de TME. </p>
 <!------------------------------------------>
               <td align="right">
                <a href="javascript:activarCapa('div13');" title="Aceptar">
-               <img src="Condiciones%20generales_files/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
 
                &nbsp;
                <a href="javascript:activarCapa('div11');" title="Cancelar">
-               <img src="Condiciones%20generales_files/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
               </td>
              </tr>
             </tbody></table>
