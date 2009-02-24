@@ -682,7 +682,7 @@ exclusivamente bajo el control de TME. </p>
                   </tbody></table>
                 </div>
 
-                <div id="catalan" style="margin: 0px; padding: 0px; position: absolute; width: 96%; visibility: hidden;">
+                <div id="catalan" style="margin: 0px; padding: 0px; position: absolute; width: 96%; display: none;">
                  <table>
                    <tbody><tr><td>
 
