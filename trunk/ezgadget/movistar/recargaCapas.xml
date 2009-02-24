@@ -57,7 +57,6 @@
             if (validated == "OK"){
                 activarCapa("div12");
                 var _telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
-                var _telefonoLimpio=_telefonoOriginal.replace(/[0-9]+/g,'');
                 var _numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
                 var _indiceMes = document.formInicio.ACWW_mesCaducidad.selectedIndex;
                 var _indiceAnyo= document.formInicio.ACWW_anyoCaducidad.selectedIndex;
@@ -65,7 +64,7 @@
                 var _anyoCaducidad=document.formInicio.ACWW_anyoCaducidad.options[_indiceAnyo].value;
                 var _importe =document.formInicio.ACWW_importeRercarga.value;
                 alert(_telefonoLimpio);
-                document.getElementById("numero_movil").innerHTML=_telefonoLimpio;
+                document.getElementById("numero_movil").innerHTML=_telefonoOriginal;
             }
             msg.dismissMessage(mensaje);
             mensaje = msg.createDismissibleMessage(html,dismissed);
