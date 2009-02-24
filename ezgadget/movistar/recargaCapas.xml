@@ -25,7 +25,7 @@
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
         document.formInicio.ACWW_numTarjetaCredito.value=numCard;
-        activarCapa("div0");
+        activarCapa("div12");
         _IG_AdjustIFrameHeight();
     }
 
