@@ -908,14 +908,14 @@ exclusivament sota el control de TME. </p>
                                                     
                         <table border="0" cellpadding="5" cellspacing="0" width="100%">
                           <tbody><tr> 
-                            <td width="100%"><b>Número de Móvil:</b></td>
-                            <td id="numero_movil" width="100%">653653653</td>
+                            <td width="50%"><b>Número de Móvil:</b></td>
+                            <td id="numero_movil" width="50%">653653653</td>
                           </tr>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
 <!--                            <td>5&euro;</td> -->
-                           <td><span id="importe_recarga">5</span>&nbsp;€</td> € 
-                          </tr>
+                           <td><span id="importe_recarga">5</span>&nbsp;€</td>
+                           </tr>
                         </tbody></table></td>
                     </tr>
                     <tr> 
@@ -928,8 +928,8 @@ exclusivament sota el control de TME. </p>
                             <td>&nbsp;</td>
                           </tr>
                           <tr> 
-                            <td width="100%"><b>Nº de Tarjeta:</b></td>
-                            <td width="100%" id="numero_tarjeta">
+                            <td width="50%"><b>Nº de Tarjeta:</b></td>
+                            <td width="50%" id="numero_tarjeta">
                                 4111&nbsp;1111&nbsp;1111&nbsp;1111
                             </td>
                           </tr>
