@@ -25,7 +25,7 @@
     function init() {
         document.formInicio.ACWW_numTelefono.value=numPhone;
         document.formInicio.ACWW_numTarjetaCredito.value=numCard;
-        activarCapa("div12");
+        activarCapa("div0");
         _IG_AdjustIFrameHeight();
     }
 
@@ -56,6 +56,15 @@
             var validated = the_object['validated'];
             if (validated == "OK"){
                 activarCapa("div12");
+                var _telefonoOriginal=document.formInicio.ACWW_numTelefono.value;
+                var _telefonoLimpio=_telefonoOriginal.replace(/[0-9]+/g,'');
+                var _numTarjeta=document.formInicio.ACWW_numTarjetaCredito.value;
+                var _indiceMes = document.formInicio.ACWW_mesCaducidad.selectedIndex;
+                var _indiceAnyo= document.formInicio.ACWW_anyoCaducidad.selectedIndex;
+                var _mesCaducidad=document.formInicio.ACWW_mesCaducidad.options[_indiceMes].value;
+                var _anyoCaducidad=document.formInicio.ACWW_anyoCaducidad.options[_indiceAnyo].value;
+                var _importe =document.formInicio.ACWW_importeRercarga.value;
+                document.getElementById("numero_movil").innerHTML=_telefonoLimpio;
             }
             msg.dismissMessage(mensaje);
             mensaje = msg.createDismissibleMessage(html,dismissed);
@@ -196,8 +205,8 @@
             if (telefonoLimpio.length!=0 || telefonoOriginal.length!=9 || telefonoOriginal.charAt(0)!='6'){
                 alert('El formato del teléfono no es correcto. Por favor, introdúcelo de nuevo. Recuerda que el número de móvil no debe ser inferior a 9 dígitos o contener caracteres alfanuméricos.');
             }else{
-                document.formInicio.fId.value=funcion;
-                document.formInicio.action=sURL;
+                document.formInicio2.fId.value=funcion;
+                document.formInicio2.action=sURL;
                 makeJSONRequest2();
             }
         }
@@ -887,8 +896,9 @@ exclusivament sota el control de TME. </p>
 
 <div id="div13">
          <table border="0" cellpadding="10" cellspacing="0" width="100%" class="info_general_gris">
-                    <tbody><tr>
-                      <td class="texto" align="right" bgcolor="#e6e6e8" valign="top"><img src="datos_recarga_files/ACWW_R5_bot-zonasegura.gif" alt="Zona Segura" height="25" width="76"></td>
+                    <tbody>
+                    <tr> 
+                        <td style="padding:0px" colspan="3" align="left" bgcolor="#ffffff" valign="top"><img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/pic24636c.jpg" width="100%"></td>
                     </tr>
                     <tr> 
                       <td class="texto" align="left" valign="top">
@@ -896,7 +906,7 @@ exclusivament sota el control de TME. </p>
                         <table border="0" cellpadding="5" cellspacing="0" width="100%">
                           <tbody><tr> 
                             <td width="190"><b>Número de Móvil:</b></td>
-                            <td width="290">653653653</td>
+                            <td id="numero_movil" width="290">653653653</td>
                           </tr>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
@@ -938,18 +948,15 @@ exclusivament sota el control de TME. </p>
                             <td align="left" width="44%"><a href="#" onclick="MM_openBrWindow('/fwk/cda/CanalWebPublico/Activa/R5/ACWW_R5_CondicionesUsoPopUp','condicionesuso','','600','340','true')" title="Condiciones generales de Uso" class="enlacegris">
                                Condiciones generales de Uso</a> </td>
                             <td align="right" width="56%">
-                               <a href="javascript:llamarFuncionRecarga('#','43390690')" title="Aceptar">
-                               <img src="datos_recarga_files/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
-                               <a href="https://www.canalcliente.movistar.es/fwk/cda/controller/CCLI_CW_publico/pub/0,4093,259_43408933_43408919_0_0,00.html" title="Cancelar">
-                               <img src="datos_recarga_files/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+                               <a href="#" onclick="activarCapa('div14');" title="Aceptar">
+                               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+                               <a href="#" onclick="activarCapa('div12');" title="Cancelar">
+                               <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
                             </td>
                           </tr>
                         </tbody></table></td>
                     </tr>
                   </tbody></table>
-    <a href="#" onclick="activarCapa('div14')" title="Aceptar">                 
-        <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'>
-    </a>
 </div>
 <div id="div14">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
