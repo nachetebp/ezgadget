@@ -221,6 +221,9 @@
             if (capas[i].nodeName == "DIV") {
                 if (capas[i].id == capa) {
                     capas[i].style.display="inline";
+                    if (capa=="div13") {
+                        msg.dismissMessage(mensaje);
+                    }
                 }else {
                     capas[i].style.display="none";
                 }
@@ -511,7 +514,7 @@
 
 <!------------------------------------------------------------>
 
-              <div id="contenedorIdiomas" style="margin: 0px; padding: 0px; overflow: auto; height: 525px; visibility: visible; position: relative;">
+              <div id="contenedorIdiomas" style="margin: 0px; padding: 0px; overflow: auto; height: 250px; visibility: visible; position: relative;">
                 <div id="castellano" style="margin: 0px; padding: 0px; position: absolute; width: 96%; visibility: visible;">
                  <table>
                    <tbody><tr><td>
