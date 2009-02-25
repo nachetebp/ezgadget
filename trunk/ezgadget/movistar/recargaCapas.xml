@@ -493,8 +493,10 @@
                             <td align="right" width="56%">
                                <a href="javascript:llamarFuncionRecarga('#','43390699')" title="Aceptar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif" title="Aceptar" border="0"></a>
+                               <!--
                                <a href="#" onclick="activarCapa('div0')" title="Cancelar">
                                <img src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-cancelar.gif" title="Cancelar" border="0"></a>
+                               -->
                             </td> 
                           </tr>
                         </tbody></table></td>
