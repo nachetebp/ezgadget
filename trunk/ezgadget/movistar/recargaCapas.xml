@@ -916,7 +916,7 @@ exclusivament sota el control de TME. </p>
                           </tr>
                           <tr> 
                             <td><b>Importe a Recargar:</b></td>
-<!--                            <td>5&euro;</td> -->
+                            <!-- <td>5&euro;</td> -->
                            <td><span id="importe_recarga">5</span>&nbsp;€</td>
                            </tr>
                         </tbody></table></td>
