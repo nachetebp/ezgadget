@@ -981,7 +981,7 @@ exclusivament sota el control de TME. </p>
                                 </tr>
                                 <tr>
                                     <td align="right">
-                                        <a href="#" onclick="activarCapa('div0')" title="Aceptar">                 
+                                        <a href="#" onclick="activarCapa('div11')" title="Aceptar">                 
                                             <img src='http://ezgadget.googlecode.com/svn/trunk/ezgadget/movistar/recarga/ACWW_boton-aceptar.gif' border='0' title='Aceptar'>
                                         </a>
                                     </td>
