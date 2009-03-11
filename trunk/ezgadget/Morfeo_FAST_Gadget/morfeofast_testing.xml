@@ -8,7 +8,7 @@
 <SCRIPT language="javascript" src="/js/ext/ext-all.js"></SCRIPT>
 <SCRIPT language="javascript" src="/js/prototype/prototype.js"></SCRIPT>
 <SCRIPT language="javascript" src="/js/fast/engine2.js"></SCRIPT>
-
+<a href="/js/prototype/prototype.js">Probando</a>
 <script language="JavaScript">
 	var menu = null;
 	
