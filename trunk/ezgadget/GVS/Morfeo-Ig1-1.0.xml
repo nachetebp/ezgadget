@@ -281,7 +281,8 @@
         FastAPI.send_get(url, this, list.addToList, list.onError);
     }
     List.prototype.addToList = function (transport){
-        var xml = transport.responseXML;
+        //var xml = transport.responseXML;        var xml = transport;
+        
         //Check if the service returned an error
         if (xml.getElementsByTagName("IsValid")[0].childNodes[0].nodeValue == "False") {
             //alert(xml.getElementsByTagName("Message")[0].childNodes[0].nodeValue);
