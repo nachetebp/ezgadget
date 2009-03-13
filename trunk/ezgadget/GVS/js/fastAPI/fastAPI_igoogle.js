@@ -14,7 +14,9 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
             if (responseText == null){
                 errorHandler(responseText);
             } else {
+                alert("1");
                 successHandler(responseText);
+                alert("2");
             }
         }
         
