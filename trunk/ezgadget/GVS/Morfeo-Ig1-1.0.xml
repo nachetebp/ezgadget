@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" ?> 
+<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="Ig1"
-        title_url="http://192.168.55.228:8090/static/Morfeo-Ig1-1.0/igoogle/Morfeo-Ig1-1.0.xml"
-        author="Author"
-        author_email="author@email.com"
-        description="Write your description here..."
-        scrolling="true" height="400">
+<ModulePrefs title="Ig1" scrolling="true" height="400">
     <Require feature="dynamic-height"/>
 </ModulePrefs>
 <Content type="html">
 <![CDATA[
-
 <link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/resources/menu/css/menu.css" />
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fast/menu.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fast/engine.js"></SCRIPT>
@@ -61,6 +55,7 @@
     alert("Loading menu...");
     _IG_RegisterOnloadHandler(loadMenu);
 </SCRIPT>
+<div id="contenidos">
 <div id="menu"></div>
 <div id="prueba">PRueba</div>
 
@@ -1461,7 +1456,7 @@
 </html>
     </object>
 </div>
-
+</div>
 
 ]]>
 </Content>
