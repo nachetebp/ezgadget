@@ -6,7 +6,7 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
     send_get: function (url, context, successHandler, errorHandler) {
         //_IG_FetchContent(url, successHandler);
         
-        _IG_FetchContent(url, onSuccess);
+        _IG_FetchXmlContent(url, onSuccess);
         
         
         function onSuccess(responseText) {
