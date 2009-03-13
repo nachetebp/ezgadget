@@ -7,8 +7,8 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fast/menu.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fast/engine.js"></SCRIPT>
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/prototype/prototype.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI.js"></SCRIP
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI_igoogle.js"></SCRIP
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI_igoogle.js"></SCRIPT>
 <SCRIPT language="javascript">
     alert("Comienza script...");
     console.log("Comienza script...");
@@ -52,7 +52,6 @@
         alert("Cargando gadget...");
     }
     alert("Loading menu...");
-    console.log("Loading menu...");
     _IG_RegisterOnloadHandler(loadMenu);
 </SCRIPT>
 <div id="contenidos">
