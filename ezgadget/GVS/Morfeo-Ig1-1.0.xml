@@ -11,12 +11,12 @@
 <Content type="html">
 <![CDATA[
 
-<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS//resources/menu/css/menu.css" />
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS//js/fast/menu.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS//js/fast/engine.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS//js/prototype/prototype.js"></SCRIPT>
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS//js/fastAPI/fastAPI.js"></SCRIP
-<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS//js/fastAPI/fastAPI_igoogle.js"></SCRIP
+<link rel="stylesheet" type="text/css" href="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/resources/menu/css/menu.css" />
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fast/menu.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fast/engine.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/prototype/prototype.js"></SCRIPT>
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI.js"></SCRIP
+<SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI_igoogle.js"></SCRIP
 <SCRIPT language="javascript">
     var menu = null;
     var screens = new Hash();
