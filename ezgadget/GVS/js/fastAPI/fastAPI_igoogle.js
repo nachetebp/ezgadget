@@ -4,19 +4,20 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
     },
     
     send_get: function (url, context, successHandler, errorHandler) {
-        _IG_FetchContent(url, successHandler);
-        /*
+        //_IG_FetchContent(url, successHandler);
+        
         _IG_FetchContent(url, onSuccess);
         
         
         function onSuccess(responseText) {
+            alert(responseText);
             if (responseText == null){
                 errorHandler(responseText);
             } else {
                 successHandler(responseText);
             }
         }
-        */
+        
     }
 });
 
