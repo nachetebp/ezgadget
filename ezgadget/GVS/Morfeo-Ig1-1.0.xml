@@ -18,6 +18,7 @@
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI.js"></SCRIP
 <SCRIPT language="javascript" src="http://ezgadget.googlecode.com/svn/trunk/ezgadget/GVS/js/fastAPI/fastAPI_igoogle.js"></SCRIP
 <SCRIPT language="javascript">
+    alert("Comienza script...");
     var menu = null;
     var screens = new Hash();
 
@@ -47,7 +48,7 @@
         {title: "Order",
         contentEl:"Order",
         pre: ['http://TODO/amazon#purchase']});
-
+    alert("Screens sets...");
     var events = new Hash();
     function loadMenu(){
         menu = new FASTMenu({renderTo: "menu"});
@@ -57,6 +58,7 @@
         EngineFactory.getInstance().run();
         alert("Cargando gadget...");
     }
+    alert("Loading menu...");
     _IG_RegisterOnloadHandler(loadMenu);
 </SCRIPT>
 <div id="menu"></div>
