@@ -60,7 +60,7 @@
     _IG_RegisterOnloadHandler(loadMenu);
 </SCRIPT>
 <div id="menu"></div>
-
+<div id="prueba">PRueba</div>
 
 <div id="ProductSearch" class="tabcontentHide">
     <object id="ProductSearch_obj" width="100%" height="100%">
