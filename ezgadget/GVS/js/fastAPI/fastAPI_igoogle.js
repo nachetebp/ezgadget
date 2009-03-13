@@ -5,7 +5,8 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
     
     send_get: function (url, context, successHandler, errorHandler) {
         //_IG_FetchContent(url, successHandler);
-        
+        _IG_FetchXmlContent(url, successHandler);
+        /*
         _IG_FetchXmlContent(url, onSuccess);
         
         
@@ -19,7 +20,7 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
                 alert("2");
             }
         }
-        
+        */
     }
 });
 
