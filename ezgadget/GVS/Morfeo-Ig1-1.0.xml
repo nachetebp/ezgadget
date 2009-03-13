@@ -55,6 +55,7 @@
         EngineFactory.getInstance().setEngine(screens, events, menu);
         
         EngineFactory.getInstance().run();
+        alert("Cargando gadget...");
     }
     _IG_RegisterOnloadHandler(loadMenu);
 </SCRIPT>
