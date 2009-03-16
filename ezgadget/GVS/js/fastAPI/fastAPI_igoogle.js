@@ -1,4 +1,4 @@
-var _fastAPI_ezweb = Class.create(_fastAPI,{
+var _fastAPI_igoogle = Class.create(_fastAPI,{
     
     initialize: function() {
     },
@@ -29,4 +29,4 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
     }
 });
 
-var FastAPI = new _fastAPI_ezweb();
+var FastAPI = new _fastAPI_igoogle();
