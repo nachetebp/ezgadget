@@ -1218,7 +1218,6 @@
 					//Add item ID
 					url += "&CartId=" + cart.id;
 					url += "&HMAC=" + cart.HMAC;
-					
 					//Invoke the service
                    	FastAPI.getXML(url, this, shoppingCart.fetch);
 				}	
@@ -1265,7 +1264,7 @@
 				EngineFactory.getInstance().manageFacts([item],['product']);
 			}
 			
-			ShoppingCart.prototype.fetch = function (transport){
+			ShoppingCart.prototype.fetch = function (){
 				//empty current data
 				shoppingCart.productList = new Array();
 				shoppingCart.subTotal = 0;
