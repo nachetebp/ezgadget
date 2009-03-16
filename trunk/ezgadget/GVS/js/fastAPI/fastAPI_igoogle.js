@@ -4,23 +4,28 @@ var _fastAPI_ezweb = Class.create(_fastAPI,{
     },
     
     send_get: function (url, context, successHandler, errorHandler) {
-        //_IG_FetchContent(url, successHandler);
-        _IG_FetchXmlContent(url, successHandler);
-        /*
-        _IG_FetchXmlContent(url, onSuccess);
-        
+        _IG_FetchContent(url, onSuccess);
         
         function onSuccess(responseText) {
-            alert(responseText);
             if (responseText == null){
                 errorHandler(responseText);
             } else {
-                alert("1");
                 successHandler(responseText);
-                alert("2");
             }
         }
-        */
+    },
+    
+    getXML: function (url, context, handler) {
+        _IG_FetchXMLContent(url, onComplete);
+
+        function onComplete(transport) {
+            if(transport.responseXML!=null) {
+                handler(transport);
+            } else {
+                //TODO: Do something
+                alert("Invalid Data in XML retrieval");
+            }
+        }
     }
 });
 
