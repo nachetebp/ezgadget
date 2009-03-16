@@ -19,11 +19,10 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
         _IG_FetchXmlContent(url, onComplete);
 
         function onComplete(transport) {
-            if(transport.responseXML!=null) {
+            if(transport!=null) {
                 handler(transport);
             } else {
                 //TODO: Do something
-                handler(transport);
                 alert("Invalid Data in XML retrieval");
             }
         }
