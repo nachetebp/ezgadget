@@ -278,10 +278,10 @@
         //Add the current version of the API
         url += "&Version=2008-06-26";
         //Invoke the service
-        FastAPI.send_get(url, this, list.addToList, list.onError);
+        FastAPI.getXML(url, this, list.addToList);
     }
     List.prototype.addToList = function (transport){
-        //var xml = transport.responseXML;        var xml = transport;
+        var xml = transport;        //var xml = transport;
         
         //Check if the service returned an error
         if (xml.getElementsByTagName("IsValid")[0].childNodes[0].nodeValue == "False") {
@@ -602,11 +602,11 @@
 						url += "&ItemId=" + item.ASIN;
 						
 						//Invoke the service
-                    	FastAPI.send_get(url, this, product.fetchProductInfo, product.onError);
+                    	FastAPI.getXML(url, this, product.fetchProductInfo);
 					}
 					
 					Product.prototype.fetchProductInfo = function (transport){
-						var xml = transport.responseXML;
+						var xml = transport;
 						var item = xml.getElementsByTagName("Item")[0];
 						if (item.getElementsByTagName("Title").length > 0)
 							var title = item.getElementsByTagName("Title")[0].firstChild.nodeValue;
@@ -920,7 +920,7 @@
 							url += "&HMAC=" + cart.HMAC;
 							
 							//Invoke the service
-	                    	FastAPI.send_get(url, this, product.isProductOnCart, product.onError);
+	                    	FastAPI.getXML(url, this, product.isProductOnCart);
 						}
 						else { //Cart doesn't exist: Create a new cart with the product
 							var url = "http://webservices.amazon.com/onca/xml?Service=AWSECommerceService";
@@ -938,12 +938,12 @@
 							url += "&Item.1.Quantity=" + $F("quantitySelect");
 							
 							//Invoke the service
-	                    	FastAPI.send_get(url, this, product.cartCreated, product.onError);
+	                    	FastAPI.getXML(url, this, product.cartCreated);
 						}
 					}
 					
 					Product.prototype.cartCreated = function (transport){
-						var xml = transport.responseXML;
+						var xml = transport;
 						
 						//The product is added to the cart,
 						//tell it to the user	
@@ -968,7 +968,7 @@
 					}
 					
 					Product.prototype.productAdded = function (transport){
-						var xml = transport.responseXML;
+						var xml = transport;
 						//Check if the product is eligible for shopping
 						if ((xml.getElementsByTagName("Error").length > 0) && 
 							xml.getElementsByTagName("Error")[0].firstChild.firstChild.nodeValue == "AWS.ECommerceService.ItemNotEligibleForCart"){
@@ -986,7 +986,7 @@
 					
 					Product.prototype.isProductOnCart = function (transport){
 						
-						var xml = transport.responseXML;
+						var xml = transport;
 						var item = EngineFactory.getInstance().getFact('http://TODO/amazon#item');
 						var cart = EngineFactory.getInstance().getFact('http://TODO/amazon#shoppingCart');
 						var user = EngineFactory.getInstance().getFact('user');
@@ -1039,7 +1039,7 @@
 							url += "&Item.1.Quantity=" + quantity;
 							
 							//Invoke the service
-	                    	FastAPI.send_get(url, this, product.productAdded, product.onError);
+	                    	FastAPI.getXML(url, this, product.productAdded);
 						}
 						else {
 		                    //Create the call
@@ -1060,7 +1060,7 @@
 							url += "&Item.1.Quantity=" + $F("quantitySelect");
 							
 							//Invoke the service
-	                    	FastAPI.send_get(url, this, product.productAdded, product.onError);
+	                    	FastAPI.getXML(url, this, product.productAdded);
 						}
 					}
 					
@@ -1210,7 +1210,7 @@
 					url += "&HMAC=" + cart.HMAC;
 					
 					//Invoke the service
-                   	FastAPI.send_get(url, this, shoppingCart.fetch, shoppingCart.onError);
+                   	FastAPI.getXML(url, this, shoppingCart.fetch);
 				}	
 			}
 			
@@ -1243,7 +1243,7 @@
 						url += "&Item." + (i+1) + ".Quantity=" + $F(shoppingCart.productList[i]["id"]);
 					}
 					//Create the call
-                   	FastAPI.send_get(url, this, shoppingCart.fetch, shoppingCart.onError);
+                   	FastAPI.getXML(url, this, shoppingCart.fetch);
 				}
 			}
 			
@@ -1282,11 +1282,11 @@
 				url += "&HMAC=" + cart.HMAC;
 				
 				//Create the call
-                FastAPI.send_get(url, this, shoppingCart.addToList, shoppingCart.onError);
+                FastAPI.getXML(url, this, shoppingCart.addToList);
             }
             
             ShoppingCart.prototype.addToList = function (transport){
-                var xml = transport.responseXML;
+                var xml = transport;
                 //Check if the service returned an error
                 if (xml.getElementsByTagName("IsValid")[0].childNodes[0].nodeValue == "False") {
                     alert(xml.getElementsByTagName("Message")[0].childNodes[0].nodeValue);
