@@ -23,6 +23,7 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
                 handler(transport);
             } else {
                 //TODO: Do something
+                handler(transport);
                 alert("Invalid Data in XML retrieval");
             }
         }
