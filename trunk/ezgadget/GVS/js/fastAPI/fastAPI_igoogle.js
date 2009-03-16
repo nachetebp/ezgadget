@@ -16,7 +16,7 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
-        _IG_FetchXMLContent(url, onComplete);
+        _IG_FetchXmlContent(url, onComplete);
 
         function onComplete(transport) {
             if(transport.responseXML!=null) {
