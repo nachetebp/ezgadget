@@ -1265,7 +1265,7 @@
 				EngineFactory.getInstance().manageFacts([item],['product']);
 			}
 			
-			ShoppingCart.prototype.fetch = function (){
+			ShoppingCart.prototype.fetch = function (transport){
 				//empty current data
 				shoppingCart.productList = new Array();
 				shoppingCart.subTotal = 0;
