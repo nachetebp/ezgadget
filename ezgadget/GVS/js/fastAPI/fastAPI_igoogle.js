@@ -16,6 +16,8 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
+        _IG_FetchXmlContent(url, handler);
+        /*
         _IG_FetchXmlContent(url, onFetchComplete);
 
         function onFetchComplete(transport) {
@@ -26,6 +28,7 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
                 alert("Invalid Data in XML retrieval");
             }
         }
+        */
     }
 });
 
