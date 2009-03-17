@@ -16,7 +16,22 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
-        _IG_FetchXmlContent(url, handler, { refreshInterval: 1 });
+        
+var ts = new Date().getTime();
+var sep = "?";
+if (refreshInterval && refreshInterval > 0) {
+ts = Math.floor(ts / (refreshInterval * 1000));
+}
+if (url.indexOf("?") > -1) {
+sep = "&";
+}
+url = [ url, sep, "nocache=", ts ].join("");
+_IG_FetchXmlContent(url, handler); 
+        
+        
+        //_IG_FetchXmlContent(url, handler, { refreshInterval: 1 });
+        
+        
         /*
         _IG_FetchXmlContent(url, onFetchComplete);
 
