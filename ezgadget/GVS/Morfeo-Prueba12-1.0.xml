@@ -1219,7 +1219,7 @@
 					url += "&CartId=" + cart.id;
 					url += "&HMAC=" + cart.HMAC;
 					//Invoke the service                    alert("Clearing URL: "+ url);
-                   	FastAPI.getText(url, this, shoppingCart.fetch);
+                   	FastAPI.getXML(url, this, shoppingCart.fetch);
 				}	
 			}
 			
@@ -1254,7 +1254,7 @@
 
                     alert("Update URL: "+ url);
 					//Create the call
-                   	FastAPI.getText(url, this, shoppingCart.fetch);
+                   	FastAPI.getXML(url, this, shoppingCart.fetch);
 				}
 			}
 			
