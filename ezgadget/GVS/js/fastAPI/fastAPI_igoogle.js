@@ -16,46 +16,21 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
-        timestamp = new Date().getTime();
+        _IG_FetchXmlContent(_getUniqueUrl(url), handler, { refreshInterval: 0 }); 
+    },
+    
+    getText: function (url, context, handler) {
+        _IG_FetchContent(_getUniqueUrl(url), handler, { refreshInterval: 0 });
+    },
+    
+    _getUniqueUrl: function (url) {
+        var timestamp = new Date().getTime();
         var ts = Math.floor( timestamp / 1000);
-        alert(ts);
         var sep = "?";
         if (url.indexOf("?") > -1) {
             sep = "&";
         }
-        url = [ url, sep, "nocache=", ts ].join("");
-        _IG_FetchXmlContent(url, handler, { refreshInterval: 0 }); 
-        
-        
-        //_IG_FetchXmlContent(url, handler, { refreshInterval: 1 });
-        
-        
-        /*
-        _IG_FetchXmlContent(url, onFetchComplete);
-
-        function onFetchComplete(transport) {
-            if(transport!=null) {
-                handler(transport);
-            } else {
-                //TODO: Do something
-                alert("Invalid Data in XML retrieval");
-            }
-        }
-        */
-    },
-    
-    getText: function (url, context, handler) {
-        _IG_FetchContent(url, handler, { refreshInterval: 1 });
-/*
-        function onComplete(transport) {
-            if(transport!=null) {
-                handler(transport);
-            } else {
-                //TODO: Do something
-                alert("Invalid Data in Text retrieval");
-            }
-        }
-        */
+        return ([ url, sep, "nocache=", ts ].join(""));
     }
 });
 
