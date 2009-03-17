@@ -1218,7 +1218,7 @@
 					//Add item ID
 					url += "&CartId=" + cart.id;
 					url += "&HMAC=" + cart.HMAC;
-					//Invoke the service
+					//Invoke the service                    alert("Clearing URL: "+ url);
                    	FastAPI.getText(url, this, shoppingCart.fetch);
 				}	
 			}
