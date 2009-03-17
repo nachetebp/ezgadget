@@ -1228,7 +1228,7 @@
 				EngineFactory.getInstance().manageFacts([purchase],[]);
 			}
 			
-			ShoppingCart.prototype.update = function (){                alert("updating...");
+			ShoppingCart.prototype.update = function (){                alert("updating..." + shoppingCart.productList.length);
 				if (shoppingCart.productList.length > 0) { //Only if there is something to update
 					var cart = EngineFactory.getInstance().getFact('http://TODO/amazon#shoppingCart');
 					var user = EngineFactory.getInstance().getFact('user');
