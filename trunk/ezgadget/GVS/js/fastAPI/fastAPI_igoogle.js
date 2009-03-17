@@ -29,6 +29,20 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
             }
         }
         */
+    },
+    
+    getText: function (url, context, handler) {
+        _IG_FetchContent(url, handler);
+/*
+        function onComplete(transport) {
+            if(transport!=null) {
+                handler(transport);
+            } else {
+                //TODO: Do something
+                alert("Invalid Data in Text retrieval");
+            }
+        }
+        */
     }
 });
 
