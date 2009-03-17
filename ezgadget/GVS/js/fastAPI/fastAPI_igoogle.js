@@ -16,7 +16,7 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
-        _IG_FetchXmlContent(url, handler);
+        _IG_FetchXmlContent(url, handler, { refreshInterval: 0 });
         /*
         _IG_FetchXmlContent(url, onFetchComplete);
 
@@ -32,7 +32,7 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getText: function (url, context, handler) {
-        _IG_FetchContent(url, handler);
+        _IG_FetchContent(url, handler, { refreshInterval: 0 });
 /*
         function onComplete(transport) {
             if(transport!=null) {
