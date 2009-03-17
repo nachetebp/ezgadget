@@ -68,7 +68,11 @@ var EngineFactory = function () {
 		
 		Engine.prototype.addFact = function (fact){
 			if(fact){
-				this.facts.set(fact.name, fact);
+                if(fact.name == "http://TODO/amazon#shoppingCart" )
+                {
+                    alert("FACT: " + fact.name + ", " + fact.id + ", " + fact.HMAC );
+                }
+                this.facts.set(fact.name, fact);
 				this.throwEvents(fact);
 			}
 		}
