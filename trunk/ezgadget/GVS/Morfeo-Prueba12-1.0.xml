@@ -1302,8 +1302,8 @@
                 }
                 else { //Correct response, create the result List
                 	if (xml.getElementsByTagName("CartItems").length > 0) { //There are products in the cart
-						var list = xml.getElementsByTagName("CartItems")[0].getElementsByTagName("CartItem");                        alert("Lista: " + list);
-						//Fill the table, 1 row per item                        alert("Lista2: " + $A(list));
+						var list = xml.getElementsByTagName("CartItems")[0].getElementsByTagName("CartItem");                        
+						//Fill the table, 1 row per item                        
 						$A(list).each(function(item){
 							if (item.getElementsByTagName("Title").length > 0) 
 								var title = item.getElementsByTagName("Title")[0].firstChild.nodeValue;
@@ -1321,7 +1321,8 @@
 								ASIN: ASIN,
 								id: ID,
 								quantity: quantity
-							};
+							};alert("Producto obtenido: "+ title);
+alert("Cantidad obtenido: "+ quantity);
 							shoppingCart.itemTotal += parseInt (quantity);
 							shoppingCart.productList.push(row);
 						});
