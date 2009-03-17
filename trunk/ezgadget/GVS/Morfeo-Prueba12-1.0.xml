@@ -1245,12 +1245,14 @@
 					url += "&Version=2008-06-26";
 					//Add item ID
 					url += "&CartId=" + cart.id;
-					url += "&HMAC=" + cart.HMAC;                    alert("updating cart: " + cart.id + ", " + cart.HMAC);
+					url += "&HMAC=" + cart.HMAC;                    alert("Updating cart: " + cart.id + ", " + cart.HMAC);
 					//Build the parameter list
 					for (var i=0; i < shoppingCart.productList.length; i++){
 						url += "&Item." + (i+1) + ".CartItemId=" + shoppingCart.productList[i]["id"];
 						url += "&Item." + (i+1) + ".Quantity=" + $F(shoppingCart.productList[i]["id"]);                        alert("Producto: " + shoppingCart.productList[i]['id'] + "; Cantidad: " + $F(shoppingCart.productList[i]['id']));
 					}
+
+                    alert("Update URL: "+ url);
 					//Create the call
                    	FastAPI.getXML(url, this, shoppingCart.fetch);
 				}
@@ -1289,8 +1291,8 @@
 				//Add item ID
 				url += "&CartId=" + cart.id;
 				url += "&HMAC=" + cart.HMAC;
-				alert("fetching cart: " + cart.id + ", " + cart.HMAC);
-				//Create the call
+				alert("Fetching cart: " + cart.id + ", " + cart.HMAC);
+				//Create the call                alert("Fetch URL: "+ url);
                 FastAPI.getXML(url, this, shoppingCart.addToList);
             }
             
