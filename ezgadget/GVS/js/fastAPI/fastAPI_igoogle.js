@@ -17,11 +17,8 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     
     getXML: function (url, context, handler) {
         
-var ts = new Date().getTime();
+var ts = Math.floor(new Date().getTime() / 1000);
 var sep = "?";
-if (refreshInterval && refreshInterval > 0) {
-ts = Math.floor(ts / (refreshInterval * 1000));
-}
 if (url.indexOf("?") > -1) {
 sep = "&";
 }
