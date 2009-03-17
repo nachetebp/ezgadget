@@ -16,14 +16,15 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
-        
-var ts = Math.floor(new Date().getTime() / 1000);
-var sep = "?";
-if (url.indexOf("?") > -1) {
-sep = "&";
-}
-url = [ url, sep, "nocache=", ts ].join("");
-_IG_FetchXmlContent(url, handler); 
+        timestamp = new Date().getTime();
+        var ts = Math.floor( timestamp / 1000);
+        alert(ts);
+        var sep = "?";
+        if (url.indexOf("?") > -1) {
+            sep = "&";
+        }
+        url = [ url, sep, "nocache=", ts ].join("");
+        _IG_FetchXmlContent(url, handler, { refreshInterval: 0 }); 
         
         
         //_IG_FetchXmlContent(url, handler, { refreshInterval: 1 });
