@@ -16,11 +16,11 @@ var _fastAPI_igoogle = Class.create(_fastAPI,{
     },
     
     getXML: function (url, context, handler) {
-        _IG_FetchXmlContent(_getUniqueUrl(url), handler, { refreshInterval: 0 }); 
+        _IG_FetchXmlContent(this._getUniqueUrl(url), handler, { refreshInterval: 0 }); 
     },
     
     getText: function (url, context, handler) {
-        _IG_FetchContent(_getUniqueUrl(url), handler, { refreshInterval: 0 });
+        _IG_FetchContent(this._getUniqueUrl(url), handler, { refreshInterval: 0 });
     },
     
     _getUniqueUrl: function (url) {
