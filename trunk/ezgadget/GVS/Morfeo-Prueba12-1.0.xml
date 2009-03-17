@@ -1265,7 +1265,6 @@
 			}
 			
 			ShoppingCart.prototype.fetch = function (){                alert("fetching");
-                console.log("fetching");
 				//empty current data
 				shoppingCart.productList = new Array();
 				shoppingCart.subTotal = 0;
