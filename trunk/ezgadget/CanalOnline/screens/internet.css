@@ -1,0 +1,174 @@
+listaVProcedes{lista: |aburgos|accentur|accorhot|adaptasol|agcomaco|aingtcat|airtiem|alandalus|alconcusi|alhaurin|almirallp|allied|analote|anetcom|anoia|anuntis|anuntissm|apas|apcas|arquicas|arquivalla|artegar|arvatop|arvatos|arzobtole|asabogja|asabogse|asabvalen|asadfinva|asagcom|asagcomal|asagpropb|asapatarr|asarcoiri|asarinaga|asarqext|asarqgal|asateval|asatlbil|asbaixll|asbenalma|asbotiger|ascámaratel|ascames|ascoagbar|ascoagreu|ascofedeva|ascolfarv|ascomcast|ascomllei|ascopalme|asderecho|aselot|asemave|asestema|asfarbad|asfarcac|asferca|asfruites|asfuengi|asgarraf|asgjasg|asgremflo|asgrsca|asguarci|ashospita|asicr|asimag|asinglpal|asinstala|aslaforja|aslasase|aslemur|aslgelect|aslogoped|asmaypes|asmedval|asmpseis|asocadenaq|asodonval|asofitness|asoleix|asonacpro|aspanval|aspastiss|aspatromet|aspenede|aspersiana|aspetita|aspizbur|asponsed|aspublicat|asraxon|assabadel|assalou|assomorr|astarrag|astecova|asterrasa|astindse|astrazen|asucbpha|asviatem|atca|atletico|atrohisal|avanade|avocatbar|aytorubi|baixvalles|bancaja|bancapue|bbvavip|bbvavvip|bergueda|bergueda|bespana|bisfello|blanju|bshelec|bshelec|cacoca|cacoincor|cacoinza|caivalls|caixacon|caixanav|cajamadrid|camenorca|campolla|candujar|cascoviejo|ccseguros|cecoma|cecuenca|cemex|ceoe|cepta|cerrocaban|cetesoco|cetraa|cincov|cindcat|cingles|cinpalmas|circulo|cliffor|clubmkzar|cocina|cocomori|coedism|cofarnor|cofioca|coialba|coitdop|coiti|colabal|colabbur|colablp|colacogi|colagcom|colagcomov|colamu|colcolle|colcomsab|coldonval|colenfval|colfarpam|colofapal|colprosev|colvetbar|comtolez|confebro|confempll|consemedi|convaldal|copueyos|cosetodo|chipcard|daimler|datafuturo|dell|deymasur|dialsur|diegoza|distqual|dmrcons|domeq|ecuanima|ehenares|estanquer|euring|euroatla|eurohue|fagipe|famcaixa|fccm|fedafeda|fedcasman|fedcatseq|fedempbad|fedempgua|fedmetali|fedprolle|fedtexsed|femepa|finanzaut|fisiocat|foeg|fontagas|fracci|friskies|fuengijas|fundacion|fundarco|gasnatur|geasco|generalgt|generalvalenciana|giocorp|glaxo|grefricar|gregracat|gremtall|grnecop|gruponh|henkelib|hercesa|hilti|hosbeyco|hostlleida|hp|hp|hypor|ibercaja|iberia|iberiap|imacaixa|inael|indra|interflora|intervet|joempsev|lpascual|madpolan|master|mdmarkt|mecafondes|medsegbiz|mercatener|mercedes|mermotril|metro|millward|mindshare|minindtur|motorola|movistar|movistar3g|msd|msoft|muntanya|murciana|musicam|nanta|nokia|novartis|nutreco|obishuel|oletore|organon|oriflame|palex|penedes|pescanova|philips1|philips2|philips3|philips4|philips5|philips6|philips7|planeta|pleyade|price|promocaixa|promoedi|psicolegs|puntmat|quantorsa|reckitt|redford|renfeop|repsol|repsolemp|rsociedad|sabadell|saintgcr|saintgvi|salvat|sanjordi|sanjordi|sanofipas|santander|savia|sch|serdehos|sermetges|sistmulti|solmelia|sony|soscuet|stopalarm|superpon|tarasc|tcable|tcontenidos|tcorporativa|tdata|tdatacorp|teldata|tgestiona|tingesegur|tisa|tiws|tmoviles|tmovilescorp|tmovistar|trader|travelclub|travelppt|tsenior|tsoluciones|ttp|turjaen|ubierna|ulpgc|unigranada|uniproaval|unitaxbar|univalenc|univelche|uoc|versitas|wagonlit|zeleris|metges|flash10|mongato|procubada|laraspa|fotografo|docentes|cacorioja|uniounio|cybermat|eurofor|cerlerelec|bitronic|adslpc3mb|;}
+
+.fondos {  background-image:   url(/qx/images/fondo.gif); background-repeat: no-repeat; background-color: #FFFFFF}
+
+.texto { font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #999999}
+
+.textarea { background-color: #D0F500; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; border: 1px solid; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: xx-small; font-style: normal; line-height: normal; color: #A6A6A6; border-style:ridge; border-top-style: dashed; border-bottom-style: dashed; border-left-style: dashed; border-right-style: dashed; border-color: #A6A6A6 solid}
+
+A {text-decoration: none}
+
+.menusup {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #666666}
+.menusup:hover {  color: #000066}
+
+.menuizd {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #000066}
+.menuizd:hover {  color: #94AE00}
+
+.menuizd2 {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #94AE00}
+
+.menuder {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #666666}
+.menuder:hover {  color: #000066}
+
+.titulolistaprec {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #000066}
+.titulolistaprec:hover {  color: #000066}
+
+.textolistaprec {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #666666}
+.textolistaprec:hover {  color: #000066}
+
+.linklistaprec {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #666666}
+.linklistaprec:hover {  color: #000066 }
+
+.linksin {  font-family: Verdana, Arial, Helvetica, sans-serif; size: 1; color: #666666}
+.linksin:hover {  color: #000066}
+
+.textotitazul { font-family: Arial, Helvetica, sans-serif; size: 1; color: #000066 ; font-weight: bold}
+
+.textof {  font-family: Verdana, Arial, Helvetica, sans-serif; size: -2; color: #666666}
+
+.textogeneral {  font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textarea_10 { color: #666666; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; wrap: soft; text-decoration: none }
+
+.D_textarea_12 { color: #666666; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; wrap: soft }
+
+.D_textogris_10 { color: #666666; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none }
+
+.D_textogris_12 { color: #666666; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonegro_10 { color: #000000; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonegro_12 { color: #000000; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textoazul_10 { color: #000066; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textoazul_12 { color: #000066; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textoazul_13 { color: #000066; font-size: 13px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textoazularial_10 { color: #000066; font-size: 10px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textoazularial_12 { color: #000066; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textoazularial_13 { color: #000066; font-size: 13px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textotitulo_13 { color: #000066; font-size: 13px; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+
+.D_textoazul2_10 { color: #000066; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textoazul2_12 { color: #000066; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textoazul2arial_10 { color: #000066; font-size: 10px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textoazul2arial_12 { color: #000066; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textoazul2arial_13 { color: #000066; font-size: 13px; font-family: Arial, Helvetica, sans-serif}
+
+
+.D_textotituloazul2_12 { color: #000066; font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+
+.D_enlace_12 { color: #000066; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+.D_enlace_12:hover { color: #94AE00}
+
+.D_enlace_10 { font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #CCCCCC}
+.D_enlace_10:hover { color: #000066}
+
+.texto_verprecios1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #666666}
+
+.texto_verprecios2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #000066}
+
+.texto_verprecios3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF}
+
+.texto_verprecios4 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px}
+
+.texto_error1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20px; color: #000066}
+
+.texto_error2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000066}
+
+.texto_escaparate {  font-family: Verdana, Arial, Helvetica, sans-serif; size: -2; color: #CCCCCC}
+.texto_escaparate:hover {  color: #000066}
+
+.titulo_escaparate {  font-family: Verdana, Arial, Helvetica, sans-serif; size: -2; color: #000066}
+.titulo_escaparate:hover {  color: #000066}
+
+.textoAyudaContextual_antiguo { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #CCCCCC }
+.marcoAyudaContextual_antiguo { background-color: #FFFFCC; border-color: #CCCCCC }
+
+.textoAyudaContextual {font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif; color:#6266A7}
+.marcoAyudaContextual {border: 1px solid #00086E; background: #F0EFF5}
+
+.D_textonaranja_10 { color: #E49158; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonaranja_12 { color: #E49158; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonaranja_13 { color: #E49158; font-size: 13px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonaranjaarial_10 { color: #E49158; font-size: 10px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textonaranjaarial_12 { color: #E49158; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textonaranjaarial_13 { color: #E49158; font-size: 13px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textotitulonaranja_11 { color: #E49158; font-size: 11px; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+
+.D_textonaranja2_10 { color: #E49158; font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonaranja2_12 { color: #E49158; font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif}
+
+.D_textonaranja2arial_10 { color: #E49158; font-size: 10px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textonaranja2arial_12 { color: #E49158; font-size: 12px; font-family: Arial, Helvetica, sans-serif}
+
+.D_textonaranja2arial_13 { color: #E49158; font-size: 13px; font-family: Arial, Helvetica, sans-serif}
+
+
+.D_textotitulonaranja2_12 { color: #E49158; font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+
+.D_textotitulonaranja { color: #CC6600; font-size: 18px;  font-family: Arial, Helvetica, sans-serif}
+
+td.ve {background-color:#83856F}
+
+.D_textotituloopcion { color: #FFFFFF; font-size: 13px;  font-family: Arial, Helvetica, sans-serif}
+
+.tx3 {font-size: 8.5pt; }
+
+.tx2 {font-size: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none }
+
+.cj {width: 120px; }
+
+.na {font-size: 7.5pt; font-family: Verdana,Arial,Helvetica; color:#DC5003}
+.na:hover {text-decoration:underline}
+
+
+.pfe{color:#333;}
+
+.pfe{font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;}
+
+.texto2_1_bold{font:bold 0.75em Arial, Helvetica, sans-serif;} 
+
+.texto2_1_bold{color:#00086E;}
+
+.cabecera_seccion_qx{min-height:16px;font:bold 0.75em Arial, Helvetica, sans-serif;color:#FFF;padding:3px 0 3px 10px;background-color:#BABCD5;}
+
+.texto1_1_bold{font:1.25em Arial, Helvetica, sans-serif;}
+
+.texto1_1_bold{color:#00086E;}
+
+.texto1_1_bold2{font:1.75em Arial, Helvetica, sans-serif;}
+
+.texto1_1_bold2{color:#00086E;}
+
+.texto5_1_bold{font:bold 0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;}
+
+.fila_par_qx td,.fila_par2_qx td,.fila_impar_qx td{padding-top:4px;padding-bottom:6px;}
+
+.fila_impar_qx td{background-color:#F0EFF5;}

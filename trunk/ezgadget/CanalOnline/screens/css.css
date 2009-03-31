@@ -1,0 +1,885 @@
+/*-- CSS FUSION DE ON CON DMR: 16/01/06 //--*/
+
+.titular1{font:normal 1.25em Arial, Helvetica, sans-serif;color:#00086E;}
+.titular1 span{color:#333;}
+.titular2{font:normal 1.25em Arial, Helvetica, sans-serif;color:#333;}
+.titular5{font:bold 1.2em Arial, Helvetica, sans-serif;color:#00086E;}
+.titular3{font:bold 1em Arial, Helvetica, sans-serif;color:#00086E;}
+.titular4{font:bold 1em Arial, Helvetica, sans-serif;color:#333;}
+.texto1_1,.texto1_2,.texto1_3,.texto1_4,.texto1_5{font:12px Arial, Helvetica, sans-serif;}
+.texto2_1,.texto2_2,.texto2_3,.texto2_4,.texto2_5,.texto2_6,.texto2_7,.texto_error{font:11px Arial, Helvetica, sans-serif;}
+.texto3_1,.texto3_2,.texto3_3,.texto3_4,.texto3_5,#menu_telefonica,#menu_cierre{font:0.625em Arial, Helvetica, sans-serif;}
+.texto4_1,.texto4_2,.texto4_3,.texto4_4,.texto4_5{font:0.7em Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.texto5_1,.texto5_2,.texto5_3,.texto5_4,.texto5_5,.texto5_6,.texto5_7,#submenu_telefonica{font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.texto1_1,.texto2_1,.texto5_7{color:#00086E;}
+.texto1_2,.texto2_2,.texto3_1,.texto4_1,.texto5_1{color:#333;}
+.texto1_3,.texto2_3,.texto3_4,.texto4_2,.texto5_3,#pie_contenido{color:#6266A7;}
+.texto1_4,.texto5_6{color:#FFF;}
+.texto1_5,.texto5_5{color:#749514;}
+.texto2_4,.texto3_2,.texto4_5,.texto5_2{color:#666;}
+.texto2_5,.texto5_4,.texto_error{color:#CE440E;}
+.texto3_3,.texto2_7{color:#999;}
+.texto2_6,.texto3_5{color:#4C4F72;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.boton_generico{font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.boton_generico2,.boton_generico3{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.boton_generico4{font:0.7em Arial, Helvetica, sans-serif;}
+.boton_generico0{color:#6266A7;}
+.boton_generico2{font-size:0.7em;}
+.boton_generico3{font-size:0.625em;}
+.boton_generico,.boton_generico2,.boton_generico3,.boton_generico4{color:#6266A7;}
+input,select,textArea{font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;color:#666;}
+#contenedor{width:100%;text-align:center;}
+#contenido{width:740px;text-align:left;margin:auto;}
+#contenedor_datos_centrales{width:500px;padding-top:8px;float:left;}
+#contenedor_principal_subhome{width:740px;margin:0;padding:0;background:url(../images/fondoPrincipal.gif) repeat-y;}
+#datos_centrales_interior{width:436px;float:left;}
+#datos_centrales_interior2{width:570px;float:left;}
+#datos_centrales_interior3{width:605px;float:left;}
+#menu_mapa_idioma{text-align:right;height:36px;padding-right:11px;background-color:#FFF;}
+#menu_mapa_idioma li{display:inline;list-style-type:none;}
+#menu_mapa_idioma .linea_vertical{color:#CCC;font-size:1.25em;line-height:1.35em;position:relative;top:-5px;}
+#menu_mapa_idioma .usuario{padding:5px 0 7px 30px;background:url(../images/ico_candado2.gif) no-repeat 3px 3px;}
+#cabecera{height:29px;}
+#menu_principal{float:right;padding-right:1px;}
+#menu_principal ul li{display:inline;}
+
+#submenu_y_buscador{clear:both;width:745px;height:42px;}
+#submenu_principal{float:right;}
+#submenu_principal ul{height:42px;float:left;}
+#submenu_principal ul li{display:inline;list-style-type:none;}
+#buscador_simple{width:230px;float:right;border: 0px solid #000000;}
+.texto_buscador{width:150px;margin:10px 0 3px 0px;}
+.boton_buscar{position:relative;top:2px;left:0px;}
+
+#contenedor_submenu{float:left;margin-top:20px;margin-right:20px;width:115px;}
+#submenu_contenido{background:url(../images/fnd_menu.gif) repeat-y;}
+#contenido_menu{margin-left:3px;width:109px;border-bottom:1px solid #BEC0D5;}
+#contenido_menu ul,#contenido_menu #listado_nivel2 ul{list-style-type:none;}
+#contenido_menu #listado_nivel2{border-top:1px solid #BEC0D5;line-height:1px;padding-top:4px;font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;margin:1px 0 7px;}
+#contenido_menu li{margin:1px 0;padding:0;}
+#contenido_menu ul li a{display:block;border-top:1px solid #BEC0D5;padding:1px 5px 4px 14px;background-color:#fff;}
+#contenido_menu ul li a:link,#contenido_menu ul li a:visited{background:url(../images/bullet1_off.gif) no-repeat left center #DEDEEA;}
+#contenido_menu #nivel1_activo li a :hover{color:#fff;background:url(../images/bullet1_on.gif) no-repeat left center #AEB2CD;}
+#contenido_menu #nivel1_activo a:hover,#contenido_menu #listado_nivel2 a:hover{color:#333;}
+#contenido_menu #nivel1_activo{padding-top:3px;padding-bottom:4px;background:url(../images/bullet1_on.gif) no-repeat left center #fff;}
+#contenido_menu #listado_nivel2 li{line-height:10px;padding-bottom:4px;}
+#contenido_menu #listado_nivel2 .activo{font-weight:bold;color:#333;}
+#contenido_menu #listado_nivel2 a{text-decoration:none;color:#6266A7;display:block;border:none;padding:0 0 0 8px;background:url(../images/bullet2_off.gif) no-repeat 3px 5px #fff;}
+#apertura_menu{width:115px;height:23px;background-image:url(../images/fnd_menu_sup.gif);}
+#cierre_menu{width:115px;height:36px;margin-bottom:10px;background-image:url(../images/fnd_menu_inf.gif);}
+#iconos_y_servicios{text-align:right;margin:12px 10px 0 0;}
+#iconos_y_servicios span{color:#CCC;position:relative;top:-4px;font-size:1.15em;margin:0 5px;}
+#separador_adicional{height:35px;}
+#contenedor_listado_adicional .informacion_adicional{padding-top:50px;background:url(../images/fnd_puntos.gif) no-repeat left 45px #fff;}
+#contenedor_listado_adicional .informacion_adicional .listado_adicional{padding-left:5px;}
+.informacion_adicional{float:right;width:159px;background:url(../images/fondo_superior_degradado.jpg) no-repeat 0 38px #fff;}
+#contenido_adicional{margin-top:20px;background:url(../images/fndDrchB.gif) no-repeat top left #F0EFF5;}
+#pasapantallas_producto #contenido_adicional{margin-top:17px;}
+#pasapantallas_producto .informacion_adicional{background:url(../images/fondo_superior_degradado.jpg) no-repeat #fff;}
+#contenido_adicional .apoyo_drch{height:354px;}
+#contenedor_listado_iconografico .listado_adicional{height:1%;min-height:100px;margin:0;padding:0;}
+.listado_adicional{list-style:none;padding-bottom:30px;min-height:280px;margin:0;}
+* html div.listado_adicional{height:280px;}
+.listado_adicional a{color:#6266A7;}
+.listado_adicional ul{list-style:none;margin:0;padding:0;}
+.listado_adicional li{line-height:1em;padding:0 3px 0 2px;}
+.listado_adicional li span{padding-left:8px;display:block;}
+.listado_adicional .opciones ul li{padding: 6px 4px 2px 18px;margin: 0;line-height: 1.1em;background: url(../images/icoList1.gif) no-repeat;background-position: 9px 13px;background-p\osition: 9px 9px;}
+.listado_adicional h4 {text-transform:uppercase;margin:0;padding:10px 0 5px 31px;}
+.listado_adicional h4 span {text-transform:uppercase;}
+.listado_adicional .boton_ver_mas{padding:8px 0 10px 10px;}
+.listado_adicional .listado_generico{padding-left:10px;}
+#adicional_destacado{margin:8px 0 10px 10px;padding:7px 5px 7px 12px;background-color:#FAFAFC;}
+#adicional_destacado_ficha{margin:8px 0 10px 10px;padding:7px 5px 7px 12px;background-color:#FAFAFC;}
+#adicional_destacado_ficha p{margin:5px 5px 15px 0;}
+#logo_verisign{text-align:right;position:relative;top:-7px;right:10px;}
+.listado_iconografico{margin-left:2px;}
+.listado_iconografico li{padding:0 0 8px 32px;}
+.listado_elementos_doble{padding:16px 0 8px;}
+.listado_elementos_doble li{display:inline;}
+.listado_elementos_doble .izquierda .contenido{float:left;}
+.listado_elementos_doble .derecha .contenido{float:right;}
+.listado_elementos_doble .contenido{width:200px;}
+#contenedor_detalles_guias .listado_elementos_doble .separador{clear:left;margin:7px 0 7px 27px;}
+#pie_contenido{background:url(../images/fndCierre.gif) repeat-x;}
+#pie_contenido ul li A{color:#6266A7;text-decoration:none;}
+#pie_contenido ul li A:hover{color:#6266A7;text-decoration:underline;}
+#menu_telefonica{width:740px;text-align:left;text-transform:uppercase;margin:auto;padding:2px 0;}
+#menu_telefonica ul{padding-left:2px;margin:0;}
+#menu_telefonica ul li{float:left;list-style-type:none;padding:0 6px 0 5px;background:url(../images/fndLImenuInf.gif) no-repeat right;}
+#contenedor_submenu_telefonica{clear:left;background:url(../images/fnd_submenu2.gif) repeat-x scroll left bottom;}
+#submenu_telefonica{width:740px;height:13px;text-align:left;margin:auto;padding:2px 0 4px;}
+#submenu_telefonica ul{margin:0;padding:0;}
+#submenu_telefonica ul li{float:left;list-style-type:none;padding:0 6px 0 5px;background:url(../images/fndLImenuCierre.gif) no-repeat right;}
+#menu_cierre{clear:left;width:740px;text-align:left;height:40px;color:#666;margin:auto;}
+#menu_cierre ul{width:615px;float:left;}
+#menu_cierre ul li{display:inline;list-style-type:none;padding:0 7px 0 5px;background:url(../images/fndLImenuCierre.gif) no-repeat right;}
+#logo_telefonica_pie{position:relative;top:-14px;}
+#menu_migas{padding-top:25px;}
+div.top,div.topB{height:8px;}
+div.top{background:url(../images/top_line.gif) repeat-x;}
+div.topB{background:url(../images/top_lineB.gif) repeat-x;}
+img.esquina_sup_izq{float:left;}
+img.esquina_sup_der{float:right;}
+div.contenido_bordes{background:url(../images/left_line.gif) repeat-y #EFEFF5;}
+div.contenido_bordesB{background:url(../images/left_lineB.gif) repeat-y #E0E0EC;}
+div.caja_control,div.caja_controlB{min-height:30px;padding:0 3px;background:url(../images/right_line.gif) repeat-y right;}
+div.caja_controlB{background:url(../images/right_lineB.gif) repeat-y right;}
+* html div.caja_control,* html div.caja_controlB{height:30px;}
+#bottom,#bottom1,#bottom2{height:8px;border:0;margin:0;padding:0;}
+div.bottom{background:url(../images/btm_line.gif) repeat-x;}
+div.bottom1{background:url(../images/btm_line1.gif) repeat-x;}
+div.bottom2{background:url(../images/btm_line2.gif) repeat-x;}
+img.esquina_inf_izq{float:left;}
+img.esquina_inf_der{float:right;}
+
+/*--CAMBIADO--*/
+/*-- * html img.esquina_sup_izq,* html img.esquina_inf_izq{\margin-left:-.2em;ma\rgin-left:0;} */
+/*-- * html img.esquina_inf_der,* html img.esquina_sup_der{\margin-left:.2em;} */
+* html img.esquina_sup_izq,* html img.esquina_inf_izq{\margin-left:-.2em;}
+* html img.esquina_inf_der,* html img.esquina_sup_der{\margin-left:.2em;}
+
+
+
+.columna_izquierda {float:left;} .columna_derecha {float:right;}
+#login .foto_destacado{padding-left:10px;}
+#formulario_registro{padding:3px 0 0 10px;}
+#formulario_registro #usuario,#formulario_registro #contrasenia{border:1px solid #B0B0B0;width:112px;margin-bottom:2px;}
+#formulario_registro #usuario{position:relative;left:18px;}
+#formulario_registro select{width:116px;margin-left:59px;}
+#login .contrasenia_y_seguridad{padding-left:5px;margin-top:3px;background-color:#E0E0EC;}
+#login .contrasenia_y_seguridad ul li{display:inline;position:relative;top:-2px;}
+#login .contrasenia_y_seguridad .icono_seguridad{padding-left:17px;background:url(../images/icoMiniCandado.gif) no-repeat 1px 5px;}
+#registrese{padding:2px 0 0 5px;background-color:#FFF;}
+#registrese .listado_generico{padding-top:1px;font:normal .7em Arial, Helvetica, sans-serif;}
+#registrese .listado_generico li{line-height:12px;padding-left:20px;background:url(../images/check.gif) no-repeat 8px 5px;}
+.listado_generico_nivel3 h5{height:16px;font:bold 0.75em Arial, Helvetica, sans-serif;color:#FFF;padding:3px 0;background-color:#BABCD5;}
+.cabecera_seccion h4,.cabecera_seccion h5,.cabecera_seccion .encabezado{min-height:16px;font:bold 0.75em Arial, Helvetica, sans-serif;color:#FFF;padding:3px 0 3px 10px;background-color:#BABCD5;}
+.cabecera_seccion h5 span{font:normal 0.9em Arial,Verdana,sans-serif;color:#333;}
+.listado_generico{font:normal 0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;}
+.listado_generico2{font:normal 11px Arial, Helvetica, sans-serif;}
+.listado_generico a,.listado_generico2 a,.listado_generico3 a{text-decoration:none;color:#6266A7;}
+.listado_generico a:hover,.listado_generico2 a:hover,.listado_generico3 a:hover{text-decoration:underline;color:#6266A7;}
+.listado_generico_nivel3 .icono_subir{float:right;margin:-27px 8px 0 0;}
+.listado_generico li ,.listado_generico2 li,.listado_generico3 li,#listado_consultas .listado_generico2 li{margin:0;padding-left:10px;line-height:13px;background: url(../images/icoList1.gif) no-repeat;background-position:0px 8px;background-p\osition:0px 4px;padding-bottom:0px;padding-b\ottom:3px;}
+#aviso_destacado{width:437px;border:1px solid #F2FFCA;margin:1px 0 5px;background:url(../images/cierre_aviso.gif) no-repeat right bottom #F2FFCA;}
+#aviso_destacado p,#aviso_destacado a{margin-left:35px;}
+#contenido_aviso{margin:1px 0 5px;padding:14px;background:url(../images/ico_aviso.gif) no-repeat 15px 15px #F2FFCA;}
+#listado_productos{padding:5px 10px 20px 12px;background:url(../images/fndcierre1.gif) repeat-x bottom #F0EFF5; }
+#listado_productos li{display:inline;list-style-type:none;}
+#listado_productos .izquierda .boton_producto{float:left;}
+#listado_productos .derecha .boton_producto{float:right;}
+
+/*--CAMBIADO--*/
+/*--.boton_producto{width: 200px;w\idth:185px;border: 1px solid #BABCD5;margin-top: 5px;padding: 3px 0 3px 15px;background: #fff url(../images/icoList1.gif) no-repeat 5px 7px;}--*/
+.boton_producto{width: 185px;border: 1px solid #BABCD5;margin-top: 5px;padding: 3px 0 3px 15px;background: #fff url(/on/images/icoList1.gif) no-repeat 5px 7px;}
+
+#aniadido_banner{margin-left:1px;width:438px;margin-bottom:20px;}
+#contenido_banner{padding:15px 10px 10px;background:url(../images/fnd_ext_banner.gif) repeat-y #6B6D94;}
+#contenido_banner .texto_destacado{padding-left:40px;background:url(../images/ico_interrogacion.gif) no-repeat;}
+#contenido_banner .texto_destacado2{padding-left:40px;background:url(../images/ico_mano.gif) no-repeat;height:1%;}
+#contenido_banner .pregunta{width:230px;}
+#contenido_banner #form_pregunta{margin-top:8px;}
+.contenedor_form{padding:10px 10px 15px 50px;}
+.contenedor_formulario{margin:0 0 1px;padding:0 5px;background:url(../images/separador_horizontal1.gif) no-repeat;}
+.contenedor_form p{margin-bottom:2px;}
+.contenedor_formulario #formulario_soporte{background:url(../images/ico_herramienta.gif) no-repeat 5px 10px;}
+.contenedor_formulario #formulario_pregunta{background:url(../images/ico_interrogacion.gif) no-repeat 5px 12px;}
+#botonera_pasos{height:1%;}
+#botonera_pasos ul li{float:left;font:normal .7em Arial, Helvetica, sans-serif;text-align:center;color:#fff;padding:4px 2px;}
+#botonera_pasos .activo,#botonera_pasos .activo_fin{color:#fff;}
+#botonera_pasos .noactivo,#botonera_pasos .noactivo2,#botonera_pasos .noactivo_fin{color:#666;}
+#botonera_pasos .activo{background:url(../images/botonMenuOn.gif) no-repeat right #A3A3A3;}
+#botonera_pasos .activo_fin{background:url(../images/botonMenuFinOn.gif) no-repeat right #A3A3A3;}
+#botonera_pasos .noactivo{background:url(../images/botonMenuOff.gif) no-repeat right #F0F0F0;}
+#botonera_pasos .noactivo2{background:url(../images/botonMenuBOff.gif) no-repeat right #F0F0F0;}
+#botonera_pasos .noactivo_fin{background:url(../images/botonMenuFinOff.gif) no-repeat right #F0F0F0;}
+#botonera_pasos2{height:1%;margin-top:10px;}
+#botonera_pasos2 ul li{float:left;font:normal .7em Arial, Helvetica, sans-serif;text-align:left;color:#fff;padding:2px 2px 3px;}
+#botonera_pasos2 .activo,#botonera_pasos2 .activo_fin{color:#fff;}
+#botonera_pasos2 .noactivo,#botonera_pasos2 .noactivo2,#botonera_pasos2 .noactivo_fin{color:#666;}
+#botonera_pasos2 .activo{background:url(../images/on_off.gif) no-repeat right #A3A3A3;}
+#botonera_pasos2 .activo_fin{background:url(../images/on_final.gif) no-repeat right #A3A3A3;}
+#botonera_pasos2 .noactivo{background:url(../images/off_off.gif) no-repeat right #F0F0F0;}
+#botonera_pasos2 .noactivo2{background:url(../images/off_on.gif) no-repeat right #F0F0F0;}
+#botonera_pasos2 .noactivo_fin{background:url(../images/off_final.gif) no-repeat right #F0F0F0;}
+#menu_detalle_pestanias{width:100%;margin:0;padding:5px 0;background:url(../images/px_violeta.gif) repeat-x right bottom #D5D7E6;}
+#menu_detalle_pestanias a{color:#6166A6;text-decoration:none;}
+#menu_detalle_pestanias a:hover{color:#6166A6;text-decoration:underline;}
+#menu_detalle_pestanias .activo a{color:#000;text-decoration:none;}
+#menu_detalle_pestanias .activo a:hover{color:#000;text-decoration:underline;}
+#menu_detalle_pestanias ul li{font:bold 0.7em Arial,sans-serif;color:#6166A6;display:inline;list-style-type:none;border-bottom:1px solid #A5A8C7;padding:4px 15px;background:url(../images/separador_menu_detalles.gif) no-repeat right #D5D7E6;}
+#menu_detalle_pestanias li.ultimo_elemento{}
+#menu_detalle_pestanias .activo{display:inline;list-style-type:none;border-top:1px solid #A5A8C7;border-left:1px solid #A5A8C7;border-right:1px solid #A5A8C7;border-bottom:1px solid #fff;background-color:#fff;}
+.bajo_pestanias{text-align:right;margin-bottom:10px;}
+.listado_oferta1{float:left;}
+.listado_oferta2{float:left;margin-bottom:8px;}
+.lista_ofertas li{padding:8px 0 2px 30px;background:url(../images/icoFlecha.gif) no-repeat 5px 5px;}
+.texto_destacado_linea{float:left;padding:4px 10px 0 6px;}
+#listado_anuncios .texto_destacado .listado_generico{padding-bottom:12px;}
+#contenedor_linea{padding-top:8px;}
+#contenedor_linea .texto_destacado_linea{padding-right:6px;}
+#formulario_otros{padding-bottom:10px;}
+#formulario_otros .cbo{width:162px;}
+#listado_anuncios .destacado_generico .separador{margin:6px 0 0 45px;}
+.foto_destacado,#anuncio_destacado{float:left;}
+.ayudamos{float:left;padding-right:35px;}
+#listado_anuncios{margin-left:155px;padding-right:10px;}
+#listado_anuncios .opciones_destacado{padding-left:45px;}
+#listado_anuncios .linea_ancho_total{height:1px;margin:1px 0 8px;background:url(../images/separador1.gif) no-repeat right #E0E0E0;}
+#contenedor_centro{width:435px;margin:12px 0 20px;background:url(../images/px_azul.gif) repeat-y 148px 20px #fff;}
+#anuncio_destacado p{width:140px;padding-bottom:10px;}
+#listado_kit_averias .listado_generico_nivel3 .icono_subir,#comparadores .listado_generico_nivel3 .icono_subir,#listados_solucion_averias .listado_generico_nivel3 .icono_subir,#listados_problemas_adsl .listado_generico_nivel3 .icono_subir,#tarifas .listado_generico_nivel3 .icono_subir{float:right;margin:-18px 8px 0 0;}
+.destacado_generico{margin-bottom:10px;}
+#listado_anuncios .opciones_destacado span{color:#CCC;font-size:0.6em;}
+#listado_anuncios .opciones_destacado,.texto_destacado{padding-left:45px;}
+
+/*--CAMBIADO--*/
+/*--div.destacado_a{margin-right:10px;}--*/
+div.destacado_a{margin-right:10px;}
+/*--div.destacado_a{margin-right:10px; height:60px;}--*/
+
+div.destacado_a .cbo{width:190px;}
+#productos h5{margin:0;padding:9px 0 3px 27px;background:url(../images/icoFlecha.gif) no-repeat 1px 3px;}
+#productos p{margin-bottom:5px;}
+.grupo_productos {margin-top:5px;height:22px;he\ight:19px;background-color:#BABCD5;padding: 3px 0 0 27px;}
+.grupo_productos h4{color:#FFF;display:inline;font:bold 0.8em Arial, Helvetica, sans-serif;margin:0;padding:0;}
+.grupo_productos .icono_subir{float:right;margin:-14px 8px 0 0;}
+#destacado_especial1 .foto_destacado{padding:0 4px 0 6px;}
+/*-- Modificado el 15/03/06 (padding-right añadido--*/
+.producto{padding-left:30px;width:406px;}
+
+.producto_imagen .descripcion_imagen{float:left;}
+/*-- --*/
+.producto_imagen{margin:0;padding:0;}
+.producto_imagen .imagen{float:left;padding:5px 5px 0 0;}
+.separador_botones{color:#CCC;font-size:0.6em;}
+#productos .separador{margin:3px 0 7px;}
+#productos .listado_grupo_productos{padding-bottom:13px;}
+#cabecera_pantalla .parrafos p{padding-top:10px;}
+#comprobacion_cobertura{border-bottom:3px solid #BABCD5;padding-bottom:10px;}
+#form_comprobacion_cobertura{vertical-align:middle;margin:0;padding:0;}
+#form_comprobacion_cobertura label{float:left;display:block;border:none;margin:10px 10px 0 0;}
+#form_comprobacion_cobertura input{border:1px solid #B0B0B0;}
+#form_comprobacion_cobertura #numero_telefono,#form_comprobacion_cobertura #numero_documento{width:135px;}
+#form_comprobacion_cobertura #enviar_direccion,#form_comprobacion_cobertura #enviar_telefono{border:none;position:relative;top:3px;}
+#form_comprobacion_cobertura select{width:140px;margin:0;}
+#form_comprobacion_cobertura #btnComprobar{border:none;}
+#boton_comprobar{text-align:right;margin-top:10px;}
+.frmSeparado{padding-bottom:13px;}
+#leyes{padding-bottom:30px;}
+.cabecera_pantalla_producto{padding-bottom:12px;}
+#busca_programa{padding-left:3px;}
+#busca_programa #canal{width:120px;padding-right:3px;}
+#busca_programa #espacio{width:120px;}
+#listado_especiales .separador_destacados{height:2px;border-bottom:1px solid #fff;position:relative;top:2px;}
+#listado_especiales .item_generico{padding-left:20px;background-position:10px 9px;}
+.item_generico{padding-left:9px;background:url(../images/icoList1.gif) no-repeat 0 9px;}
+body{margin:0;padding:0;background:url(../images/fondo_principal.gif) repeat-x 0 4px;}
+legend{display:none;}
+fieldset{border:none;display:inline;margin:0;padding:0;}
+img{border:0;}
+form,ul,li,dl,dd,dt,h1,h2,h3,h4,h5,h6,p,a{margin:0;padding:0;}
+li{list-style-type:none;margin:0;padding:0;}
+hr{display:none;}
+.auxiliar:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.border_listado{border:1px solid #BEB9D9;color:#000;width:inherit;margin:5px 0;padding:2px 0 2px 27px;}
+.capa_error{border-top:1px solid #CF440D;border-bottom:1px solid #CF440D;font:bold .7em Arial, Helvetica, sans-serif;color:#CE440E;margin:15px 0;padding:15px 5px 15px 30px;background:url(../images/ico_error.gif) no-repeat 3px 17px;}
+.oculto{display:none;}
+.titulo_separador_triple{height:3px;margin:0 0 7px 10px;background:url(../images/linea_triple.gif) repeat-x right;}
+.separador,.separador2{background:url(../images/titSeparador.gif) no-repeat right #E0E0E0;}
+.separador{height:1px;}
+.separador2{height:2px;}
+#paso{padding-left:40px;}
+.titular_paso1{background:url(../images/paso1.gif) no-repeat 0 3px;}
+.titular_paso2{background:url(../images/paso2.gif) no-repeat 0 3px;}
+.titular_paso3{background:url(../images/paso3.gif) no-repeat 0 3px;}
+.titular_paso4{background:url(../images/paso4.gif) no-repeat 0 3px;}
+.titular_paso5{background:url(../images/paso5.gif) no-repeat 0 3px;}
+.titular_paso6{background:url(../images/paso6.gif) no-repeat 0 3px;}
+.texto_presentacion1,.texto_presentacion2,.texto_presentacion3{min-height:35px;margin-bottom:10px;padding-bottom:8px;}
+/*--.texto_presentacion1,.texto_presentacion1_1{background:url(../images/separadorProd.gif) no-repeat bottom;}
+.texto_presentacion2{background:url(../images/separadorProd2.gif) no-repeat bottom;}
+--*/
+.texto_presentacion3{background:url(../images/separadorProd3.gif) no-repeat bottom;}
+* html div.texto_presentacion1,* html div.texto_presentacion1_1{height:35px;}
+.texto_presentacion1 h4,.texto_presentacion2 h4{padding-bottom:8px;}
+.texto_presentacion1_1{min-height:35px;padding-bottom:8px;}
+.menu_cabecera .sub_menu{padding-left:20px;}
+.separador3{height:3px;margin:8px 0;background-color:#BBBBD3;}
+.separador4{height:2px;margin:5px 0;background-color:#BBBBD3;}
+
+/*--CAMBIADO--*/
+#cabecera_pantalla ,#cabecera_pantalla2,#cabecera_pantalla3{ padding-bottom:6px; min-height: 27px; }
+/*-- #cabecera_pantalla ,#cabecera_pantalla2,#cabecera_pantalla3{padding-bottom:6px;height:1%;} --*/
+
+* html #cabecera_pantalla , * html #cabecera_pantalla2, * html #cabecera_pantalla3 { height: 27px; }
+
+/*--CAMBIADO--*/
+/*--#cabecera_pantalla  {background:transparent url(../images/separadorProd2.gif) no-repeat bottom;}--*/
+#cabecera_pantalla  {background:transparent url(/on/images/separadorProd2.gif) no-repeat bottom;}
+
+/*--CAMBIADO--*/
+/*--#cabecera_pantalla2 {min-height:27px;background:transparent url(../images/separadorProd.gif) no-repeat bottom;}--*/
+#cabecera_pantalla2 {background:transparent url(/on/images/separadorProd.gif) no-repeat bottom;}
+
+
+* html #cabecera_pantalla2 {height:27px;}
+
+/*--CAMBIADO--*/
+/*--#cabecera_pantalla2 #titulo_y_texto2{width:290px;}--*/
+#cabecera_pantalla2 #titulo_y_texto2{float:left;width:290px;}
+
+
+#cabecera_pantalla3 #titulo_y_texto2{width:290px;}
+#cabecera_pantalla #titulo_y_texto{width:390px;}
+#cabecera_pantalla2 .grande{padding-bottom:4px;background:url(../images/separadorProd2.gif) no-repeat 0 bottom;}
+#parrafos p{margin-top:15px;}
+#cabecera_pantalla #imagen{text-align:right;float:right;}
+#boton_cabecera{margin-top:25px;}
+.boton_formulario{position:relative;left:5px;top:4px;}
+.boton_formulario2{position:relative;top:4px;}
+#cabecera_pantalla2 #imagen{float:right;}
+#cabecera_pantalla3 #imagen{float:right;}
+#cabecera_pantalla2 #parrafos p{padding-bottom:4px;}
+#cabecera_pantalla2 .menu_cabecera ul li{padding-bottom:3px;}
+.info{background:url(../images/icoInfo.gif) no-repeat 6px;}
+.info2{padding:5px 0 3px 22px;background:url(../images/icoInfo2.gif) no-repeat 0 center;}
+.seguro{background:url(../images/ico_candado4.gif) no-repeat 6px;}
+.flecha{background:url(../images/icoFlecha.gif) no-repeat 6px;}
+.preguntas{background:url(../images/ico_preguntas.gif) no-repeat 4px 6px;}
+.instalacion{background:url(../images/ico_instalacion.gif) no-repeat 4px 6px;}
+.consulta{background:url(../images/ico_asesor.gif) no-repeat 4px 6px;}
+.cobertura{background:url(../images/ico_cobertura.gif) no-repeat 4px 6px;}
+.salto1{margin-bottom:3px;}
+.salto2{margin-top:3px;}
+.salto3{margin-top:3px;clear:both;}
+.tabla_generica th{border-top:3px solid #BABCD5;border-bottom:1px solid #BABCD5;border-left:1px solid #F0EFF5;text-align:center;height:24px;}
+.cabecera .inicio_cabecera{border-left:1px solid #BABCD5;}
+.cabecera .fin_cabecera{border-right:1px solid #BABCD5;}
+caption{display:none;}
+td{padding-top:0;}
+.fila_par td{border-left:1px solid #F0EFF5;border-bottom:1px solid #F0EFF5;}
+.fila_par2 td{border-bottom:1px solid #F0EFF5;}
+.fila_impar td{border-left:1px solid #FFF;border-bottom:1px solid #FFF;background-color:#F0EFF5;}
+.tabla_generica2 th{border-left:1px solid #fff;padding:4px 6px 4px 4px;background-color:#BABCD5;}
+table .centrado{text-align:center;padding:5px 0;}
+table .centrado_cierre{text-align:center;border-right:1px solid #F0EFF5;padding:5px 0;}
+table .normal{padding:3px 0 3px 10px;}
+table .precio{text-align:center;color:#000;border-right:1px solid #F0EFF5;}
+table .acceso{padding:5px 0 0 10px;}
+table .velocidad{text-align:center;}
+table .alta{text-align:right;padding-right:10px;}
+table .capa_titular1{margin-left:10px;}
+.tabla_generica #columna_acceso{width:145px;}
+.tabla_generica #columna_modem{width:140px;}
+.tabla_generica #columna_velocidad{width:75px;}
+.tabla_generica #columna_alta{width:135px;}
+.tabla_generica #columna_precio{width:100px;}
+#kit_adsl_precios #columna_modalidad{width:110px;}
+#kit_adsl_precios #columna_alta{width:80px;}
+#kit_adsl_precios #columna_modem{width:130px;}
+#kit_adsl_precios #columna_altaYmodem{width:150px;}
+#kit_adsl_precios #columna_cuota{width:135px;}
+#kit_adsl_opciones #columna_opcion{width:270px;}
+#kit_adsl_opciones #columna_alta_opciones{width:115px;}
+#kit_adsl_opciones #columna_cuota_mes{width:125px;}
+#kit_adsl_opciones #columna_cuota_anio{width:90px;}
+.tabla_generica #columna_seleccion{width:47px;}
+.tabla_generica #columna_agrupacion_facturable{width:170px;}
+.tabla_generica #columna_factura{width:165px;}
+.tabla_generica #columna_fecha{width:110px;}
+.tabla_generica #columna_importe{width:100px;}
+.tabla_generica #columna_telefono_asociado{width:170px;}
+#contenedor_consulta_facturas .tabla_generica .seleccion{width:38px;}
+#contenedor_consulta_facturas .tabla_generica .agrupacion_facturable{width:162px;}
+#contenedor_consulta_facturas .tabla_generica .factura{width:138px;}
+#contenedor_consulta_facturas .tabla_generica .fecha_factura{width:98px;}
+#contenedor_consulta_facturas .tabla_generica .importe{width:90px;}
+#contenedor_consulta_facturas .tabla_generica .telefono_asociado{width:120px;}
+.tabla_generica2 .destacado{margin-bottom:3px;border-left:1px solid #fff;padding:4px 1px 4px 10px;}
+.tabla_generica #columna_dia{width:80px;}
+.tabla_generica #columna_hora{width:45px;}
+#iconos_servicios{float:right;color:#ccc;padding:22px 9px 0 0;}
+#iconos_servicios span{vertical-align:top;}
+iframe{overflow:hidden;}
+.informacion_adicional .listado_generico{padding-bottom:10px;}
+#sin_cabecera{background-image:none;}
+.listado_paginacion{font:bold 0.7em Arial,Verdana,sans-serif;margin:8px 0 20px 10px;}
+.listado_paginacion span{color:#CCC;}
+.listado_paginacion ul,.listado_paginacion li{display:inline;}
+.listado_paginacion a{color:#6267AB;text-decoration:none;}
+.listado_paginacion a:hover{text-decoration:underline;}
+.listado_paginacion li .activo{color:#000;}
+#resultados{margin:15px 0 5px;}
+#resultados ul{margin:5px 0 10px;}
+#resultados ul a{font-size:.9em;}
+#resultados .listado_generico3,#listado_busqueda .listado_generico3{font:normal .75em Arial, Helvetica, sans-serif;}
+#listado_busqueda .listado_generico_nivel3 .icono_subir{float:right;margin:-18px 8px 0 0;}
+#listado_busqueda .listado_generico_nivel3 h5{padding-left:10px;}
+.listado_datos_resultado{padding:5px 0 9px 10px;}
+#listado_busqueda h5 .texto2_2{font-size:1em;}
+#resultados .listado_generico3 .boton_generico4{font-size:1em;}
+#listado_busqueda .separador{margin:5px 0 2px;}
+#resultado_no_encontrado{margin:15px 0 5px;}
+#resultado_no_encontrado ul{color:#333;margin:5px 0 10px;}
+.separador_degradado{width:437px;height:4px;margin:15px 0 12px;background:url(../images/separadorProd.gif) no-repeat left;}
+.precio_antes{text-decoration:line-through;}
+#listado_fotos{padding-left:10px;background:url(../images/dospuntos.gif) repeat-y;}
+#listado_fotos h5{margin-bottom:10px;}
+#listado_fotos_home .imagen_foto{width:85px;float:left;}
+#listado_fotos_home ul{line-height:0;}
+#listado_fotos_home .textos{margin-left:85px;}
+#listado_fotos_home .icono_flecha{background:url(../images/icoFlecha.gif) no-repeat #FFF;}
+.cabecera_pantalla_producto #cabecera_pantalla2 #titulo_y_texto2{width:275px;}
+.cabecera_pantalla_producto #cabecera_pantalla2 #imagen{padding-top:18px;text-align:right;}
+.cabecera_pantalla_producto #titulo_y_texto2 h4{padding-bottom:21px;}
+.cabecera_pantalla_producto #titulo_y_texto2 p{padding-bottom:15px;}
+#enlace_promos{padding-left:30px;}
+#cabecera_promo2{padding-bottom:13px;}
+#cabecera_popup #logo_telefonica{float:none;margin:16px 0 0;padding:0 0 0 20px;background:url(../images/fnd_cabPop.gif) repeat-x #00086E;}
+#pie_popup{margin-top:27px;padding:8px 0 35px 32px;background:url(../images/fnd_pie_pop.gif) repeat-x;}
+#pie_popup #logo_telefonica_pie{float:right;margin:12px 0 0;padding:0 15px 0 0;}
+.texto_alerta{text-transform:uppercase;padding-left:12px;background:url(../images/icoExclamacion.gif) no-repeat 1px 2px;}
+#contenedor_principal_mapa{width:740px;padding-top:20px;}
+#iframe_mapa_web{width:740px;height:1300px;}
+#mapa_web .cabecera_seccion{clear:both;margin:10px 0;}
+#mapa_web ul li.opciones_mapa_web{float:left;width:137px;padding-left:15px;margin:0 14px 0 12px;background:url(../images/icoList3.gif) no-repeat 0 6px;}
+#mapa_web .subopciones_mapa_web ul li{clear:both;}
+#mapa_web .cabecera_seccion h5{padding-left:26px;}
+#mapa_web .border_listado{clear:both;}
+      
+
+
+/* Añadido para el menú submigas */
+#submenu_migas {
+		padding-top: 0px;
+		padding-bottom: 5px;
+		padding-left: 4px;
+	}
+	      
+/*-- Añadido 14/09/05 cine catálogo --*/
+.listado_alfabetico {margin:0px 0px 20px 0px;font: bold 0.7em Arial,Verdana,sans-serif;}
+.listado_alfabetico span {color:#CCCCCC; margin-left:1px; margin-right:1px;}
+.listado_alfabetico ul,.listado_alfabetico li {display: inline;}
+.listado_alfabetico a {color: #6267AB;text-decoration:none;}
+.listado_alfabetico a:hover {text-decoration:underline;}
+.listado_alfabetico li .activo {color: #000;}
+
+
+/*-- Añadido 19/09/05/ cuerpo de Popup --*/
+#datos_centrales_popup {margin:15px 20px 10px 30px;}
+/*-- Modificado 19/09/05/ pie de Popup --*/
+#pie_popup{margin-top:11px;padding:8px 0 10px 32px;background:url(../images/fnd_pie_pop.gif) repeat-x;} 
+
+/*-- Añadido 20/09/05 texto alerta naranja --*/
+.texto_alerta_naranja {
+	background:url(../images/icoExclamacion_naranja.gif) no-repeat 1px 2px;
+	font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	padding-left:12px;
+	color:#CE440E;
+}
+
+/*-- Añadido 23/09/05 texto oferta rojo--*/
+.oferta_rojo {
+	background:url(../images/ico_alerta_ambar.gif) no-repeat 1px 2px;
+	font:0.625em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	padding-left:12px;
+	color:#E3A000;
+}
+
+/*-- Añadido 23/09/05 enlaces en medio de frases --*/
+.texto2_2 a {color:#6266A7;}
+.texto1_2 a {color:#6266A7;}
+
+
+/*-- Añadido 13/10/05 para solucionar la desaparición de una raya --*/
+#cabecera_pantalla3 .texto_presentacion1 {background:url(../images/separadorProd.gif) no-repeat bottom;}
+
+/*-- Añadido 14/10/05 cajas más anchas para boton producto --*/
+#listado_productos .izquierda .boton_producto2{float:left;}
+#listado_productos .derecha .boton_producto2{float:right;}
+.boton_producto2{width: 250px; border: 1px solid #BABCD5;margin-top: 5px;padding: 3px 0 3px 15px;background: #fff url(../images/icoList1.gif) no-repeat 5px 7px;}
+
+/*--Añadido 25/10/05 enlaces en medio de frases --*/
+.texto2_4 a {color:#6266A7;}
+.texto5_1 a {color:#6266A7;}
+
+/*--Añadido 28/10/05--*/
+/*--elementos listados en tabla en 'fichas' de manuales y descargas de soporte tecnico y averias /internet /adsl --*/
+.tabla_generica th li{margin:0;padding-left:10px;line-height:13px;background: url(../images/icoList1.gif) no-repeat;background-position:0px 8px;background-p\osition:0px 4px;padding-bottom:0px;padding-b\ottom:3px;}
+
+/*Añadido 11/10/05--*/
+/*--porcentajes de ajuste en tablas y elementos centrados en tabla de tarifas internacionales--*/
+.tabla_generica #destino {padding-right:10px; text-align:right;}
+.tabla_generica #campo {text-align:center;}
+.tabla_generica th.destino{width:40%}
+
+/*Añadido 21/11/05 --*/
+/*-- enlaces en tablas de listado telefónico, maqueta--*/
+.texto5_3 a {color:#6266A7;}
+
+/* Añadido 22/11/05 */
+/* Modificado el ancho del body en los casos plantilla emergente para zm y ficha de producto */
+#sin_cabecera_zm{background-image:none; width: 435px;}
+
+/* Añadido 23/11/05 */
+/* Ocultar o mostrar capas dinámicamente para fichas de producto */
+#ocultar{display:none;}
+#mostrar{display:block;}
+
+/*Añadido 25/11/05--*/
+/* Maqueta de páginas de error--*/
+.espaciado_superior{margin-top:60px;}
+#contenedor_submenu_telefonica_grande{clear:left;background:url(../images/fnd_submenu_grande.gif) no-repeat bottom left;}
+
+
+/*Añadido 12/12/05--*/
+#ajuste_titular{margin-top:30px; margin-bottom:-18px;}
+#ajuste_titular h4 .titular3{font:bold 1em Arial, Helvetica, sans-serif;color:#00086E;}
+
+/* Maqueta de páginas de error, sin_cookies--*/
+#contenido_aviso p{margin-left:30px;}
+
+#login2 .contrasenia_y_seguridad{padding-left:5px;margin-top:3px;background-color:#E0E0EC;}
+#login2 .contrasenia_y_seguridad ul li{display:inline;position:relative;top:-2px;}
+#login2 .contrasenia_y_seguridad .icono_seguridad{padding-left:17px;background:url(../images/icoMiniCandado.gif) no-repeat 1px 5px;}
+
+#aviso_destacado2 {width:570px; border:1px solid #F2FFCA;margin:1px 0 5px;background:url(../images/cierre_aviso02.gif) no-repeat right bottom #F2FFCA;}
+#aviso_destacado3 {width:472px; border:1px solid #F2FFCA;margin:1px 0 5px;background:url(../images/cierre_aviso02.gif) no-repeat right bottom #F2FFCA;}
+
+.horario {margin-top:6px;}
+.llegar {margin-top:8px;}
+
+/*Añadido 13/12/05--*/
+.margen_login {padding-left:10px;}
+#icono_impresion{float:right; padding-right:1px; margin-top:5px; margin-bottom:5px; margin-left:5px;}
+
+.margen_login_inverso {margin-left:-10px;}
+.ajuste_fino {margin-top:-16px;}
+
+/*Añadido 14/12/05--*/
+/*--cajas en maqueta home de hogar --*/
+#login ul.tamaño_fijo_caja{height:20px;}
+#login ul li.ajuste_caja{padding-top:5px;}
+
+#contenedor_principal{width:740px;}
+
+/*--Añadido 15/12/05--*/
+/*--Navidad--*/
+.ajuste_radios {padding-left:20px; margin-top:-20px; }
+
+/*--home de area privada--*/
+#login ul.tamaño_fijo_caja2{height:19px; margin-bottom:-5px;}
+
+
+#login5 .contrasenia_y_seguridad{padding-left:5px;margin-top:3px;background-color:#E0E0EC;}
+#login5 .contrasenia_y_seguridad ul li{display:inline;position:relative;top:-2px;}
+#login5 .contrasenia_y_seguridad .icono_seguridad{padding-left:17px;background:url(../images/icoMiniCandado.gif) no-repeat 1px 5px;}
+
+/*--Añadido 15/12/05--*/
+#login5 ul.tamaño_fijo_caja{height:20px;}
+#login5 ul.tamaño_fijo_caja2{height:19px; margin-bottom:-5px;}
+#login5 ul li.ajuste_caja{padding-top:5px;}
+
+
+/*--Añadido 15/12/05--*/
+/*--maqueta para noticias al dia --*/
+#par_columnas{margin-left:0px; margin-top:0px; height:100px;}
+#par_columnas .tabulado{padding-left:10px;}
+#par_columnas2{margin-left:150px; margin-top:-100px; height:100px;}
+#par_columnas2 .tabulado{padding-left:10px;}
+#par_columnas3{margin-left:300px; margin-top:-100px; height:100px;}
+#par_columnas3 .tabulado{padding-left:10px;}
+
+/*--Añadido 04/01/06 --*/
+/*--color de enlace en maqueta de servicios --*/
+.texto1_1 a{color:#00086E;}
+
+.texto_activo{font:bold .7em Arial, Helvetica, sans-serif; color:#333;}
+.valor_activo{color:#333; font-weight:bold; }
+
+/*--añadido 13/01/06 --*/
+/*-- Ajuste para cajas de AHOG y EMPR de home de area privada --*/
+.ajuste_cajas_ahog_ca {margin-left:47px; margin-top:-16px;}
+.ajuste_combo_ahog_ca {margin-left:6px;}
+
+
+/*--AÑADIDO DMR--*/
+#iconos_freducida{text-align:right;}
+.botonera{
+	clear: both;
+	padding-left: 80px;
+}
+
+
+#menu_detalle_pestanias li.oculto{display:none;}
+.grupo_productos_fichas .icono_subir{float:right;margin:-17px 8px 0 0;}
+.instalacion_aplicaciones{background:url(/on/images/ico_aplicaciones.gif) no-repeat 4px 6px;}
+.instalacion_ejecutables{background:url(/on/images/ico_ejecutable.gif) no-repeat 4px 6px;}
+.instalacion_word{background:url(/on/images/ico_word.gif) no-repeat 4px 6px;}
+.instalacion_powerpoint{background:url(/on/images/ico_powerpoint.gif) no-repeat 4px 6px;}
+.instalacion_excel{background:url(/on/images/ico_excel.gif) no-repeat 4px 6px;}
+.instalacion_flash{background:url(/on/images/ico_flash.gif) no-repeat 4px 6px;}
+.instalacion_media{background:url(/on/images/ico_mediaPlayer.gif) no-repeat 4px 6px;}
+.instalacion_pdf{background:url(/on/images/ico_pdf.gif) no-repeat 4px 6px;}
+.instalacion_zip{background:url(/on/images/ico_zip.gif) no-repeat 4px 6px;}
+.enlace_ayuda_principal{background:url(/on/images/ico_ayudap1.gif) no-repeat 4px 6px;}
+.enlace_ayuda_principal2{background:url(/on/images/ico_ayudap2.gif) no-repeat 4px 6px;}
+.enlace_ayuda_principal3{background:url(/on/images/ico_ayudap3.gif) no-repeat 4px 6px;}
+.enlace_ayuda_principal4{background:url(/on/images/ico_ayudap4.gif) no-repeat 4px 6px;}
+.enlace_ayuda_principal5{background:url(/on/images/ico_ayudap5.gif) no-repeat 4px 6px;}
+.enlace_ayuda_principald{background:url(/on/images/ico_ayudapd.gif) no-repeat 4px 6px;}
+
+
+#iconos_servicios_producto{float:right;color:#ccc;padding:22px 9px 0 0;}
+#iconos_servicios_producto span{vertical-align:top;}
+
+#contenedor_detalles_informacion_prom_lis{float:left;color:#666;}
+#contenedor_detalles_informacion_prom_lis a{position:relative;color:#6266A7;}
+#contenedor_detalles_informacion_prom_lis.texto2_4 table tr td{color:#666;font:.7em Arial, Helvetica, sans-serif;}
+#contenedor_detalles_informacion_prom_lis.texto2_4 p{position:relative;color:#666;}
+#contenedor_detalles_informacion_prom_lis.texto2_4 ul.listado li{margin:0;padding-left:10px;line-height:13px;background: url(/on/images/icoList1.gif) no-repeat;background-position:0px 8px;background-p\osition:0px 4px;padding-bottom:0px;padding-b\ottom:3px;}
+
+
+/*-- Añadido 19/01/06 --*/
+/*-- Solucion al desajuste de la caja de gestion online y otras--*/
+div.contenido_bordesG{background:url(/on/images/left_line.gif) repeat-y #EFEFF5;margin-left:0px;/margin-left:3px;min-height:44px;}
+div.contenido_bordesH{background:url(/on/images/left_line.gif) repeat-y #EFEFF5;margin-left:0px;/margin-left:0px;}
+
+/*-- Añadido 03/02/2006 --*/
+/*-- Clase necesaria para montar el marco central y derecho embebido en uno global --*/
+#contenedor_principal_subhome3 {width:605px;margin:0;padding:0;background:url(../images/fondoPrincipal3.gif) repeat-y;}
+
+/*-- Añadido 08/02/2006 --*/
+/*-- Clase utilizada en la zona morada cuando se embebe junto con el marco central --*/
+.informacion_adicional_embebida {float:right;width:159px;background:url(../images/fondo_superior_degradado.jpg) no-repeat 0 3px #fff;}
+
+
+#datos_centrales_interior4 {width:740px;float:left;}
+
+/*--Añadido 20/02/2006 --*/
+/*--Nuevo Seguimiento de pedido --*/
+.texto3_3 a{color:#6266A7;}
+.texto2_3 a{color:#6266A7;}
+.texto5_2 a{color:#6266A7;}
+
+
+/*-- Añadido 02/03/06 --*/
+/*-- estilos para emergente de seguridad desde cajas de login--*/
+#desplazador_der_popup{float:right;padding-right:1px; }
+.espacio2{margin-bottom:28px;}
+
+/*-- Añadido 04/03/06 --*/
+/*-- estilo adaptado al div <div id="contenedor_detalles_informacion_prom_fich" class="texto2_2"> en ficha de producto- OFERTA*/
+.oferta_rojo2 {
+	background:url(../images/ico_alerta_ambar.gif) no-repeat 1px 2px;
+	text-transform:uppercase;
+	padding-left:12px;
+	color:#E3A000;
+}
+
+/*-- Añadido 06/03/06 --*/
+/*-- estilo adaptado al div <div id="contenedor_detalles_informacion_prom_fich" class="texto2_2"> en ficha de producto- SOLO ONLINE*/
+.texto_verde{color:#749514;}
+
+/*-- Añadido 05/06/08 --*/
+/*-- Para mostrar de diferente forma las ofertas en <div id="contenedor_detalles_informacion_prom_fich" class="texto2_2"> y en<div id="contenedor_detalles_informacion_prom_lis" class="texto2_2">*/
+#contenedor_detalles_informacion_prom_lis .img_promo_ficha {display:none;}
+
+#contenedor_detalles_informacion_prom_fich *{-moz-box-sizing: border-box;box-sizing: border-box}
+/*#contenedor_detalles_informacion_prom_fich div {border-left:1px solid #749514; border-right:1px solid #749514;}*/
+#contenedor_detalles_informacion_prom_fich .promo_ficha {font: 1.2em Arial, Helvetica, sans-serif; color:#00086e; float:left; width:25%;  text-align:center; padding:3% 3% 3% 3%; margin-left:-1px;} 
+#contenedor_detalles_informacion_prom_fich .mas_azul {font:bold 1.2em Arial, Helvetica, sans-serif; color:#00086e;} 
+#contenedor_detalles_informacion_prom_fich .menos_azul {font:0.8em Arial, Helvetica, sans-serif; color:#00086e;} 
+#contenedor_detalles_informacion_prom_fich .mas_verde {font:bold 1.2em Arial, Helvetica, sans-serif; color:#749514;} 
+#contenedor_detalles_informacion_prom_fich .menos_verde {font:0.8em Arial, Helvetica, sans-serif; color:#749514;} 
+#contenedor_detalles_informacion_prom_fich .img_promo_ficha {display:block;}
+
+
+.espacio3{margin-top:0px}
+
+
+/*--  Añadido 10/03/06 --*/
+div.caja_controlS{min-height:30px;padding:0 3px;background:url(../images/right_line.gif) repeat-y right;margin-top:-.2em;}
+* html div.caja_controlS{}
+#gestiones_online{margin-top:2px;}
+#gestiones_online .imagen_seccion{background:url('/on/images/icoGestionOnline.gif') no-repeat 2px 2px;padding:0 2px 2px 30px;}
+#caja_controlS .gestiones_online {height:1%;}
+
+/*--  Añadido 13/03/06 --*/
+.cabecera_seccion .icono_subir{float:right;margin:-17px 8px 0 0;}
+
+/*--  Añadido 15/03/06 --*/
+/*--  Útil para hacer cajas con esquinas redondeadas que ocupen el marco central + derecho --*/
+#aniadido_banner3 {margin-left:1px;width:605px;margin-bottom:20px;}
+#contenido_banner3 {padding:15px 10px 10px;background:url(../images/fnd_ext_banner3.gif) repeat-y #6B6D94;}
+#contenido_banner3 .texto_destacado{padding-left:40px;background:url(../images/ico_interrogacion.gif) no-repeat;}
+#contenido_banner3 .texto_destacado2{padding-left:40px;background:url(../images/ico_mano.gif) no-repeat;height:1%;}
+#contenido_banner3 .pregunta{width:230px;}
+#contenido_banner3 #form_pregunta{margin-top:8px;}
+
+/*--  Añadido 16/03/06 --
+.producto_imagen .descripcion_imagen{float:left;}
+.producto_imagen .descripcion_imagen #contenedor_detalles_informacion_prom_lis{width:330px;}
+.producto #contenedor_detalles_informacion_prom_lis{width:400px;}*/
+
+/*--  Cambiado 07/05/07 --*/
+.producto_imagen .descripcion_imagen{float:left;width:78%;}
+.producto_imagen .descripcion_imagen #contenedor_detalles_informacion_prom_lis{width:100%;}
+.producto #contenedor_detalles_informacion_prom_lis{width:100%;}
+
+
+#registro_home .cajas{margin-left:14px}
+
+.texto3_2 a {color:#6266A7;}
+
+/* Añadido el 29/03/2006 para crear menu de anclas */
+.enlace_ancla{width: 185px;border: 1px solid #BABCD5;margin-top: 5px;padding: 3px 0 3px 15px;background: #fff url(/on/images/icoList1.gif) no-repeat 5px 7px;}
+#menu_anclas {padding:5px 10px 20px 12px; margin-bottom:15px; background:url(../images/fndcierre1.gif) repeat-x bottom #F0EFF5; }
+#menu_anclas li{display:inline;list-style-type:none;}
+#menu_anclas .izquierda .enlace_ancla{float:left;}
+#menu_anclas .derecha .enlace_ancla{float:right;}
+
+/* Estilo nuevo para tablas */
+table .align_derecha{text-align:right; padding:3px 10px 3px 3px;}
+
+/*--Añadido 03/04/06--*/
+/*-- Clase para el logo de TdE --*/
+#tes{position:absolute;float:left;margin-top:4px}
+#tes_logado{position:absolute;float:left;margin-top:25px}
+#logo_telefonica{padding-top:8px;float:left; padding-left:220px}
+#logo_telefonica_pie{visibility:hidden} 
+/*--#logo_telefonica{padding-top:4px;float:left;}--*/
+
+#cabecera_popup #logo_telefonica {padding-top:4px;}
+
+/*--Añadido 08/05/06--*/
+/*-- Clases para el buscador de Imagenio --*/
+.altura_buscador{/height:30px;}
+.ajuste_buscador1{margin-top:-10px}
+
+#contenido #formulario_registro{margin-left:-9px}
+
+
+
+#consulta_11822_listado {height:200px; background:url(../images/fondo_listado.jpg) no-repeat;z-index:1}
+#consulta_11822_distributiva {height:245px; background:url(../images/fondo_distributiva.jpg) no-repeat;z-index:1}
+
+
+#consulta_11822_listado #form_consulta_11822 fieldset {margin-left:16px; width:190px;}
+#consulta_11822_distributiva #form_consulta_11822 fieldset {margin-left:16px; width:190px;}
+
+#bloque_izquierda{float:left; width:215px; margin-top:34px;background:url(../images/px_azul.gif) repeat-y 213px; z-index:0}
+#bloque_derecha{float:left;width:215px; margin-top:34px;}
+
+
+#form_consulta_11822 label input{width:180px}
+#form_consulta_11822 select{width:186px}
+
+.buscar_11822_listado{float:right;padding-right:30px;position:relative;top:9px;left:3px;}
+.buscar_11822_distributiva{float:right;padding-right:30px;position:relative;top:23px;left:3px;}
+
+.encabezado_izquierda{margin-bottom:5px; margin-left:17px; width:190px;}
+.encabezado_derecha{margin-bottom:5px; margin-left:11px;}
+
+
+#consulta_11822_listado #form_consulta_11822 .nombre{float:left;}
+#consulta_11822_listado #form_consulta_11822 .apellido1{float:left;}
+#consulta_11822_listado #form_consulta_11822 .apellido2{float:left;}
+#consulta_11822_listado #form_consulta_11822 .provincia{float:left;margin-left:11px;}
+#consulta_11822_listado #form_consulta_11822 .localidad{float:left;margin-left:11px;}
+#consulta_11822_listado #form_consulta_11822 .calle{float:left;margin-left:11px;}
+
+#consulta_11822_distributiva #form_consulta_11822 .nombre{float:left;}
+#consulta_11822_distributiva #form_consulta_11822 .apellido1{float:left;}
+#consulta_11822_distributiva #form_consulta_11822 .apellido2{float:left;}
+#consulta_11822_distributiva #form_consulta_11822 .provincia{float:left;margin-left:11px;}
+#consulta_11822_distributiva #form_consulta_11822 .localidad{float:left;margin-left:11px;}
+#consulta_11822_distributiva #form_consulta_11822 .calle{float:left;margin-left:11px;}
+
+.izquierda_11822{float:left;}
+.derecha_11822{float:right;}
+
+.alerta_formulario{font:.7em Arial, Helvetica, sans-serif;color:#CE440E;background:url(/on/images/ico_error_mini.gif) no-repeat; margin-left:14px; padding-left:17px;}
+#bloque_alerta{float:left;width:190px; margin-top:6px;}
+.desplazamiento{margin-left:12px;}
+
+#contenido_bordesG select {width:180px}
+
+
+
+/*--estilos para cabecera grande con imagen y texto grande --*/
+#cabecera_pantalla_imagen2{ padding-bottom:6px; min-height: 100px; }
+* html #cabecera_pantalla_imagen2 { height: 100px; }
+#cabecera_pantalla_imagen2 {background:transparent url(/on/images/separadorProd2.gif) no-repeat bottom;}
+
+#cabecera_pantalla_imagen2 #titulo_y_texto2{width:450px;float:left}
+#cabecera_pantalla_imagen2 #parrafos p{padding-bottom:4px;}
+
+#imagen_flotante2{margin-bottom:-100px;margin-left:454px; position:relative;top:-105px}
+
+
+/*--estilos para cabecera pequeña con imagen y texto grande --*/
+#cabecera_pantalla_imagen{ padding-bottom:6px; min-height: 100px; }
+* html #cabecera_pantalla_imagen { height: 100px; }
+#cabecera_pantalla_imagen {background:transparent url(/on/images/separadorProd.gif) no-repeat bottom;}
+
+#cabecera_pantalla_imagen #titulo_y_texto{width:280px;float:left}
+#cabecera_pantalla_imagen #parrafos p{padding-bottom:4px;}
+
+#imagen_flotante{margin-bottom:-100px;margin-left:284px; position:relative;top:-105px}
+
+/*-- Anyadido DMR 20060727 --*/
+#listado_adicional_foto{width:130;margin-left:8px;}
+#listado_adicional_foto .foto_menu_derecho{float:left;}
+#listado_adicional_foto .texto_menu_derecho{float:left;padding-left:5px;}
+
+/*--INICIO EVERIS MEJORA TAGS 20080508--*/
+
+#menu_detalle_pestanias_ficha {display:inline;position:relative;width:100%;margin:0;padding:5px 0;background:url(../images/px_violeta.gif) repeat-x right bottom #D5D7E6;}
+#menu_detalle_pestanias_ficha a{color:#6166A6;text-decoration:none;}
+#menu_detalle_pestanias_ficha a:hover{color:#6166A6;text-decoration:underline;}
+#menu_detalle_pestanias_ficha .activo a h4{color:#000;text-decoration:none;}
+#menu_detalle_pestanias_ficha .activo a:hover{color:#000;text-decoration:underline;}
+#menu_detalle_pestanias_ficha ul li h4{font:bold 0.7em Arial,sans-serif;color:#6166A6;display:inline;list-style-type:none;border-bottom:1px solid #A5A8C7;padding:4px 15px;background:url(../images/separador_menu_detalles.gif) no-repeat right #D5D7E6;}
+#menu_detalle_pestanias_ficha li.ultimo_elemento{}
+#menu_detalle_pestanias_ficha .activo h4{display:inline;list-style-type:none;border-top:1px solid #A5A8C7;border-left:1px solid #A5A8C7;border-right:1px solid #A5A8C7;border-bottom:1px solid #fff;background-color:#fff;}
+.bajo_pestanias{text-align:right;margin-bottom:10px;}
+.listado_oferta1{float:left;}
+.listado_oferta2{float:left;margin-bottom:8px;}
+.lista_ofertas li{padding:8px 0 2px 30px;background:url(../images/icoFlecha.gif) no-repeat 5px 5px;}
+.texto_destacado_linea{float:left;padding:4px 10px 0 6px;}
+
+#productos h4{margin:0;padding:9px 0 3px 27px;background:url(../images/icoFlecha.gif) no-repeat 1px 3px;}
+#productos h3{margin:0;padding:9px 0 3px 27px;background:url(../images/icoFlecha.gif) no-repeat 1px 3px;}
+#productos h1{margin:0;padding:9px 0 3px 27px;background:url(../images/icoFlecha.gif) no-repeat 1px 3px;}
+#productos_ h2{margin:0;padding:9px 0 3px 27px;background:url(../images/icoFlecha.gif) no-repeat 1px 3px;}
+#productos_ h3 .texto1_2 .border_listado
+
+.grupo_productos_especial {margin-top:5px;height:22px;he\ight:19px;background-color:#BABCD5;padding: 3px 0 0 27px;}
+
+.grupo_productos h2{color:#FFF;display:inline;font:bold 0.8em Arial, Helvetica, sans-serif;margin:0;padding:0;}
+.grupo_productos_especial h4{color:#FFF;display:inline;font:bold 0.8em Arial, Helvetica, sans-serif;margin:0;padding:0;}
+.grupo_productos_especial h2{color:#FFF;display:inline;font:bold 0.8em Arial, Helvetica, sans-serif;margin:0;padding:0;background:url(../images/btnSubir.gif);}
+
+.grupo_productos_especial .icono_subir{float:right;margin:-14px 8px 0 0;}
+
+.grupo_productos_especial h2{color:#FFFFFF;display:inline;font:bold 0.8em Arial, Helvetica, sans-serif;margin:0;padding:0;}
+#productos_especial .listado_grupo_productos{padding-bottom:13px;}
+
+.grupo_productos_fichas_especial .icono_subir{float:right;margin:-17px 8px 0 0;}
+
+/*--FIN EVERIS MEJORA TAGS 20080508--*/
+
+/*--AÑADIDO ON711000 20080723--*/
+#menu_mapa_idioma_logado{text-align:right;height:58px;padding-right:11px;background-color:#FFF;}
+#menu_mapa_idioma_logado li{display:inline;list-style-type:none;}
+#menu_mapa_idioma_logado .linea_vertical{color:#CCC;font-size:1.25em;line-height:1.35em;position:relative;top:-5px;}
+#menu_mapa_idioma_logado .usuario{padding:5px 0 7px 30px;background:url(../images/ico_candado2.gif) no-repeat 3px 3px;}
+body.normal{margin:0;padding:0;background:url(../images/fondo_principal.gif) repeat-x 0 4px;}
+body.normal_logado{margin:0;padding:0;background:url(../images/fondo_principal.gif) repeat-x 0 26px;}
